@@ -12,20 +12,21 @@
       "total_points": 8,
       "form": 8.0,
       "points_per_game": 8.0,
-      "minutes": 66,
+      "minutes": 72,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.0,
-      "xgc": 0.84,
+      "xgc": 1.14,
       "expected_goals": 0.0,
       "expected_assists": 0.0,
-      "bps": 31,
+      "bps": 32,
       "bonus": 1,
       "starts": 1,
       "news": "",
-      "xpts90": 0.5,
-      "reliability": 0.94,
-      "score": 4.764805748098056,
+      "xpts90": 0.06,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 4.924844181459566,
       "fixtures": [
         {
           "opponent": "COV",
@@ -55,14 +56,14 @@
       "gw_note": ""
     },
     {
-      "id": 350,
-      "name": "Alisson Becker",
-      "web_name": "A.Becker",
+      "id": 352,
+      "name": "Freddie Woodman",
+      "web_name": "Woodman",
       "team": "Liverpool",
       "team_short": "LIV",
       "team_id": 14,
       "position": 1,
-      "price": 55,
+      "price": 40,
       "total_points": 0,
       "form": 0.0,
       "points_per_game": 0.0,
@@ -79,7 +80,8 @@
       "news": "",
       "xpts90": 4.0,
       "reliability": 1.0,
-      "score": 1.2399999999999998,
+      "nailedness": 0.0,
+      "score": 0.37199999999999994,
       "fixtures": [
         {
           "opponent": "NFO",
@@ -133,7 +135,8 @@
       "news": "",
       "xpts90": 5.36,
       "reliability": 0.9,
-      "score": 9.664423668639055,
+      "nailedness": 1.0,
+      "score": 10.201336094674557,
       "fixtures": [
         {
           "opponent": "COV",
@@ -187,7 +190,8 @@
       "news": "",
       "xpts90": 2.18,
       "reliability": 0.9,
-      "score": 9.333823668639054,
+      "nailedness": 1.0,
+      "score": 9.852369428007888,
       "fixtures": [
         {
           "opponent": "COV",
@@ -241,6 +245,7 @@
       "news": "",
       "xpts90": 4.57,
       "reliability": 1.0,
+      "nailedness": 1.0,
       "score": 7.82565476660092,
       "fixtures": [
         {
@@ -295,6 +300,7 @@
       "news": "",
       "xpts90": 0.15,
       "reliability": 1.0,
+      "nailedness": 1.0,
       "score": 1.8816666666666664,
       "fixtures": [
         {
@@ -325,14 +331,14 @@
       "gw_note": ""
     },
     {
-      "id": 361,
-      "name": "Wellity Lucky",
-      "web_name": "Lucky",
+      "id": 364,
+      "name": "Kostas Tsimikas",
+      "web_name": "Tsimikas",
       "team": "Liverpool",
       "team_short": "LIV",
       "team_id": 14,
       "position": 2,
-      "price": 40,
+      "price": 50,
       "total_points": 0,
       "form": 0.0,
       "points_per_game": 0.0,
@@ -349,7 +355,8 @@
       "news": "",
       "xpts90": 4.0,
       "reliability": 1.0,
-      "score": 1.2399999999999998,
+      "nailedness": 0.0,
+      "score": 0.37199999999999994,
       "fixtures": [
         {
           "opponent": "NFO",
@@ -403,6 +410,7 @@
       "news": "",
       "xpts90": 2.26,
       "reliability": 1.0,
+      "nailedness": 1.0,
       "score": 7.1674596318211705,
       "fixtures": [
         {
@@ -457,7 +465,8 @@
       "news": "",
       "xpts90": 4.35,
       "reliability": 0.96,
-      "score": 6.314700726965343,
+      "nailedness": 1.0,
+      "score": 6.4560746238377025,
       "fixtures": [
         {
           "opponent": "AVL",
@@ -498,7 +507,7 @@
       "total_points": 2,
       "form": 2.0,
       "points_per_game": 2.0,
-      "minutes": 66,
+      "minutes": 72,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.28,
@@ -510,8 +519,9 @@
       "starts": 1,
       "news": "",
       "xpts90": 1.05,
-      "reliability": 0.94,
-      "score": 1.4720101437024513,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 1.561222879684418,
       "fixtures": [
         {
           "opponent": "IPS",
@@ -552,20 +562,21 @@
       "total_points": 2,
       "form": 2.0,
       "points_per_game": 2.0,
-      "minutes": 66,
+      "minutes": 72,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.27,
       "xgc": 1.18,
       "expected_goals": 0.06,
       "expected_assists": 0.21,
-      "bps": 17,
+      "bps": 15,
       "bonus": 0,
       "starts": 1,
       "news": "",
       "xpts90": 0.94,
-      "reliability": 0.94,
-      "score": 1.450324429416737,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 1.5315562130177514,
       "fixtures": [
         {
           "opponent": "IPS",
@@ -595,31 +606,32 @@
       "gw_note": ""
     },
     {
-      "id": 162,
-      "name": "Andrey Nascimento dos Santos",
-      "web_name": "Andrey Santos",
+      "id": 428,
+      "name": "Matheus Santos Carneiro da Cunha",
+      "web_name": "Cunha",
       "team": "Man Utd",
       "team_short": "MUN",
       "team_id": 16,
       "position": 3,
-      "price": 50,
+      "price": 80,
       "total_points": 2,
       "form": 2.0,
       "points_per_game": 2.0,
-      "minutes": 66,
+      "minutes": 72,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 0.23,
+      "xgi": 0.18,
       "xgc": 1.18,
-      "expected_goals": 0.0,
-      "expected_assists": 0.23,
-      "bps": 17,
+      "expected_goals": 0.14,
+      "expected_assists": 0.04,
+      "bps": 10,
       "bonus": 0,
       "starts": 1,
       "news": "",
-      "xpts90": 0.7,
-      "reliability": 0.94,
-      "score": 1.3824387151310227,
+      "xpts90": 0.83,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 1.4818895463510848,
       "fixtures": [
         {
           "opponent": "IPS",
@@ -673,7 +685,8 @@
       "news": "",
       "xpts90": 0.06,
       "reliability": 0.99,
-      "score": 1.2301714285714287,
+      "nailedness": 1.0,
+      "score": 1.2390857142857143,
       "fixtures": [
         {
           "opponent": "HUL",
@@ -727,7 +740,8 @@
       "news": "",
       "xpts90": 0.03,
       "reliability": 0.99,
-      "score": 1.2147285714285714,
+      "nailedness": 1.0,
+      "score": 1.2235309523809523,
       "fixtures": [
         {
           "opponent": "HUL",
@@ -757,20 +771,20 @@
       "gw_note": ""
     },
     {
-      "id": 248,
-      "name": "Norberto Bercique Gomes Betuncal",
-      "web_name": "Beto",
-      "team": "Everton",
-      "team_short": "EVE",
-      "team_id": 9,
+      "id": 80,
+      "name": "Enes \u00dcnal",
+      "web_name": "Enes \u00dcnal",
+      "team": "Bournemouth",
+      "team_short": "BOU",
+      "team_id": 3,
       "position": 4,
       "price": 55,
       "total_points": 0,
       "form": 0.0,
       "points_per_game": 0.0,
       "minutes": 0,
-      "status": "a",
-      "chance_of_playing": null,
+      "status": "u",
+      "chance_of_playing": 0,
       "xgi": 0.0,
       "xgc": 0.0,
       "expected_goals": 0.0,
@@ -778,42 +792,2293 @@
       "bps": 0,
       "bonus": 0,
       "starts": 0,
-      "news": "",
+      "news": "Has joined Getafe permanently",
       "xpts90": 0.0,
       "reliability": 1.0,
-      "score": 0.0,
+      "nailedness": 0.0,
+      "score": 0,
       "fixtures": [
         {
-          "opponent": "BOU",
-          "is_home": false,
+          "opponent": "EVE",
+          "is_home": true,
           "difficulty": 3,
           "gw": 2
         },
         {
-          "opponent": "MUN",
-          "is_home": true,
-          "difficulty": 4,
+          "opponent": "NEW",
+          "is_home": false,
+          "difficulty": 3,
           "gw": 3
         },
         {
-          "opponent": "TOT",
-          "is_home": false,
+          "opponent": "BRE",
+          "is_home": true,
           "difficulty": 3,
           "gw": 4
         },
         {
-          "opponent": "IPS",
+          "opponent": "LIV",
           "is_home": true,
-          "difficulty": 2,
+          "difficulty": 4,
           "gw": 5
         }
       ],
       "gw_note": ""
     }
   ],
-  "cost": 88.0,
-  "score": 56.18220816568048,
+  "cost": 90.5,
+  "score": 56.09069069878839,
   "gameweek": 2,
+  "top_players": {
+    "1": [
+      {
+        "id": 572,
+        "name": "Konstantinos Tzolakis",
+        "web_name": "Tzolakis",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 1,
+        "price": 45,
+        "total_points": 8,
+        "form": 8.0,
+        "points_per_game": 8.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 1.14,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 32,
+        "bonus": 1,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.06,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.924844181459566,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 1,
+        "name": "David Raya Mart\u00edn",
+        "web_name": "Raya",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 1,
+        "price": 60,
+        "total_points": 6,
+        "form": 6.0,
+        "points_per_game": 6.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.2,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 24,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 2.86,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.387865877712031,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 412,
+        "name": "Senne Lammens",
+        "web_name": "Lammens",
+        "team": "Man Utd",
+        "team_short": "MUN",
+        "team_id": 16,
+        "position": 1,
+        "price": 50,
+        "total_points": 1,
+        "form": 1.0,
+        "points_per_game": 1.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 1.18,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 5,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.03,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 0.6268915187376727,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "EVE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "MCI",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "FUL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 110,
+        "name": "Carl Rushworth",
+        "web_name": "Rushworth",
+        "team": "Coventry City",
+        "team_short": "COV",
+        "team_id": 7,
+        "position": 1,
+        "price": 45,
+        "total_points": 1,
+        "form": 1.0,
+        "points_per_game": 1.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.01,
+        "xgc": 1.88,
+        "expected_goals": 0.0,
+        "expected_assists": 0.01,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.03,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 0.609,
+        "fixtures": [
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 3
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 350,
+        "name": "Alisson Becker",
+        "web_name": "A.Becker",
+        "team": "Liverpool",
+        "team_short": "LIV",
+        "team_id": 14,
+        "position": 1,
+        "price": 55,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 4.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.37199999999999994,
+        "fixtures": [
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 2
+          },
+          {
+            "opponent": "IPS",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 351,
+        "name": "Giorgi Mamardashvili",
+        "web_name": "Mamardashvili",
+        "team": "Liverpool",
+        "team_short": "LIV",
+        "team_id": 14,
+        "position": 1,
+        "price": 50,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 4.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.37199999999999994,
+        "fixtures": [
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 2
+          },
+          {
+            "opponent": "IPS",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 352,
+        "name": "Freddie Woodman",
+        "web_name": "Woodman",
+        "team": "Liverpool",
+        "team_short": "LIV",
+        "team_id": 14,
+        "position": 1,
+        "price": 40,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 4.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.37199999999999994,
+        "fixtures": [
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 2
+          },
+          {
+            "opponent": "IPS",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 355,
+        "name": "Harvey Davies",
+        "web_name": "Davies",
+        "team": "Liverpool",
+        "team_short": "LIV",
+        "team_id": 14,
+        "position": 1,
+        "price": 40,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 4.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.37199999999999994,
+        "fixtures": [
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 2
+          },
+          {
+            "opponent": "IPS",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 82,
+        "name": "Caoimh\u00edn Kelleher",
+        "web_name": "Kelleher",
+        "team": "Brentford",
+        "team_short": "BRE",
+        "team_id": 4,
+        "position": 1,
+        "price": 50,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 4.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.366,
+        "fixtures": [
+          {
+            "opponent": "LEE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 2
+          },
+          {
+            "opponent": "SUN",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 83,
+        "name": "H\u00e1kon Rafn Valdimarsson",
+        "web_name": "Valdimarsson",
+        "team": "Brentford",
+        "team_short": "BRE",
+        "team_id": 4,
+        "position": 1,
+        "price": 45,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 4.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.366,
+        "fixtures": [
+          {
+            "opponent": "LEE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 2
+          },
+          {
+            "opponent": "SUN",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      }
+    ],
+    "2": [
+      {
+        "id": 279,
+        "name": "Semi Ajayi",
+        "web_name": "Ajayi",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 2,
+        "price": 40,
+        "total_points": 15,
+        "form": 15.0,
+        "points_per_game": 15.0,
+        "minutes": 63,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.81,
+        "xgc": 0.84,
+        "expected_goals": 0.81,
+        "expected_assists": 0.0,
+        "bps": 39,
+        "bonus": 3,
+        "starts": 1,
+        "news": "",
+        "xpts90": 5.36,
+        "reliability": 0.9,
+        "nailedness": 1.0,
+        "score": 10.201336094674557,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 586,
+        "name": "Nobel Mendy",
+        "web_name": "Mendy",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 2,
+        "price": 40,
+        "total_points": 16,
+        "form": 16.0,
+        "points_per_game": 16.0,
+        "minutes": 63,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.28,
+        "xgc": 0.84,
+        "expected_goals": 0.28,
+        "expected_assists": 0.0,
+        "bps": 35,
+        "bonus": 2,
+        "starts": 1,
+        "news": "",
+        "xpts90": 2.18,
+        "reliability": 0.9,
+        "nailedness": 1.0,
+        "score": 9.852369428007888,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 10,
+        "name": "Benjamin White",
+        "web_name": "White",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 2,
+        "price": 55,
+        "total_points": 11,
+        "form": 11.0,
+        "points_per_game": 11.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": 100,
+        "xgi": 0.39,
+        "xgc": 0.2,
+        "expected_goals": 0.18,
+        "expected_assists": 0.21,
+        "bps": 37,
+        "bonus": 2,
+        "starts": 1,
+        "news": "",
+        "xpts90": 4.57,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 7.82565476660092,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 8,
+        "name": "Riccardo Calafiori",
+        "web_name": "Calafiori",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 2,
+        "price": 55,
+        "total_points": 9,
+        "form": 9.0,
+        "points_per_game": 9.0,
+        "minutes": 80,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.13,
+        "xgc": 0.06,
+        "expected_goals": 0.04,
+        "expected_assists": 0.09,
+        "bps": 31,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 4.15,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 6.523182971729127,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 277,
+        "name": "John Egan",
+        "web_name": "Egan",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 2,
+        "price": 40,
+        "total_points": 8,
+        "form": 8.0,
+        "points_per_game": 8.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 1.14,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 27,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.06,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.908177514792899,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 11,
+        "name": "Cristhian Mosquera",
+        "web_name": "Mosquera",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 2,
+        "price": 55,
+        "total_points": 6,
+        "form": 6.0,
+        "points_per_game": 6.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.2,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 27,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 2.86,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.397532544378698,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 4,
+        "name": "Gabriel dos Santos Magalh\u00e3es",
+        "web_name": "Gabriel",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 2,
+        "price": 80,
+        "total_points": 5,
+        "form": 5.0,
+        "points_per_game": 5.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.06,
+        "xgc": 0.2,
+        "expected_goals": 0.05,
+        "expected_assists": 0.01,
+        "bps": 21,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 3.19,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.893899211045365,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 282,
+        "name": "Ryan Giles",
+        "web_name": "Giles",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 2,
+        "price": 40,
+        "total_points": 6,
+        "form": 6.0,
+        "points_per_game": 6.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.04,
+        "xgc": 1.14,
+        "expected_goals": 0.0,
+        "expected_assists": 0.04,
+        "bps": 22,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.18,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.7275108481262325,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 280,
+        "name": "Lewie Coyle",
+        "web_name": "Coyle",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 2,
+        "price": 40,
+        "total_points": 6,
+        "form": 6.0,
+        "points_per_game": 6.0,
+        "minutes": 69,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.01,
+        "xgc": 1.14,
+        "expected_goals": 0.0,
+        "expected_assists": 0.01,
+        "bps": 23,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.09,
+        "reliability": 0.99,
+        "nailedness": 1.0,
+        "score": 3.6773881515919973,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 173,
+        "name": "Bobby Thomas",
+        "web_name": "Thomas",
+        "team": "Coventry City",
+        "team_short": "COV",
+        "team_id": 7,
+        "position": 2,
+        "price": 40,
+        "total_points": 3,
+        "form": 3.0,
+        "points_per_game": 3.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.03,
+        "xgc": 1.88,
+        "expected_goals": 0.02,
+        "expected_assists": 0.01,
+        "bps": 11,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.15,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 1.8816666666666664,
+        "fixtures": [
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 3
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      }
+    ],
+    "3": [
+      {
+        "id": 15,
+        "name": "Martin \u00d8degaard",
+        "web_name": "\u00d8degaard",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 3,
+        "price": 65,
+        "total_points": 11,
+        "form": 11.0,
+        "points_per_game": 11.0,
+        "minutes": 75,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.31,
+        "xgc": 0.06,
+        "expected_goals": 0.21,
+        "expected_assists": 0.1,
+        "bps": 41,
+        "bonus": 3,
+        "starts": 1,
+        "news": "",
+        "xpts90": 2.26,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 7.1674596318211705,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 12,
+        "name": "Bukayo Saka",
+        "web_name": "Saka",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 3,
+        "price": 95,
+        "total_points": 9,
+        "form": 9.0,
+        "points_per_game": 9.0,
+        "minutes": 67,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.72,
+        "xgc": 0.06,
+        "expected_goals": 0.64,
+        "expected_assists": 0.08,
+        "bps": 36,
+        "bonus": 1,
+        "starts": 1,
+        "news": "",
+        "xpts90": 4.35,
+        "reliability": 0.96,
+        "nailedness": 1.0,
+        "score": 6.4560746238377025,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 557,
+        "name": "Christos Tzolis",
+        "web_name": "Tzolis",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 3,
+        "price": 65,
+        "total_points": 6,
+        "form": 6.0,
+        "points_per_game": 6.0,
+        "minutes": 75,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.33,
+        "xgc": 0.06,
+        "expected_goals": 0.19,
+        "expected_assists": 0.14,
+        "bps": 30,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 2.28,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.237815187376725,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 290,
+        "name": "Regan Slater",
+        "web_name": "Slater",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 3,
+        "price": 45,
+        "total_points": 6,
+        "form": 6.0,
+        "points_per_game": 6.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.44,
+        "xgc": 1.14,
+        "expected_goals": 0.0,
+        "expected_assists": 0.44,
+        "bps": 18,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 1.34,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.060544378698224,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 7,
+        "name": "Myles Lewis-Skelly",
+        "web_name": "Lewis-Skelly",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 3,
+        "price": 55,
+        "total_points": 3,
+        "form": 3.0,
+        "points_per_game": 3.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.17,
+        "xgc": 0.2,
+        "expected_goals": 0.06,
+        "expected_assists": 0.11,
+        "bps": 15,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 1.35,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 2.1786664694280073,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 13,
+        "name": "Declan Rice",
+        "web_name": "Rice",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 3,
+        "price": 75,
+        "total_points": 3,
+        "form": 3.0,
+        "points_per_game": 3.0,
+        "minutes": 67,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.15,
+        "xgc": 0.06,
+        "expected_goals": 0.07,
+        "expected_assists": 0.08,
+        "bps": 10,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 1.5,
+        "reliability": 0.96,
+        "nailedness": 1.0,
+        "score": 2.1598742270123035,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 286,
+        "name": "Mohamed Belloumi",
+        "web_name": "Belloumi",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 3,
+        "price": 50,
+        "total_points": 3,
+        "form": 3.0,
+        "points_per_game": 3.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.05,
+        "xgc": 1.14,
+        "expected_goals": 0.05,
+        "expected_assists": 0.0,
+        "bps": 6,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.27,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 1.8995443786982247,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 576,
+        "name": "Elliot Stroud",
+        "web_name": "Stroud",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 3,
+        "price": 50,
+        "total_points": 3,
+        "form": 3.0,
+        "points_per_game": 3.0,
+        "minutes": 70,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.03,
+        "xgc": 1.14,
+        "expected_goals": 0.0,
+        "expected_assists": 0.03,
+        "bps": 11,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.11,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 1.8682110453648912,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 427,
+        "name": "Bryan Mbeumo",
+        "web_name": "Mbeumo",
+        "team": "Man Utd",
+        "team_short": "MUN",
+        "team_id": 16,
+        "position": 3,
+        "price": 80,
+        "total_points": 2,
+        "form": 2.0,
+        "points_per_game": 2.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.28,
+        "xgc": 1.18,
+        "expected_goals": 0.1,
+        "expected_assists": 0.18,
+        "bps": 14,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 1.05,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 1.561222879684418,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "EVE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "MCI",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "FUL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 426,
+        "name": "Bruno Borges Fernandes",
+        "web_name": "B.Fernandes",
+        "team": "Man Utd",
+        "team_short": "MUN",
+        "team_id": 16,
+        "position": 3,
+        "price": 120,
+        "total_points": 2,
+        "form": 2.0,
+        "points_per_game": 2.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.27,
+        "xgc": 1.18,
+        "expected_goals": 0.06,
+        "expected_assists": 0.21,
+        "bps": 15,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.94,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 1.5315562130177514,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "EVE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "MCI",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "FUL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      }
+    ],
+    "4": [
+      {
+        "id": 26,
+        "name": "Kai Havertz",
+        "web_name": "Havertz",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 4,
+        "price": 75,
+        "total_points": 6,
+        "form": 6.0,
+        "points_per_game": 6.0,
+        "minutes": 90,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.29,
+        "xgc": 0.2,
+        "expected_goals": 0.26,
+        "expected_assists": 0.03,
+        "bps": 34,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 1.13,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.9172555555555557,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 295,
+        "name": "Oli McBurnie",
+        "web_name": "McBurnie",
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_id": 11,
+        "position": 4,
+        "price": 55,
+        "total_points": 5,
+        "form": 5.0,
+        "points_per_game": 5.0,
+        "minutes": 72,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.1,
+        "xgc": 1.14,
+        "expected_goals": 0.1,
+        "expected_assists": 0.0,
+        "bps": 18,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.4,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.18,
+        "fixtures": [
+          {
+            "opponent": "COV",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "AVL",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "CHE",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 194,
+        "name": "Brandon Thomas-Asante",
+        "web_name": "Thomas-Asante",
+        "team": "Coventry City",
+        "team_short": "COV",
+        "team_id": 7,
+        "position": 4,
+        "price": 50,
+        "total_points": 2,
+        "form": 2.0,
+        "points_per_game": 2.0,
+        "minutes": 69,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.02,
+        "xgc": 1.6,
+        "expected_goals": 0.0,
+        "expected_assists": 0.02,
+        "bps": 9,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.06,
+        "reliability": 0.99,
+        "nailedness": 1.0,
+        "score": 1.2390857142857143,
+        "fixtures": [
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 3
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 195,
+        "name": "Ellis Simms",
+        "web_name": "Simms",
+        "team": "Coventry City",
+        "team_short": "COV",
+        "team_id": 7,
+        "position": 4,
+        "price": 50,
+        "total_points": 2,
+        "form": 2.0,
+        "points_per_game": 2.0,
+        "minutes": 69,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.01,
+        "xgc": 1.6,
+        "expected_goals": 0.0,
+        "expected_assists": 0.01,
+        "bps": 7,
+        "bonus": 0,
+        "starts": 1,
+        "news": "",
+        "xpts90": 0.03,
+        "reliability": 0.99,
+        "nailedness": 1.0,
+        "score": 1.2235309523809523,
+        "fixtures": [
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 3
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": true
+      },
+      {
+        "id": 492,
+        "name": "Taiwo Awoniyi",
+        "web_name": "Awoniyi",
+        "team": "Coventry City",
+        "team_short": "COV",
+        "team_id": 7,
+        "position": 4,
+        "price": 55,
+        "total_points": 1,
+        "form": 1.0,
+        "points_per_game": 1.0,
+        "minutes": 20,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.29,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 4,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.18399999999999997,
+        "fixtures": [
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 3
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 4
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 439,
+        "name": "Benjamin Sesko",
+        "web_name": "\u0160e\u0161ko",
+        "team": "Man Utd",
+        "team_short": "MUN",
+        "team_id": 16,
+        "position": 4,
+        "price": 70,
+        "total_points": 1,
+        "form": 1.0,
+        "points_per_game": 1.0,
+        "minutes": 5,
+        "status": "a",
+        "chance_of_playing": 100,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 3,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.183,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 2
+          },
+          {
+            "opponent": "EVE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 3
+          },
+          {
+            "opponent": "MCI",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 4
+          },
+          {
+            "opponent": "FUL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 25,
+        "name": "Viktor Gy\u00f6keres",
+        "web_name": "Gy\u00f6keres",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 4,
+        "price": 75,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.0,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 27,
+        "name": "Gabriel Fernando de Jesus",
+        "web_name": "G.Jesus",
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_id": 1,
+        "position": 4,
+        "price": 60,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.0,
+        "fixtures": [
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 3
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 55,
+        "name": "Ollie Watkins",
+        "web_name": "Watkins",
+        "team": "Aston Villa",
+        "team_short": "AVL",
+        "team_id": 2,
+        "position": 4,
+        "price": 80,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "",
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.0,
+        "fixtures": [
+          {
+            "opponent": "ARS",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "HUL",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "TOT",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 56,
+        "name": "Tammy Abraham",
+        "web_name": "Abraham",
+        "team": "Aston Villa",
+        "team_short": "AVL",
+        "team_id": 2,
+        "position": 4,
+        "price": 55,
+        "total_points": 0,
+        "form": 0.0,
+        "points_per_game": 0.0,
+        "minutes": 0,
+        "status": "d",
+        "chance_of_playing": 75,
+        "xgi": 0.0,
+        "xgc": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 0,
+        "bonus": 0,
+        "starts": 0,
+        "news": "Knock - 75% chance of playing",
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.0,
+        "score": 0.0,
+        "fixtures": [
+          {
+            "opponent": "ARS",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 2
+          },
+          {
+            "opponent": "HUL",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 3
+          },
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 4
+          },
+          {
+            "opponent": "TOT",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 5
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      }
+    ]
+  },
   "current_squad": [
     {
       "id": 109,
@@ -840,7 +3105,8 @@
       "news": "",
       "xpts90": 4.0,
       "reliability": 1.0,
-      "score": 1.22,
+      "nailedness": 0.0,
+      "score": 0.366,
       "fixtures": [
         {
           "opponent": "CHE",
@@ -896,7 +3162,8 @@
       "news": "",
       "xpts90": 4.0,
       "reliability": 1.0,
-      "score": 1.2,
+      "nailedness": 0.0,
+      "score": 0.36,
       "fixtures": [
         {
           "opponent": "FUL",
@@ -952,6 +3219,7 @@
       "news": "",
       "xpts90": 4.15,
       "reliability": 1.0,
+      "nailedness": 1.0,
       "score": 6.523182971729127,
       "fixtures": [
         {
@@ -1008,6 +3276,7 @@
       "news": "",
       "xpts90": 3.19,
       "reliability": 1.0,
+      "nailedness": 1.0,
       "score": 3.893899211045365,
       "fixtures": [
         {
@@ -1064,7 +3333,8 @@
       "news": "",
       "xpts90": 4.0,
       "reliability": 1.0,
-      "score": 1.22,
+      "nailedness": 0.0,
+      "score": 0.366,
       "fixtures": [
         {
           "opponent": "NEW",
@@ -1120,7 +3390,8 @@
       "news": "",
       "xpts90": 4.0,
       "reliability": 1.0,
-      "score": 1.22,
+      "nailedness": 0.0,
+      "score": 0.366,
       "fixtures": [
         {
           "opponent": "LEE",
@@ -1176,7 +3447,8 @@
       "news": "",
       "xpts90": 4.0,
       "reliability": 1.0,
-      "score": 1.2,
+      "nailedness": 0.0,
+      "score": 0.36,
       "fixtures": [
         {
           "opponent": "FUL",
@@ -1219,7 +3491,7 @@
       "total_points": 2,
       "form": 2.0,
       "points_per_game": 2.0,
-      "minutes": 66,
+      "minutes": 72,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.28,
@@ -1231,8 +3503,9 @@
       "starts": 1,
       "news": "",
       "xpts90": 1.05,
-      "reliability": 0.94,
-      "score": 1.4720101437024513,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 1.561222879684418,
       "fixtures": [
         {
           "opponent": "IPS",
@@ -1275,20 +3548,21 @@
       "total_points": 2,
       "form": 2.0,
       "points_per_game": 2.0,
-      "minutes": 66,
+      "minutes": 72,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.27,
       "xgc": 1.18,
       "expected_goals": 0.06,
       "expected_assists": 0.21,
-      "bps": 17,
+      "bps": 15,
       "bonus": 0,
       "starts": 1,
       "news": "",
       "xpts90": 0.94,
-      "reliability": 0.94,
-      "score": 1.450324429416737,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 1.5315562130177514,
       "fixtures": [
         {
           "opponent": "IPS",
@@ -1331,20 +3605,21 @@
       "total_points": 2,
       "form": 2.0,
       "points_per_game": 2.0,
-      "minutes": 66,
+      "minutes": 72,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 0.1,
+      "xgi": 0.18,
       "xgc": 1.18,
-      "expected_goals": 0.06,
+      "expected_goals": 0.14,
       "expected_assists": 0.04,
       "bps": 10,
       "bonus": 0,
       "starts": 1,
       "news": "",
-      "xpts90": 0.43,
-      "reliability": 0.94,
-      "score": 1.2840672865595943,
+      "xpts90": 0.83,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 1.4818895463510848,
       "fixtures": [
         {
           "opponent": "IPS",
@@ -1400,7 +3675,8 @@
       "news": "",
       "xpts90": 1.0,
       "reliability": 1.0,
-      "score": 0.305,
+      "nailedness": 0.0,
+      "score": 0.0915,
       "fixtures": [
         {
           "opponent": "BRE",
@@ -1456,7 +3732,8 @@
       "news": "",
       "xpts90": 1.0,
       "reliability": 1.0,
-      "score": 0.3,
+      "nailedness": 0.0,
+      "score": 0.09,
       "fixtures": [
         {
           "opponent": "BHA",
@@ -1512,6 +3789,7 @@
       "news": "",
       "xpts90": 1.13,
       "reliability": 1.0,
+      "nailedness": 1.0,
       "score": 3.9172555555555557,
       "fixtures": [
         {
@@ -1568,6 +3846,7 @@
       "news": "",
       "xpts90": 0.0,
       "reliability": 1.0,
+      "nailedness": 0.0,
       "score": 0.0,
       "fixtures": [
         {
@@ -1624,6 +3903,7 @@
       "news": "",
       "xpts90": 0.0,
       "reliability": 1.0,
+      "nailedness": 0.0,
       "score": 0.0,
       "fixtures": [
         {
@@ -1657,22 +3937,22 @@
     }
   ],
   "current_squad_cost": 100.0,
-  "current_squad_score": 25.21,
+  "current_squad_score": 20.91,
   "suggested_transfers": [
     {
       "out": "Mukiele",
       "in": "Ajayi",
       "cost_diff": -1.5,
-      "net_gain": 8.46,
+      "net_gain": 9.84,
       "uses_free_transfer": true
     },
     {
       "out": "Van Hecke",
       "in": "Ajayi",
       "cost_diff": -1.0,
-      "net_gain": 4.44,
+      "net_gain": 5.84,
       "uses_free_transfer": false
     }
   ],
-  "analysis": "1) **Ajayi** e **Mendy** s\u00e3o as melhores escolhas \u2014 forma excelente (15-16 pts), fixture f\u00e1cil imediato (COV fora, dif.2) e xpts90 s\u00f3lidos. **Tzolakis** garante clean sheet potencial com fixtures favor\u00e1veis. Risco a vigiar: **A.Becker e Lucky** com 0 pontos e presen\u00e7a duvidosa no XI.\n\n2) **Capit\u00e3o: Ajayi** (score 9.7) \u2014 melhor fixture imediato, forma superior, xpts90 de 5.36.\n\n3) **Mukiele\u2192Ajayi** claramente primeiro: ganho l\u00edquido de 8.5 sem custo de transfer\u00eancia. A segunda (Van Hecke\u2192Ajayi) s\u00f3 vale se sobrarem transfer\u00eancias livres \u2014 pagar -4 com ganho de 4.4 n\u00e3o compensa."
+  "analysis": "1) **Ajayi** e **Mendy** s\u00e3o as grandes apostas \u2014 Hull com fixtures acess\u00edveis, xpts90 e bps90 elevados, forma excelente. **White** \u00e9 s\u00f3lido op\u00e7\u00e3o Arsenal. \u26a0 Vigiar **\u00dcnal**: saiu permanentemente para o Getafe, praticamente eliminado.\n\n2) **Capit\u00e3o: Ajayi** (score 10.2, melhor combina\u00e7\u00e3o de xpts90, bps90 e fixture imediato f\u00e1cil vs COV fora).\n\n3) **Mukiele\u2192Ajayi** claramente primeiro: ganho l\u00edquido de 9.8 sem custo de transfer\u00eancia extra. Van Hecke\u2192Ajayi s\u00f3 faz sentido depois, mas pagar -4 pontos com ganho l\u00edquido de 5.8 n\u00e3o compensa \u2014 evitar essa segunda transfer\u00eancia."
 }
