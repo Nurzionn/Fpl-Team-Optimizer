@@ -1,0 +1,5 @@
+requests
+pulp
+anthropic
+streamlit
+pandas
