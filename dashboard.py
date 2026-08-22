@@ -17,9 +17,19 @@ st.set_page_config(page_title="FPL Optimizer", page_icon="⚽", layout="centered
 
 POS_NAMES = {1: "Guarda-Redes", 2: "Defesas", 3: "Médios", 4: "Avançados"}
 POS_ORDER = [1, 2, 3, 4]
+FDR_EMOJI = {1: "🟢", 2: "🟢", 3: "🟡", 4: "🔴", 5: "🔴"}
+
+
+def format_fixtures(fixtures):
+    if not fixtures:
+        return "-"
+    return " ".join(
+        f"{FDR_EMOJI.get(f['difficulty'], '⚪')}{f['opponent']}({'C' if f['is_home'] else 'F'})"
+        for f in fixtures
+    )
 
 st.title("⚽ FPL Optimizer")
-st.caption("Equipa ótima gerada automaticamente com base em forma, pontos/jogo e disponibilidade")
+st.caption("Equipa ótima gerada automaticamente com base em forma, pontos/jogo, xG/xA e dificuldade de fixtures")
 
 try:
     with open("latest_squad.json") as f:
@@ -44,12 +54,35 @@ for pos in POS_ORDER:
     if not pos_players:
         continue
     st.subheader(POS_NAMES[pos])
-    df = pd.DataFrame(pos_players)[
-        ["web_name", "team", "price", "form", "points_per_game", "total_points"]
-    ]
-    df.columns = ["Jogador", "Clube", "Preço (€M)", "Forma", "Pts/Jogo", "Pontos Totais"]
-    df["Preço (€M)"] = df["Preço (€M)"] / 10
-    st.dataframe(df, hide_index=True, use_container_width=True)
+    xg_col = "xGI/90" if pos in (3, 4) else "xGC/90"
+    rows = []
+    for p in pos_players:
+        games = max(p.get("minutes", 0) / 90, 1)
+        if pos in (3, 4):
+            xg90 = round(p.get("xgi", 0.0) / games, 2)
+        else:
+            xg90 = round(p.get("xgc", 0.0) / games, 2)
+        name = f"⚠️ {p['web_name']}" if p.get("news") else p["web_name"]
+        rows.append({
+            "Jogador": name,
+            "Clube": p["team"],
+            "Preço (€M)": p["price"] / 10,
+            "Forma": float(p["form"]),
+            "Pts/Jogo": float(p["points_per_game"]),
+            xg_col: xg90,
+            "Score": round(p.get("score", 0.0), 2),
+            "Próx. 4 jogos": format_fixtures(p.get("fixtures")),
+        })
+    df = pd.DataFrame(rows)
+    st.dataframe(
+        df,
+        hide_index=True,
+        use_container_width=True,
+        column_config={
+            "Forma": st.column_config.ProgressColumn("Forma", min_value=0, max_value=10, format="%.1f"),
+            "Pts/Jogo": st.column_config.ProgressColumn("Pts/Jogo", min_value=0, max_value=12, format="%.1f"),
+        },
+    )
 
 st.divider()
 
@@ -87,18 +120,17 @@ try:
     if history:
         df_h = pd.DataFrame(history)[["gameweek", "cost", "score"]]
         df_h.columns = ["Jornada", "Custo (€M)", "Score"]
-        st.line_chart(df_h.set_index("Jornada")["Score"])
+        c1, c2 = st.columns(2)
+        with c1:
+            st.markdown("**Score por jornada**")
+            st.line_chart(df_h.set_index("Jornada")["Score"])
+        with c2:
+            st.markdown("**Custo (€M) por jornada**")
+            st.line_chart(df_h.set_index("Jornada")["Custo (€M)"])
         st.dataframe(df_h, hide_index=True, use_container_width=True)
     else:
         st.caption("Ainda sem histórico registado.")
 except FileNotFoundError:
     st.caption("Ainda sem `history.json`. É criado automaticamente após a primeira execução do otimizador.")
 
-st.divider()
-if st.button("🔄 Atualizar equipa (correr otimizador)"):
-    st.warning(
-        "Este botão não corre o otimizador diretamente no Streamlit Cloud gratuito "
-        "(não tem acesso a segredos/execução longa por defeito). "
-        "Usa o GitHub Actions para atualizar `latest_squad.json`, "
-        "e este dashboard reflete automaticamente a próxima leitura do repo."
-    )
+st.caption("🔄 Equipa atualizada automaticamente todas as sextas via GitHub Actions.")

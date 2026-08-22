@@ -102,9 +102,17 @@ def optimize_squad(players, budget=BUDGET, fdr_map=None):
     return sorted(selected, key=lambda p: (p["position"], -p["score"]))
 
 
+def _compact_fixtures(fixtures):
+    if not fixtures:
+        return ""
+    return "|".join(
+        f"{f['opponent']}({'C' if f['is_home'] else 'F'},{f['difficulty']})" for f in fixtures
+    )
+
+
 def _compact_squad(squad):
     """Representação compacta (CSV-like) para minimizar tokens de input."""
-    header = "nome,clube,pos,preco,forma,ppj,xstat"
+    header = "nome,clube,pos,preco,forma,ppj,xstat,proximos4"
     rows = []
     for p in squad:
         games = max(p.get("minutes", 0) / 90, 1)
@@ -112,7 +120,7 @@ def _compact_squad(squad):
             xstat = f"xgi:{p.get('xgi', 0.0) / games:.2f}"
         else:
             xstat = f"xgc:{p.get('xgc', 0.0) / games:.2f}"
-        row = f"{p['web_name']},{p['team']},{p['position']},{p['price']/10},{p['form']},{p['points_per_game']},{xstat}"
+        row = f"{p['web_name']},{p['team']},{p['position']},{p['price']/10},{p['form']},{p['points_per_game']},{xstat},{_compact_fixtures(p.get('fixtures'))}"
         if p.get("news"):
             row += f",⚠{p['news'][:40]}"
         rows.append(row)
@@ -135,7 +143,8 @@ SYSTEM_PROMPT = (
     "Analista de Fantasy Premier League. Respostas em português, "
     "diretas, sem preâmbulo, sem repetir os dados em tabela. "
     "Pos: 1=GR,2=DEF,3=MED,4=AVA. "
-    "xgi=expected goal involvements/90; xgc=expected goals conceded/90. ⚠=alerta lesão/rotação."
+    "xgi=expected goal involvements/90; xgc=expected goals conceded/90. ⚠=alerta lesão/rotação. "
+    "proximos4=próximos 4 jogos, formato ADV(C/F,dificuldade 1-5); C=casa,F=fora."
 )
 
 
@@ -203,6 +212,39 @@ def fetch_fixture_difficulty(current_gw, next_n_gws=3):
             fdr_count[tid] = fdr_count.get(tid, 0) + 1
 
     return {tid: fdr_sum[tid] / fdr_count[tid] for tid in fdr_sum}
+
+
+def fetch_next_fixtures(current_gw, next_n=4):
+    """
+    Devolve, por team_id, a lista dos próximos N jogos:
+    [{"opponent": "ARS", "is_home": bool, "difficulty": 1-5, "gw": int}, ...]
+    """
+    teams_resp = requests.get(f"{FPL_BASE}/bootstrap-static/", timeout=15)
+    teams_resp.raise_for_status()
+    short_names = {t["id"]: t["short_name"] for t in teams_resp.json()["teams"]}
+
+    fixtures_resp = requests.get(f"{FPL_BASE}/fixtures/", timeout=15)
+    fixtures_resp.raise_for_status()
+    fixtures = [f for f in fixtures_resp.json() if f.get("event") and f["event"] >= current_gw]
+    fixtures.sort(key=lambda f: f["event"])
+
+    result = {}
+    for fix in fixtures:
+        for team_key, opp_key, diff_key in (
+            ("team_h", "team_a", "team_h_difficulty"),
+            ("team_a", "team_h", "team_a_difficulty"),
+        ):
+            tid = fix[team_key]
+            entries = result.setdefault(tid, [])
+            if len(entries) >= next_n:
+                continue
+            entries.append({
+                "opponent": short_names[fix[opp_key]],
+                "is_home": team_key == "team_h",
+                "difficulty": fix[diff_key],
+                "gw": fix["event"],
+            })
+    return result
 
 
 def fetch_manager_squad(manager_id, gameweek=None):
@@ -299,9 +341,12 @@ if __name__ == "__main__":
 
     print("A buscar dificuldade de fixtures...")
     fdr_map = fetch_fixture_difficulty(gw)
+    team_fixtures = fetch_next_fixtures(gw, next_n=4)
 
     print("A otimizar equipa...")
     squad = optimize_squad(players, fdr_map=fdr_map)
+    for p in squad:
+        p["fixtures"] = team_fixtures.get(p["team_id"], [])
 
     total_cost = sum(p["price"] for p in squad) / 10
     total_score = sum(p["score"] for p in squad)
