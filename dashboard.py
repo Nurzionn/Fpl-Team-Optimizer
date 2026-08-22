@@ -24,6 +24,7 @@ st.markdown("""
 .fpl-table { width: auto; min-width: 100%; table-layout: auto !important; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 14px; }
 .fpl-table th { text-align: left; padding: 6px 8px; border-bottom: 2px solid rgba(120,120,120,0.4); font-size: 12px; opacity: 0.75; white-space: nowrap; }
 .fpl-table td { padding: 6px 8px; border-bottom: 1px solid rgba(120,120,120,0.2); vertical-align: middle; white-space: nowrap !important; }
+.fpl-table td.col-wrap { white-space: normal !important; max-width: 130px; word-break: break-word; }
 .fpl-bar-wrap { background: rgba(120,120,120,0.25); border-radius: 4px; height: 12px; width: 80px; display: inline-block; vertical-align: middle; overflow: hidden; }
 .fpl-bar { height: 100%; border-radius: 4px; }
 .fpl-chip { display: inline-flex; align-items: center; gap: 5px; background: rgba(120,120,120,0.12); border: 1px solid rgba(120,120,120,0.3); border-radius: 6px; padding: 2px 6px 2px 2px; margin: 2px 4px 2px 0; font-size: 12px; white-space: nowrap; }
@@ -114,7 +115,7 @@ def render_squad_tables(squad):
             rows_html.append(
                 "<tr>"
                 f"<td>{name}</td>"
-                f"<td>{team_badge_html(p)}{p['team']}</td>"
+                f"<td class=\"col-wrap\">{team_badge_html(p)}{p.get('team_short', p['team'])}</td>"
                 f"<td>€{p['price']/10:.1f}M</td>"
                 f"<td>{bar_html(float(p['form']), 10, '#3ec86a')}</td>"
                 f"<td>{bar_html(float(p['points_per_game']), 12, '#4a9eff')}</td>"
