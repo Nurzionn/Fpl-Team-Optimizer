@@ -143,6 +143,25 @@ def optimize_squad(players, budget=BUDGET, fdr_map=None, dgw_map=None):
     return sorted(selected, key=lambda p: (p["position"], -p["score"]))
 
 
+def top_players_by_position(players, team_fixtures, fixture_counts, selected_ids, n=10):
+    """Devolve, por posição, os N jogadores com maior score — para comparação além da equipa ótima escolhida."""
+    result = {}
+    for pos in POS_LIMITS:
+        ranked = sorted(
+            (p for p in players if p["position"] == pos), key=lambda p: -p.get("score", 0)
+        )[:n]
+        entries = []
+        for p in ranked:
+            entry = dict(p)
+            entry["fixtures"] = team_fixtures.get(p["team_id"], [])
+            c = fixture_counts.get(p["team_id"], 1)
+            entry["gw_note"] = "DGW" if c >= 2 else ("BGW" if c == 0 else "")
+            entry["is_selected"] = p["id"] in selected_ids
+            entries.append(entry)
+        result[pos] = entries
+    return result
+
+
 def _compact_fixtures(fixtures):
     if not fixtures:
         return ""
@@ -429,6 +448,9 @@ if __name__ == "__main__":
         print(f"  [{p['position']}] {p['web_name']} ({p['team']}) - €{p['price']/10}M")
 
     output = {"squad": squad, "cost": total_cost, "score": total_score, "gameweek": gw}
+
+    squad_ids = {p["id"] for p in squad}
+    output["top_players"] = top_players_by_position(players, team_fixtures, fixture_counts, squad_ids)
 
     # --- Comparação com equipa atual (opcional: define FPL_MANAGER_ID) ---
     transfers = None

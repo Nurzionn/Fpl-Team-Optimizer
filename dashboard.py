@@ -84,6 +84,8 @@ def render_squad_tables(squad):
                 name = f'<span class="captain-badge">★ {name}</span>'
             elif p.get("is_vice_captain"):
                 name = f'{name} <span class="vice-badge">(V)</span>'
+            if p.get("is_selected"):
+                name = f"✅ {name}"
             if p.get("news"):
                 name += " ⚠️"
 
@@ -135,7 +137,9 @@ with tab_optimal:
 
     st.divider()
 
-    render_squad_tables(squad)
+    st.caption("Top 10 por posição segundo o modelo de score. ✅ = selecionado para a equipa ótima dentro do orçamento.")
+    top_players = [p for group in data.get("top_players", {}).values() for p in group]
+    render_squad_tables(top_players)
 
     st.divider()
 
