@@ -41,9 +41,13 @@ st.markdown("""
 .gw-bgw { background: #c0392b; }
 .pos-heading { color: #2e7d32; margin: 0.4rem 0 0.6rem 0; font-size: 1.1rem; font-weight: 700; }
 .team-badge { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; margin-right: 5px; }
-.pitch-field { background: repeating-linear-gradient(180deg, #1e6b30, #1e6b30 36px, #26802f 36px, #26802f 72px); border: 3px solid rgba(255,255,255,0.85); border-radius: 14px; padding: 18px 8px; position: relative; margin-bottom: 0.75rem; }
-.pitch-circle { position: absolute; left: 50%; top: 50%; width: 90px; height: 90px; margin-left: -45px; margin-top: -45px; border: 2px solid rgba(255,255,255,0.55); border-radius: 50%; z-index: 1; }
-.pitch-halfway { position: absolute; left: 6%; right: 6%; top: 50%; height: 2px; background: rgba(255,255,255,0.55); z-index: 1; }
+.pitch-field { background: repeating-linear-gradient(180deg, #1e6b30, #1e6b30 36px, #26802f 36px, #26802f 72px); border: 3px solid rgba(255,255,255,0.85); border-radius: 14px; padding: 34px 8px 22px 8px; position: relative; margin-bottom: 0.75rem; overflow: hidden; transform: perspective(900px) rotateX(10deg); transform-origin: bottom center; box-shadow: 0 24px 30px -14px rgba(0,0,0,0.55); }
+.pitch-goal { position: absolute; top: -4px; left: 50%; transform: translateX(-50%); width: 64px; height: 8px; border: 3px solid rgba(255,255,255,0.95); border-top: none; background: rgba(255,255,255,0.15); z-index: 1; }
+.pitch-goal-area { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 150px; height: 46px; border: 2px solid rgba(255,255,255,0.7); border-top: none; z-index: 1; }
+.pitch-penalty-area { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 270px; height: 96px; border: 2px solid rgba(255,255,255,0.7); border-top: none; z-index: 1; }
+.pitch-penalty-arc { position: absolute; top: 96px; left: 50%; transform: translateX(-50%); width: 96px; height: 46px; border: 2px solid rgba(255,255,255,0.7); border-top: none; border-radius: 0 0 50% 50%; z-index: 1; }
+.pitch-halfway { position: absolute; left: 6%; right: 6%; bottom: 18px; height: 2px; background: rgba(255,255,255,0.6); z-index: 1; }
+.pitch-circle-half { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); width: 110px; height: 55px; border: 2px solid rgba(255,255,255,0.6); border-bottom: none; border-radius: 50% 50% 0 0; z-index: 1; }
 .pitch-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 12px 0; position: relative; z-index: 2; }
 .pitch-player { display: flex; flex-direction: column; align-items: center; width: 84px; }
 .pitch-badge { width: 30px; height: 30px; object-fit: contain; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.7)); }
@@ -155,12 +159,20 @@ def render_pitch(squad, formation_label):
             "</div>"
         )
 
-    lines = [by_pos(4, starters), by_pos(3, starters), by_pos(2, starters), by_pos(1, starters)]
+    lines = [by_pos(1, starters), by_pos(2, starters), by_pos(3, starters), by_pos(4, starters)]
     rows_html = "".join(
         f'<div class="pitch-row">{"".join(card(p) for p in line)}</div>' for line in lines if line
     )
+    markings_html = (
+        '<div class="pitch-goal"></div>'
+        '<div class="pitch-goal-area"></div>'
+        '<div class="pitch-penalty-area"></div>'
+        '<div class="pitch-penalty-arc"></div>'
+        '<div class="pitch-circle-half"></div>'
+        '<div class="pitch-halfway"></div>'
+    )
     st.markdown(
-        f'<div class="pitch-field"><div class="pitch-circle"></div><div class="pitch-halfway"></div>{rows_html}</div>',
+        f'<div class="pitch-field">{markings_html}{rows_html}</div>',
         unsafe_allow_html=True,
     )
     if formation_label:
