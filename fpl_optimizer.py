@@ -28,6 +28,7 @@ def fetch_players():
 
     teams = {t["id"]: t["name"] for t in data["teams"]}
     short_names = {t["id"]: t["short_name"] for t in data["teams"]}
+    codes = {t["id"]: t["code"] for t in data["teams"]}
     players = []
     for p in data["elements"]:
         players.append({
@@ -36,6 +37,7 @@ def fetch_players():
             "web_name": p["web_name"],
             "team": teams[p["team"]],
             "team_short": short_names[p["team"]],
+            "team_code": codes[p["team"]],
             "team_id": p["team"],
             "position": p["element_type"],  # 1 GK, 2 DEF, 3 MID, 4 FWD
             "price": p["now_cost"],  # em décimos de milhão
@@ -168,6 +170,43 @@ def top_players_by_position(players, team_fixtures, fixture_counts, selected_ids
             entries.append(entry)
         result[pos] = entries
     return result
+
+
+VALID_FORMATIONS = [
+    (d, m, f) for d in range(3, 6) for m in range(2, 6) for f in range(1, 4) if d + m + f == 10
+]  # GK é sempre 1; (DEF, MED, AVA) somam 10 para totalizar 11 titulares
+
+
+def pick_starting_xi(squad):
+    """
+    Escolhe, dentro das formações válidas na FPL, a que maximiza o score dos
+    11 titulares. Marca `is_starting` em cada jogador do plantel (os restantes
+    4 ficam no banco) e devolve o label da formação (ex. "4-4-2").
+    """
+    by_pos = {
+        pos: sorted((p for p in squad if p["position"] == pos), key=lambda p: -p.get("score", 0))
+        for pos in POS_LIMITS
+    }
+
+    best = None
+    for d, m, f in VALID_FORMATIONS:
+        if d > len(by_pos[2]) or m > len(by_pos[3]) or f > len(by_pos[4]):
+            continue
+        starters = by_pos[1][:1] + by_pos[2][:d] + by_pos[3][:m] + by_pos[4][:f]
+        total = sum(p.get("score", 0) for p in starters)
+        if best is None or total > best[0]:
+            best = (total, d, m, f, starters)
+
+    if best is None:
+        starters, label = squad[:11], "?"
+    else:
+        _, d, m, f, starters = best
+        label = f"{d}-{m}-{f}"
+
+    starter_ids = {p["id"] for p in starters}
+    for p in squad:
+        p["is_starting"] = p["id"] in starter_ids
+    return label
 
 
 def _compact_fixtures(fixtures):
@@ -461,6 +500,7 @@ if __name__ == "__main__":
         print(f"  [{p['position']}] {p['web_name']} ({p['team']}) - €{p['price']/10}M")
 
     output = {"squad": squad, "cost": total_cost, "score": total_score, "gameweek": gw}
+    output["formation"] = pick_starting_xi(squad)
 
     squad_ids = {p["id"] for p in squad}
     output["top_players"] = top_players_by_position(players, team_fixtures, fixture_counts, squad_ids)
@@ -489,6 +529,7 @@ if __name__ == "__main__":
             output["current_squad"] = current_squad
             output["current_squad_cost"] = round(sum(p["price"] for p in current_squad) / 10, 1)
             output["current_squad_score"] = round(sum(p["score"] for p in current_squad), 2)
+            output["current_formation"] = pick_starting_xi(current_squad)
 
             transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map, dgw_map=dgw_map, gws_elapsed=gws_elapsed)
             output["suggested_transfers"] = [

@@ -15,8 +15,9 @@ import pandas as pd
 
 st.set_page_config(page_title="FPL Optimizer", page_icon="⚽", layout="centered")
 
-POS_NAMES = {1: "Guarda-Redes", 2: "Defesas", 3: "Médios", 4: "Avançados"}
+POS_NAMES = {1: "🧤 Guarda-Redes", 2: "🛡️ Defesas", 3: "🎯 Médios", 4: "⚡ Avançados"}
 POS_ORDER = [1, 2, 3, 4]
+BADGE_URL = "https://resources.premierleague.com/premierleague/badges/50/t{code}.png"
 
 st.markdown("""
 <style>
@@ -37,6 +38,18 @@ st.markdown("""
 .gw-tag { display: inline-block; border-radius: 4px; padding: 1px 6px; margin-right: 4px; font-size: 11px; font-weight: 700; color: white; }
 .gw-dgw { background: #0b8a3d; }
 .gw-bgw { background: #c0392b; }
+.pos-heading { color: #2e7d32; margin: 0.4rem 0 0.6rem 0; font-size: 1.1rem; font-weight: 700; }
+.team-badge { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; margin-right: 5px; }
+.pitch-field { background: repeating-linear-gradient(180deg, #1e6b30, #1e6b30 36px, #26802f 36px, #26802f 72px); border: 3px solid rgba(255,255,255,0.85); border-radius: 14px; padding: 18px 8px; position: relative; margin-bottom: 0.75rem; }
+.pitch-circle { position: absolute; left: 50%; top: 50%; width: 90px; height: 90px; margin-left: -45px; margin-top: -45px; border: 2px solid rgba(255,255,255,0.55); border-radius: 50%; z-index: 1; }
+.pitch-halfway { position: absolute; left: 6%; right: 6%; top: 50%; height: 2px; background: rgba(255,255,255,0.55); z-index: 1; }
+.pitch-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 12px 0; position: relative; z-index: 2; }
+.pitch-player { display: flex; flex-direction: column; align-items: center; width: 84px; }
+.pitch-badge { width: 30px; height: 30px; object-fit: contain; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.7)); }
+.pitch-name { background: rgba(0,0,0,0.6); color: white; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-top: 3px; white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis; }
+.pitch-sub { color: #eafff0; font-size: 10px; margin-top: 2px; text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
+.bench-strip { background: rgba(120,120,120,0.12); border: 1px solid rgba(120,120,120,0.3); border-radius: 10px; padding: 10px 8px 6px 8px; margin-bottom: 1rem; }
+.bench-label { font-size: 11px; font-weight: 700; opacity: 0.7; text-transform: uppercase; margin-bottom: 4px; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -66,13 +79,20 @@ def fixtures_row_html(fixtures, gw_note):
     return tag + "".join(fixture_chip(f) for f in fixtures)
 
 
+def team_badge_html(p, css_class="team-badge"):
+    code = p.get("team_code")
+    if not code:
+        return ""
+    return f'<img class="{css_class}" src="{BADGE_URL.format(code=code)}">'
+
+
 def render_squad_tables(squad):
     """Constrói e apresenta uma tabela HTML por posição, com barras e badges de dificuldade."""
     for pos in POS_ORDER:
         pos_players = [p for p in squad if p["position"] == pos]
         if not pos_players:
             continue
-        st.subheader(POS_NAMES[pos])
+        st.markdown(f'<div class="pos-heading">{POS_NAMES[pos]}</div>', unsafe_allow_html=True)
 
         rows_html = []
         for p in pos_players:
@@ -94,7 +114,7 @@ def render_squad_tables(squad):
             rows_html.append(
                 "<tr>"
                 f"<td>{name}</td>"
-                f"<td>{p['team']}</td>"
+                f"<td>{team_badge_html(p)}{p['team']}</td>"
                 f"<td>€{p['price']/10:.1f}M</td>"
                 f"<td>{bar_html(float(p['form']), 10, '#3ec86a')}</td>"
                 f"<td>{bar_html(float(p['points_per_game']), 12, '#4a9eff')}</td>"
@@ -112,6 +132,47 @@ def render_squad_tables(squad):
             "</tr></thead><tbody>" + "".join(rows_html) + "</tbody></table>"
         )
         st.markdown(f'<div style="overflow-x:auto">{table_html}</div>', unsafe_allow_html=True)
+
+
+def render_pitch(squad, formation_label):
+    """Mostra o plantel como um campo de futebol: 11 titulares na formação escolhida + banco de 4."""
+    starters = [p for p in squad if p.get("is_starting")]
+    bench = [p for p in squad if not p.get("is_starting")]
+    if not starters:
+        return
+
+    def by_pos(pos, players):
+        return sorted((p for p in players if p["position"] == pos), key=lambda p: -p.get("score", 0))
+
+    def card(p):
+        tag = " (C)" if p.get("is_captain") else (" (V)" if p.get("is_vice_captain") else "")
+        return (
+            '<div class="pitch-player">'
+            f"{team_badge_html(p, 'pitch-badge')}"
+            f'<div class="pitch-name">{p["web_name"]}{tag}</div>'
+            f'<div class="pitch-sub">€{p["price"]/10:.1f}M</div>'
+            "</div>"
+        )
+
+    lines = [by_pos(4, starters), by_pos(3, starters), by_pos(2, starters), by_pos(1, starters)]
+    rows_html = "".join(
+        f'<div class="pitch-row">{"".join(card(p) for p in line)}</div>' for line in lines if line
+    )
+    st.markdown(
+        f'<div class="pitch-field"><div class="pitch-circle"></div><div class="pitch-halfway"></div>{rows_html}</div>',
+        unsafe_allow_html=True,
+    )
+    if formation_label:
+        st.caption(f"Formação: {formation_label}")
+
+    if bench:
+        bench.sort(key=lambda p: (p["position"] != 1, -p.get("score", 0)))
+        bench_html = "".join(card(p) for p in bench)
+        st.markdown(
+            f'<div class="bench-strip"><div class="bench-label">Banco</div>'
+            f'<div class="pitch-row">{bench_html}</div></div>',
+            unsafe_allow_html=True,
+        )
 
 
 st.title("⚽ FPL Optimizer")
@@ -136,6 +197,10 @@ with tab_optimal:
     col1.metric("Custo total", f"€{data['cost']}M")
     col2.metric("Orçamento restante", f"€{100 - data['cost']:.1f}M")
     col3.metric("Score total", f"{data['score']:.1f}")
+
+    st.divider()
+
+    render_pitch(squad, data.get("formation", ""))
 
     st.divider()
 
@@ -177,6 +242,8 @@ with tab_current:
         col1.metric("Custo da equipa atual", f"€{data.get('current_squad_cost', 0)}M")
         col2.metric("Score da equipa atual", f"{data.get('current_squad_score', 0):.1f}")
 
+        st.divider()
+        render_pitch(current_squad, data.get("current_formation", ""))
         st.divider()
         render_squad_tables(current_squad)
     else:
