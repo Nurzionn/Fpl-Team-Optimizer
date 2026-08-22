@@ -101,7 +101,7 @@
       "total_points": 11,
       "form": 11.0,
       "points_per_game": 11.0,
-      "minutes": 45,
+      "minutes": 47,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.28,
@@ -191,7 +191,7 @@
       "total_points": 10,
       "form": 10.0,
       "points_per_game": 10.0,
-      "minutes": 45,
+      "minutes": 47,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.81,
@@ -416,7 +416,7 @@
       "total_points": 1,
       "form": 1.0,
       "points_per_game": 1.0,
-      "minutes": 45,
+      "minutes": 47,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.27,
@@ -461,7 +461,7 @@
       "total_points": 1,
       "form": 1.0,
       "points_per_game": 1.0,
-      "minutes": 45,
+      "minutes": 47,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.23,
@@ -506,7 +506,7 @@
       "total_points": 1,
       "form": 1.0,
       "points_per_game": 1.0,
-      "minutes": 45,
+      "minutes": 47,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.09,
@@ -551,7 +551,7 @@
       "total_points": 5,
       "form": 5.0,
       "points_per_game": 5.0,
-      "minutes": 45,
+      "minutes": 47,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.1,
@@ -678,6 +678,715 @@
   ],
   "cost": 90.0,
   "score": 59.058416666666666,
+  "current_squad": [
+    {
+      "id": 109,
+      "name": "Bart Verbruggen",
+      "web_name": "Verbruggen",
+      "team": "Brighton",
+      "team_id": 5,
+      "position": 1,
+      "price": 45,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.366,
+      "fixtures": [
+        {
+          "opponent": "CHE",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 2
+        },
+        {
+          "opponent": "LEE",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 3
+        },
+        {
+          "opponent": "COV",
+          "is_home": false,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "ARS",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 529,
+      "name": "Robin Roefs",
+      "web_name": "Roefs",
+      "team": "Sunderland",
+      "team_id": 20,
+      "position": 1,
+      "price": 50,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.36,
+      "fixtures": [
+        {
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "BRE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "ARS",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 8,
+      "name": "Riccardo Calafiori",
+      "web_name": "Calafiori",
+      "team": "Arsenal",
+      "team_id": 1,
+      "position": 2,
+      "price": 55,
+      "total_points": 9,
+      "form": 9.0,
+      "points_per_game": 9.0,
+      "minutes": 80,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.13,
+      "xgc": 0.06,
+      "news": "",
+      "score": 7.7256,
+      "fixtures": [
+        {
+          "opponent": "AVL",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 2
+        },
+        {
+          "opponent": "CHE",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 3
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 4,
+      "name": "Gabriel dos Santos Magalh\u00e3es",
+      "web_name": "Gabriel",
+      "team": "Arsenal",
+      "team_id": 1,
+      "position": 2,
+      "price": 80,
+      "total_points": 5,
+      "form": 5.0,
+      "points_per_game": 5.0,
+      "minutes": 90,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.06,
+      "xgc": 0.2,
+      "news": "",
+      "score": 4.398333333333333,
+      "fixtures": [
+        {
+          "opponent": "AVL",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 2
+        },
+        {
+          "opponent": "CHE",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 3
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 112,
+      "name": "Jan Paul van Hecke",
+      "web_name": "Van Hecke",
+      "team": "Spurs",
+      "team_id": 19,
+      "position": 2,
+      "price": 50,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.366,
+      "fixtures": [
+        {
+          "opponent": "NEW",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "EVE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "AVL",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 88,
+      "name": "Michael Kayode",
+      "web_name": "Kayode",
+      "team": "Brentford",
+      "team_id": 4,
+      "position": 2,
+      "price": 45,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.366,
+      "fixtures": [
+        {
+          "opponent": "LEE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 2
+        },
+        {
+          "opponent": "SUN",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 3
+        },
+        {
+          "opponent": "BOU",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "CHE",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 533,
+      "name": "Nordi Mukiele",
+      "web_name": "Mukiele",
+      "team": "Sunderland",
+      "team_id": 20,
+      "position": 2,
+      "price": 55,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": 100,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.36,
+      "fixtures": [
+        {
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "BRE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "ARS",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 427,
+      "name": "Bryan Mbeumo",
+      "web_name": "Mbeumo",
+      "team": "Man Utd",
+      "team_id": 16,
+      "position": 3,
+      "price": 80,
+      "total_points": 1,
+      "form": 1.0,
+      "points_per_game": 1.0,
+      "minutes": 47,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.27,
+      "xgc": 1.16,
+      "news": "",
+      "score": 1.0525,
+      "fixtures": [
+        {
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "MCI",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "FUL",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": true
+    },
+    {
+      "id": 426,
+      "name": "Bruno Borges Fernandes",
+      "web_name": "B.Fernandes",
+      "team": "Man Utd",
+      "team_id": 16,
+      "position": 3,
+      "price": 120,
+      "total_points": 1,
+      "form": 1.0,
+      "points_per_game": 1.0,
+      "minutes": 47,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.09,
+      "xgc": 1.16,
+      "news": "",
+      "score": 0.9175,
+      "fixtures": [
+        {
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "MCI",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "FUL",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": true,
+      "is_vice_captain": false
+    },
+    {
+      "id": 428,
+      "name": "Matheus Santos Carneiro da Cunha",
+      "web_name": "Cunha",
+      "team": "Man Utd",
+      "team_id": 16,
+      "position": 3,
+      "price": 80,
+      "total_points": 1,
+      "form": 1.0,
+      "points_per_game": 1.0,
+      "minutes": 47,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.08,
+      "xgc": 1.16,
+      "news": "",
+      "score": 0.9099999999999999,
+      "fixtures": [
+        {
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "MCI",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "FUL",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 40,
+      "name": "Morgan Rogers",
+      "web_name": "Rogers",
+      "team": "Chelsea",
+      "team_id": 6,
+      "position": 3,
+      "price": 75,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.0,
+      "fixtures": [
+        {
+          "opponent": "BHA",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "ARS",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 3
+        },
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "BRE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 338,
+      "name": "Ethan Ampadu",
+      "web_name": "Ampadu",
+      "team": "Leeds",
+      "team_id": 13,
+      "position": 3,
+      "price": 55,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.0,
+      "fixtures": [
+        {
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 2
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "NEW",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "CRY",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 26,
+      "name": "Kai Havertz",
+      "web_name": "Havertz",
+      "team": "Arsenal",
+      "team_id": 1,
+      "position": 4,
+      "price": 75,
+      "total_points": 6,
+      "form": 6.0,
+      "points_per_game": 6.0,
+      "minutes": 90,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.29,
+      "xgc": 0.2,
+      "news": "",
+      "score": 5.14025,
+      "fixtures": [
+        {
+          "opponent": "AVL",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 2
+        },
+        {
+          "opponent": "CHE",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 3
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 552,
+      "name": "Brian Brobbey",
+      "web_name": "Brobbey",
+      "team": "Sunderland",
+      "team_id": 20,
+      "position": 4,
+      "price": 60,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.0,
+      "fixtures": [
+        {
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "BRE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "ARS",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 165,
+      "name": "Jo\u00e3o Pedro Junqueira de Jesus",
+      "web_name": "Jo\u00e3o Pedro",
+      "team": "Chelsea",
+      "team_id": 6,
+      "position": 4,
+      "price": 75,
+      "total_points": 0,
+      "form": 0.0,
+      "points_per_game": 0.0,
+      "minutes": 0,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.0,
+      "xgc": 0.0,
+      "news": "",
+      "score": 0.0,
+      "fixtures": [
+        {
+          "opponent": "BHA",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "ARS",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 3
+        },
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "BRE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ],
+      "is_captain": false,
+      "is_vice_captain": false
+    }
+  ],
+  "current_squad_cost": 100.0,
+  "current_squad_score": 21.96,
   "suggested_transfers": [
     {
       "out": "Rogers",
@@ -694,5 +1403,5 @@
       "uses_free_transfer": false
     }
   ],
-  "analysis": "1) **Melhores escolhas:** White (xgc baixo, fixtures acess\u00edveis) e Saka (xgi 0.72, Arsenal em boa forma). Mendy/Ajayi oferecem valor defensivo com fixtures f\u00e1ceis. **Risco a vigiar:** Mbeumo e Man Utd toda \u2014 forma p\u00e9ssima (1 ponto), xgi fraco, fixtures dif\u00edceis a m\u00e9dio prazo.\n\n2) **Capit\u00e3o: Saka** \u2014 maior xgi da equipa, Arsenal com sequ\u00eancia de jogos acess\u00edveis.\n\n3) Rogers\u2192\u00d8degaard \u00e9 claramente melhor: ganho l\u00edquido superior (9.3) sem custo de -4. \u00d8degaard em boa forma com Arsenal. Faz primeiro e sem penaliza\u00e7\u00e3o. S\u00f3 considerar Ampadu\u2192\u00d8degaard se tiveres transfer\u00eancia extra dispon\u00edvel sem prejudicar a equipa."
+  "analysis": "1) **Melhores escolhas:** Mendy e Ajayi (Hull, xgc favor\u00e1vel, forma excelente, fixture f\u00e1cil imediato). Saka (xgi alto, Arsenal em boa forma apesar de fixtures dif\u00edceis). **Risco:** Mbeumo, B.Fernandes e Andrey Santos \u2014 Man Utd em m\u00e1 forma (1 pto), fixtures n\u00e3o inspiram confian\u00e7a a curto prazo.\n\n2) **Capit\u00e3o: Saka** \u2014 maior xgi da equipa, Arsenal com volume ofensivo consistente.\n\n3) Rogers\u2192\u00d8degaard \u00e9 claramente melhor: gratuita, ganho l\u00edquido superior (9.3). \u00d8degaard em boa forma com fixtures acess\u00edveis a partir da jornada 3. Fazer primeiro e imediatamente \u2014 n\u00e3o justifica pagar -4 pela segunda op\u00e7\u00e3o quando a primeira j\u00e1 resolve."
 }
