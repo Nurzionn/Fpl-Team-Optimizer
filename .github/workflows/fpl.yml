@@ -3,8 +3,8 @@ name: FPL Optimizer
 
 on:
   schedule:
-    # Runs every Friday at 18:00 UTC (adjust to time before deadline)
-    - cron: "0 18 * * 5"
+    # Runs every Friday at 17:00 UTC (adjust to time before deadline)
+    - cron: "0 17 * * 5"
   workflow_dispatch: {}  # allows manual runs from GitHub
 
 permissions:
