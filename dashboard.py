@@ -21,9 +21,9 @@ BADGE_URL = "https://resources.premierleague.com/premierleague/badges/50/t{code}
 
 st.markdown("""
 <style>
-.fpl-table { width: auto; min-width: 100%; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 14px; }
-.fpl-table th { text-align: left; padding: 6px 8px; border-bottom: 2px solid rgba(120,120,120,0.4); font-size: 12px; opacity: 0.75; }
-.fpl-table td { padding: 6px 8px; border-bottom: 1px solid rgba(120,120,120,0.2); vertical-align: middle; white-space: nowrap; }
+.fpl-table { width: auto; min-width: 100%; table-layout: auto !important; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 14px; }
+.fpl-table th { text-align: left; padding: 6px 8px; border-bottom: 2px solid rgba(120,120,120,0.4); font-size: 12px; opacity: 0.75; white-space: nowrap; }
+.fpl-table td { padding: 6px 8px; border-bottom: 1px solid rgba(120,120,120,0.2); vertical-align: middle; white-space: nowrap !important; }
 .fpl-bar-wrap { background: rgba(120,120,120,0.25); border-radius: 4px; height: 12px; width: 80px; display: inline-block; vertical-align: middle; overflow: hidden; }
 .fpl-bar { height: 100%; border-radius: 4px; }
 .fpl-chip { display: inline-flex; align-items: center; gap: 5px; background: rgba(120,120,120,0.12); border: 1px solid rgba(120,120,120,0.3); border-radius: 6px; padding: 2px 6px 2px 2px; margin: 2px 4px 2px 0; font-size: 12px; white-space: nowrap; }
