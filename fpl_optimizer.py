@@ -144,7 +144,8 @@ SYSTEM_PROMPT = (
     "diretas, sem preâmbulo, sem repetir os dados em tabela. "
     "Pos: 1=GR,2=DEF,3=MED,4=AVA. "
     "xgi=expected goal involvements/90; xgc=expected goals conceded/90. ⚠=alerta lesão/rotação. "
-    "proximos4=próximos 4 jogos, formato ADV(C/F,dificuldade 1-5); C=casa,F=fora."
+    "proximos4=próximos 4 jogos, formato ADV(C/F,dificuldade); C=casa,F=fora. "
+    "Escala de dificuldade: 1-2=fácil, 3=médio, 4-5=difícil. NÃO confundir a direção da escala."
 )
 
 
@@ -363,6 +364,22 @@ if __name__ == "__main__":
         try:
             print(f"\nA buscar equipa atual do manager {manager_id}...")
             current_picks = fetch_manager_squad(int(manager_id))
+
+            players_by_id = {p["id"]: p for p in players}
+            current_squad = []
+            for pid, pick in current_picks.items():
+                if pid not in players_by_id:
+                    continue
+                pl = dict(players_by_id[pid])
+                pl["fixtures"] = team_fixtures.get(pl["team_id"], [])
+                pl["is_captain"] = pick.get("is_captain", False)
+                pl["is_vice_captain"] = pick.get("is_vice_captain", False)
+                current_squad.append(pl)
+            current_squad.sort(key=lambda p: (p["position"], -p["score"]))
+            output["current_squad"] = current_squad
+            output["current_squad_cost"] = round(sum(p["price"] for p in current_squad) / 10, 1)
+            output["current_squad_score"] = round(sum(p["score"] for p in current_squad), 2)
+
             transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map)
             output["suggested_transfers"] = [
                 {
