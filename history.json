@@ -1,41 +1,41 @@
 [
   {
     "gameweek": 2,
-    "cost": 90.5,
-    "score": 56.09069069878839,
+    "cost": 91.0,
+    "score": 59.12870546351085,
     "squad_ids": [
       572,
-      352,
+      385,
       279,
       586,
       10,
       173,
-      364,
+      534,
       15,
       12,
       427,
-      426,
       428,
+      426,
       194,
       195,
-      80
+      224
     ],
     "squad_names": [
       "Tzolakis",
-      "Woodman",
+      "Trafford",
       "Ajayi",
       "Mendy",
       "White",
       "Thomas",
-      "Tsimikas",
+      "Hume",
       "\u00d8degaard",
       "Saka",
       "Mbeumo",
-      "B.Fernandes",
       "Cunha",
+      "B.Fernandes",
       "Thomas-Asante",
       "Simms",
-      "Enes \u00dcnal"
+      "Nketiah"
     ]
   }
 ]
