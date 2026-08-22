@@ -61,12 +61,12 @@ GOALS_PTS = {1: 6, 2: 6, 3: 5, 4: 4}  # pontos por golo, por posição
 CLEAN_SHEET_PTS = {1: 4, 2: 4, 3: 1, 4: 0}  # pontos por jogo sem sofrer, por posição
 
 
-def score_player(p, fdr=3.0, dgw_factor=1.0, w_form=0.35, w_ppg=0.25, w_xpts=0.30, w_bps=0.10):
+def score_player(p, fdr=3.0, dgw_factor=1.0, gws_elapsed=0, w_form=0.35, w_ppg=0.25, w_xpts=0.30, w_bps=0.10):
     """
     Pontos esperados combinando forma, pontos/jogo, uma métrica subjacente
     (xG/xA/xGC convertidos em pontos FPL reais por posição) e tendência de
     bonus points (bps/90). Ajustado por dificuldade de fixtures, jogos
-    duplos/em branco, fiabilidade de minutos e disponibilidade.
+    duplos/em branco, risco de rotação e disponibilidade.
     """
     games = max(p.get("minutes", 0) / 90, 1)
 
@@ -86,13 +86,19 @@ def score_player(p, fdr=3.0, dgw_factor=1.0, w_form=0.35, w_ppg=0.25, w_xpts=0.3
 
     base = w_form * p["form"] + w_ppg * p["points_per_game"] + w_xpts * xpts90 + w_bps * bps_score
 
-    # fiabilidade: penaliza jogadores frequentemente suplentes/substituídos cedo
+    # fiabilidade: quantos minutos joga quando é titular (deteta substituições cedo)
     starts = p.get("starts", 0)
     if starts > 0:
         reliability = min(1.0, (p.get("minutes", 0) / starts) / 70)
     else:
         reliability = 1.0
-    base *= reliability
+
+    # titularidade: com que frequência é titular face às jornadas já disputadas
+    # (sem jornadas ainda disputadas — ex. início de época — não penaliza)
+    nailedness = min(1.0, starts / gws_elapsed) if gws_elapsed > 0 else 1.0
+
+    rotation_factor = (0.3 + 0.7 * nailedness) * (0.5 + 0.5 * reliability)
+    base *= rotation_factor
 
     base *= 1.0 + (3.0 - fdr) * 0.05  # ±10% across FDR range 1–5
     base *= dgw_factor  # boost em jogo duplo, penalização em jornada em branco
@@ -104,16 +110,18 @@ def score_player(p, fdr=3.0, dgw_factor=1.0, w_form=0.35, w_ppg=0.25, w_xpts=0.3
 
     p["xpts90"] = round(xpts90, 2)
     p["reliability"] = round(reliability, 2)
+    p["nailedness"] = round(nailedness, 2)
     return base
 
 
-def optimize_squad(players, budget=BUDGET, fdr_map=None, dgw_map=None):
+def optimize_squad(players, budget=BUDGET, fdr_map=None, dgw_map=None, gws_elapsed=0):
     """Resolve o problema de seleção de equipa via programação linear inteira."""
     fdr_map = fdr_map or {}
     dgw_map = dgw_map or {}
     for p in players:
         p["score"] = score_player(
-            p, fdr=fdr_map.get(p["team_id"], 3.0), dgw_factor=dgw_map.get(p["team_id"], 1.0)
+            p, fdr=fdr_map.get(p["team_id"], 3.0), dgw_factor=dgw_map.get(p["team_id"], 1.0),
+            gws_elapsed=gws_elapsed,
         )
 
     prob = LpProblem("FPL_Squad", LpMaximize)
@@ -184,6 +192,8 @@ def _compact_squad(squad):
         tags = []
         if p.get("gw_note"):
             tags.append(p["gw_note"])
+        if p.get("nailedness", 1.0) < 0.5:
+            tags.append("🪑rotação")
         if p.get("news"):
             tags.append(f"⚠{p['news'][:40]}")
         if tags:
@@ -218,6 +228,7 @@ SYSTEM_PROMPT = (
     "xpts90=pontos esperados/90min (modelo próprio via xG/xA/xGC); "
     "bps90=bonus points system por 90min (indicador de probabilidade de bónus). "
     "⚠=alerta lesão/rotação. DGW=jogo duplo esta jornada; BGW=sem jogo esta jornada. "
+    "🪑rotação=risco de não ser titular fixo (poucos starts face às jornadas já disputadas). "
     "proximos4=próximos 4 jogos, formato ADV(C/F,dificuldade); C=casa,F=fora. "
     "Escala de dificuldade: 1-2=fácil, 3=médio, 4-5=difícil. NÃO confundir a direção da escala. "
     "Usa apenas os números fornecidos nos dados; não estimes ou inventes valores fora da tabela."
@@ -351,7 +362,7 @@ def fetch_manager_squad(manager_id, gameweek=None):
     return {p["element"]: p for p in picks}  # id -> pick info
 
 
-def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1, fdr_map=None, dgw_map=None):
+def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1, fdr_map=None, dgw_map=None, gws_elapsed=0):
     """
     Compara a equipa atual com a ótima e sugere as trocas de maior impacto,
     respeitando o nº de transfers livres (cada transfer extra custa -4 pts).
@@ -361,7 +372,8 @@ def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfer
     dgw_map = dgw_map or {}
     for p in players:
         p["score"] = score_player(
-            p, fdr=fdr_map.get(p["team_id"], 3.0), dgw_factor=dgw_map.get(p["team_id"], 1.0)
+            p, fdr=fdr_map.get(p["team_id"], 3.0), dgw_factor=dgw_map.get(p["team_id"], 1.0),
+            gws_elapsed=gws_elapsed,
         )
 
     current = [players_by_id[pid] for pid in current_squad_ids if pid in players_by_id]
@@ -433,9 +445,10 @@ if __name__ == "__main__":
     team_fixtures = fetch_next_fixtures(gw, next_n=4)
     fixture_counts = compute_gw_fixture_counts(team_fixtures, gw)
     dgw_map = {tid: (0.4 if c == 0 else (1.5 if c >= 2 else 1.0)) for tid, c in fixture_counts.items()}
+    gws_elapsed = gw - 1
 
     print("A otimizar equipa...")
-    squad = optimize_squad(players, fdr_map=fdr_map, dgw_map=dgw_map)
+    squad = optimize_squad(players, fdr_map=fdr_map, dgw_map=dgw_map, gws_elapsed=gws_elapsed)
     for p in squad:
         p["fixtures"] = team_fixtures.get(p["team_id"], [])
         c = fixture_counts.get(p["team_id"], 1)
@@ -477,7 +490,7 @@ if __name__ == "__main__":
             output["current_squad_cost"] = round(sum(p["price"] for p in current_squad) / 10, 1)
             output["current_squad_score"] = round(sum(p["score"] for p in current_squad), 2)
 
-            transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map, dgw_map=dgw_map)
+            transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map, dgw_map=dgw_map, gws_elapsed=gws_elapsed)
             output["suggested_transfers"] = [
                 {
                     "out": t["out"]["web_name"], "in": t["in"]["web_name"],

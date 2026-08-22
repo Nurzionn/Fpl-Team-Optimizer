@@ -86,6 +86,8 @@ def render_squad_tables(squad):
                 name = f'{name} <span class="vice-badge">(V)</span>'
             if p.get("is_selected"):
                 name = f"✅ {name}"
+            if p.get("nailedness", 1.0) < 0.5:
+                name += " 🪑"
             if p.get("news"):
                 name += " ⚠️"
 
