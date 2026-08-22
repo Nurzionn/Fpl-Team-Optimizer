@@ -27,6 +27,7 @@ def fetch_players():
     data = resp.json()
 
     teams = {t["id"]: t["name"] for t in data["teams"]}
+    short_names = {t["id"]: t["short_name"] for t in data["teams"]}
     players = []
     for p in data["elements"]:
         players.append({
@@ -34,6 +35,7 @@ def fetch_players():
             "name": f"{p['first_name']} {p['second_name']}",
             "web_name": p["web_name"],
             "team": teams[p["team"]],
+            "team_short": short_names[p["team"]],
             "team_id": p["team"],
             "position": p["element_type"],  # 1 GK, 2 DEF, 3 MID, 4 FWD
             "price": p["now_cost"],  # em décimos de milhão
@@ -45,35 +47,74 @@ def fetch_players():
             "chance_of_playing": p.get("chance_of_playing_next_round"),
             "xgi": float(p.get("expected_goal_involvements") or 0),
             "xgc": float(p.get("expected_goals_conceded") or 0),
+            "expected_goals": float(p.get("expected_goals") or 0),
+            "expected_assists": float(p.get("expected_assists") or 0),
+            "bps": p.get("bps", 0),
+            "bonus": p.get("bonus", 0),
+            "starts": p.get("starts", 0),
             "news": p.get("news", ""),
         })
     return players
 
 
-def score_player(p, fdr=3.0, w_form=0.5, w_ppg=0.35, w_xg=0.15):
-    """Expected-points metric: form + ppg + xG/xA + fixture difficulty."""
-    base = w_form * p["form"] + w_ppg * p["points_per_game"]
+GOALS_PTS = {1: 6, 2: 6, 3: 5, 4: 4}  # pontos por golo, por posição
+CLEAN_SHEET_PTS = {1: 4, 2: 4, 3: 1, 4: 0}  # pontos por jogo sem sofrer, por posição
 
+
+def score_player(p, fdr=3.0, dgw_factor=1.0, w_form=0.35, w_ppg=0.25, w_xpts=0.30, w_bps=0.10):
+    """
+    Pontos esperados combinando forma, pontos/jogo, uma métrica subjacente
+    (xG/xA/xGC convertidos em pontos FPL reais por posição) e tendência de
+    bonus points (bps/90). Ajustado por dificuldade de fixtures, jogos
+    duplos/em branco, fiabilidade de minutos e disponibilidade.
+    """
     games = max(p.get("minutes", 0) / 90, 1)
-    if p["position"] in (3, 4):  # MID, FWD — reward goal involvements
-        base += w_xg * (p.get("xgi", 0.0) / games) * 5
-    else:  # GK, DEF — reward low expected goals conceded
-        base += w_xg * max(0.0, 1.2 - p.get("xgc", 0.0) / games) * 2
+
+    goals_pts = GOALS_PTS[p["position"]]
+    cs_pts = CLEAN_SHEET_PTS[p["position"]]
+
+    xg90 = p.get("expected_goals", 0.0) / games
+    xa90 = p.get("expected_assists", 0.0) / games
+    xgc90 = p.get("xgc", 0.0) / games
+
+    attack_pts90 = xg90 * goals_pts + xa90 * 3
+    clean_sheet_prob = max(0.0, 1 - xgc90 / 1.3) ** 2
+    xpts90 = attack_pts90 + clean_sheet_prob * cs_pts
+
+    bps90 = p.get("bps", 0) / games
+    bps_score = min(bps90 / 30, 1.5)  # normaliza (top performers ~30-40 bps/jogo)
+
+    base = w_form * p["form"] + w_ppg * p["points_per_game"] + w_xpts * xpts90 + w_bps * bps_score
+
+    # fiabilidade: penaliza jogadores frequentemente suplentes/substituídos cedo
+    starts = p.get("starts", 0)
+    if starts > 0:
+        reliability = min(1.0, (p.get("minutes", 0) / starts) / 70)
+    else:
+        reliability = 1.0
+    base *= reliability
 
     base *= 1.0 + (3.0 - fdr) * 0.05  # ±10% across FDR range 1–5
+    base *= dgw_factor  # boost em jogo duplo, penalização em jornada em branco
 
     if p["chance_of_playing"] is not None and p["chance_of_playing"] < 75:
         base *= p["chance_of_playing"] / 100
     if p["status"] not in ("a", "d"):
         base = 0
+
+    p["xpts90"] = round(xpts90, 2)
+    p["reliability"] = round(reliability, 2)
     return base
 
 
-def optimize_squad(players, budget=BUDGET, fdr_map=None):
+def optimize_squad(players, budget=BUDGET, fdr_map=None, dgw_map=None):
     """Resolve o problema de seleção de equipa via programação linear inteira."""
     fdr_map = fdr_map or {}
+    dgw_map = dgw_map or {}
     for p in players:
-        p["score"] = score_player(p, fdr=fdr_map.get(p["team_id"], 3.0))
+        p["score"] = score_player(
+            p, fdr=fdr_map.get(p["team_id"], 3.0), dgw_factor=dgw_map.get(p["team_id"], 1.0)
+        )
 
     prob = LpProblem("FPL_Squad", LpMaximize)
     x = {p["id"]: LpVariable(f"x_{p['id']}", cat=LpBinary) for p in players}
@@ -111,20 +152,32 @@ def _compact_fixtures(fixtures):
 
 
 def _compact_squad(squad):
-    """Representação compacta (CSV-like) para minimizar tokens de input."""
-    header = "nome,clube,pos,preco,forma,ppj,xstat,proximos4"
+    """Representação compacta (CSV-like), ordenada por score, para minimizar tokens de input."""
+    header = "nome,clube,pos,preco,forma,ppj,xpts90,bps90,proximos4"
     rows = []
-    for p in squad:
+    for p in sorted(squad, key=lambda p: -p.get("score", 0)):
         games = max(p.get("minutes", 0) / 90, 1)
-        if p["position"] in (3, 4):
-            xstat = f"xgi:{p.get('xgi', 0.0) / games:.2f}"
-        else:
-            xstat = f"xgc:{p.get('xgc', 0.0) / games:.2f}"
-        row = f"{p['web_name']},{p['team']},{p['position']},{p['price']/10},{p['form']},{p['points_per_game']},{xstat},{_compact_fixtures(p.get('fixtures'))}"
+        bps90 = round(p.get("bps", 0) / games, 1)
+        row = (
+            f"{p['web_name']},{p.get('team_short', p['team'])},{p['position']},{p['price']/10},{p['form']},"
+            f"{p['points_per_game']},{p.get('xpts90', 0)},{bps90},{_compact_fixtures(p.get('fixtures'))}"
+        )
+        tags = []
+        if p.get("gw_note"):
+            tags.append(p["gw_note"])
         if p.get("news"):
-            row += f",⚠{p['news'][:40]}"
+            tags.append(f"⚠{p['news'][:40]}")
+        if tags:
+            row += "," + ";".join(tags)
         rows.append(row)
     return header + "\n" + "\n".join(rows)
+
+
+def _top_captain_candidates(squad, n=3):
+    """Pré-calcula os melhores candidatos a capitão (por score), evitando que o Claude tenha de comparar 15 linhas."""
+    eligible = [p for p in squad if p.get("gw_note") != "BGW"]
+    ranked = sorted(eligible, key=lambda p: -p.get("score", 0))
+    return ", ".join(f"{p['web_name']}(score:{p.get('score', 0):.1f})" for p in ranked[:n])
 
 
 def _compact_transfers(transfers):
@@ -143,9 +196,12 @@ SYSTEM_PROMPT = (
     "Analista de Fantasy Premier League. Respostas em português, "
     "diretas, sem preâmbulo, sem repetir os dados em tabela. "
     "Pos: 1=GR,2=DEF,3=MED,4=AVA. "
-    "xgi=expected goal involvements/90; xgc=expected goals conceded/90. ⚠=alerta lesão/rotação. "
+    "xpts90=pontos esperados/90min (modelo próprio via xG/xA/xGC); "
+    "bps90=bonus points system por 90min (indicador de probabilidade de bónus). "
+    "⚠=alerta lesão/rotação. DGW=jogo duplo esta jornada; BGW=sem jogo esta jornada. "
     "proximos4=próximos 4 jogos, formato ADV(C/F,dificuldade); C=casa,F=fora. "
-    "Escala de dificuldade: 1-2=fácil, 3=médio, 4-5=difícil. NÃO confundir a direção da escala."
+    "Escala de dificuldade: 1-2=fácil, 3=médio, 4-5=difícil. NÃO confundir a direção da escala. "
+    "Usa apenas os números fornecidos nos dados; não estimes ou inventes valores fora da tabela."
 )
 
 
@@ -160,11 +216,13 @@ def analyze_with_claude(squad, transfers=None, client=None):
 
     squad_csv = _compact_squad(squad)
     transfers_csv = _compact_transfers(transfers) if transfers else None
+    captain_candidates = _top_captain_candidates(squad)
 
-    prompt = f"Equipa (15 jog.):\n{squad_csv}\n\n"
+    prompt = f"Equipa (15 jog., ordenada por score):\n{squad_csv}\n\n"
     prompt += (
         "1) Em até 80 palavras: 2-3 melhores escolhas e 1 risco a vigiar.\n"
-        "2) Sugere o capitão (1 nome).\n"
+        f"2) Escolhe o capitão apenas entre estes candidatos pré-calculados: {captain_candidates}. "
+        "Não sugiras nenhum nome fora desta lista.\n"
     )
 
     if transfers_csv:
@@ -248,6 +306,14 @@ def fetch_next_fixtures(current_gw, next_n=4):
     return result
 
 
+def compute_gw_fixture_counts(team_fixtures, current_gw):
+    """Conta jogos de cada equipa na jornada atual (0=jornada em branco, 2+=jogo duplo)."""
+    return {
+        tid: sum(1 for f in fixtures if f["gw"] == current_gw)
+        for tid, fixtures in team_fixtures.items()
+    }
+
+
 def fetch_manager_squad(manager_id, gameweek=None):
     """
     Busca a equipa atual de um manager (o teu 'team ID' da FPL).
@@ -266,15 +332,18 @@ def fetch_manager_squad(manager_id, gameweek=None):
     return {p["element"]: p for p in picks}  # id -> pick info
 
 
-def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1, fdr_map=None):
+def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1, fdr_map=None, dgw_map=None):
     """
     Compara a equipa atual com a ótima e sugere as trocas de maior impacto,
     respeitando o nº de transfers livres (cada transfer extra custa -4 pts).
     """
     players_by_id = {p["id"]: p for p in players}
     fdr_map = fdr_map or {}
+    dgw_map = dgw_map or {}
     for p in players:
-        p["score"] = score_player(p, fdr=fdr_map.get(p["team_id"], 3.0))
+        p["score"] = score_player(
+            p, fdr=fdr_map.get(p["team_id"], 3.0), dgw_factor=dgw_map.get(p["team_id"], 1.0)
+        )
 
     current = [players_by_id[pid] for pid in current_squad_ids if pid in players_by_id]
     current_ids = set(current_squad_ids)
@@ -343,11 +412,15 @@ if __name__ == "__main__":
     print("A buscar dificuldade de fixtures...")
     fdr_map = fetch_fixture_difficulty(gw)
     team_fixtures = fetch_next_fixtures(gw, next_n=4)
+    fixture_counts = compute_gw_fixture_counts(team_fixtures, gw)
+    dgw_map = {tid: (0.4 if c == 0 else (1.5 if c >= 2 else 1.0)) for tid, c in fixture_counts.items()}
 
     print("A otimizar equipa...")
-    squad = optimize_squad(players, fdr_map=fdr_map)
+    squad = optimize_squad(players, fdr_map=fdr_map, dgw_map=dgw_map)
     for p in squad:
         p["fixtures"] = team_fixtures.get(p["team_id"], [])
+        c = fixture_counts.get(p["team_id"], 1)
+        p["gw_note"] = "DGW" if c >= 2 else ("BGW" if c == 0 else "")
 
     total_cost = sum(p["price"] for p in squad) / 10
     total_score = sum(p["score"] for p in squad)
@@ -355,7 +428,7 @@ if __name__ == "__main__":
     for p in squad:
         print(f"  [{p['position']}] {p['web_name']} ({p['team']}) - €{p['price']/10}M")
 
-    output = {"squad": squad, "cost": total_cost, "score": total_score}
+    output = {"squad": squad, "cost": total_cost, "score": total_score, "gameweek": gw}
 
     # --- Comparação com equipa atual (opcional: define FPL_MANAGER_ID) ---
     transfers = None
@@ -372,6 +445,8 @@ if __name__ == "__main__":
                     continue
                 pl = dict(players_by_id[pid])
                 pl["fixtures"] = team_fixtures.get(pl["team_id"], [])
+                c = fixture_counts.get(pl["team_id"], 1)
+                pl["gw_note"] = "DGW" if c >= 2 else ("BGW" if c == 0 else "")
                 pl["is_captain"] = pick.get("is_captain", False)
                 pl["is_vice_captain"] = pick.get("is_vice_captain", False)
                 current_squad.append(pl)
@@ -380,7 +455,7 @@ if __name__ == "__main__":
             output["current_squad_cost"] = round(sum(p["price"] for p in current_squad) / 10, 1)
             output["current_squad_score"] = round(sum(p["score"] for p in current_squad), 2)
 
-            transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map)
+            transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map, dgw_map=dgw_map)
             output["suggested_transfers"] = [
                 {
                     "out": t["out"]["web_name"], "in": t["in"]["web_name"],

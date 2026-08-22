@@ -34,6 +34,9 @@ st.markdown("""
 .fdr-5 { background: #c0392b; }
 .captain-badge { color: #e0c518; font-weight: 700; }
 .vice-badge { opacity: 0.7; font-size: 11px; }
+.gw-tag { display: inline-block; border-radius: 4px; padding: 1px 6px; margin-right: 4px; font-size: 11px; font-weight: 700; color: white; }
+.gw-dgw { background: #0b8a3d; }
+.gw-bgw { background: #c0392b; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -52,10 +55,15 @@ def fixture_chip(f):
     return f'<span class="fpl-chip"><span class="fdr-sq fdr-{diff}">{diff}</span>{f["opponent"]} ({loc})</span>'
 
 
-def fixtures_row_html(fixtures):
+def fixtures_row_html(fixtures, gw_note):
+    tag = ""
+    if gw_note == "DGW":
+        tag = '<span class="gw-tag gw-dgw">DGW</span>'
+    elif gw_note == "BGW":
+        tag = '<span class="gw-tag gw-bgw">BGW</span>'
     if not fixtures:
-        return "-"
-    return "".join(fixture_chip(f) for f in fixtures)
+        return tag + "-" if tag else "-"
+    return tag + "".join(fixture_chip(f) for f in fixtures)
 
 
 def render_squad_tables(squad):
@@ -65,12 +73,11 @@ def render_squad_tables(squad):
         if not pos_players:
             continue
         st.subheader(POS_NAMES[pos])
-        xg_label = "xGI/90" if pos in (3, 4) else "xGC/90"
 
         rows_html = []
         for p in pos_players:
             games = max(p.get("minutes", 0) / 90, 1)
-            xg90 = round((p.get("xgi", 0.0) if pos in (3, 4) else p.get("xgc", 0.0)) / games, 2)
+            bps90 = round(p.get("bps", 0) / games, 1)
 
             name = p["web_name"]
             if p.get("is_captain"):
@@ -87,19 +94,20 @@ def render_squad_tables(squad):
                 f"<td>€{p['price']/10:.1f}M</td>"
                 f"<td>{bar_html(float(p['form']), 10, '#3ec86a')}</td>"
                 f"<td>{bar_html(float(p['points_per_game']), 12, '#4a9eff')}</td>"
-                f"<td>{xg90}</td>"
+                f"<td>{p.get('xpts90', 0.0)}</td>"
+                f"<td>{bps90}</td>"
                 f"<td>{round(p.get('score', 0.0), 2)}</td>"
-                f"<td>{fixtures_row_html(p.get('fixtures'))}</td>"
+                f"<td>{fixtures_row_html(p.get('fixtures'), p.get('gw_note'))}</td>"
                 "</tr>"
             )
 
         table_html = (
             '<table class="fpl-table"><thead><tr>'
-            f"<th>Jogador</th><th>Clube</th><th>Preço</th><th>Forma</th>"
-            f"<th>Pts/Jogo</th><th>{xg_label}</th><th>Score</th><th>Próx. 4 jogos</th>"
+            "<th>Jogador</th><th>Clube</th><th>Preço</th><th>Forma</th>"
+            "<th>Pts/Jogo</th><th>Pts Esp/90</th><th>BPS/90</th><th>Score</th><th>Próx. 4 jogos</th>"
             "</tr></thead><tbody>" + "".join(rows_html) + "</tbody></table>"
         )
-        st.markdown(table_html, unsafe_allow_html=True)
+        st.markdown(f'<div style="overflow-x:auto">{table_html}</div>', unsafe_allow_html=True)
 
 
 st.title("⚽ FPL Optimizer")
