@@ -1,14 +1,14 @@
-# Guardar este ficheiro em: .github/workflows/fpl.yml no teu repositório
+# Save this file at: .github/workflows/fpl.yml in your repository
 name: FPL Optimizer
 
 on:
   schedule:
-    # Corre toda a sexta-feira às 18:00 UTC (ajusta ao horário antes do deadline)
+    # Runs every Friday at 18:00 UTC (adjust to time before deadline)
     - cron: "0 18 * * 5"
-  workflow_dispatch: {}  # permite correr manualmente pelo GitHub
+  workflow_dispatch: {}  # allows manual runs from GitHub
 
 permissions:
-  contents: write  # necessário para o job poder fazer commit/push dos ficheiros JSON
+  contents: write  # required for the job to commit/push JSON files
 
 jobs:
   optimize:
@@ -21,20 +21,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Instalar dependências
+      - name: Install dependencies
         run: pip install requests pulp anthropic
 
-      - name: Correr otimizador
+      - name: Run optimizer
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          FPL_MANAGER_ID: ${{ secrets.FPL_MANAGER_ID }}  # opcional: o teu team ID da FPL
+          FPL_MANAGER_ID: ${{ secrets.FPL_MANAGER_ID }}  # optional: your FPL team ID
         run: python fpl_optimizer.py
 
-      - name: Guardar resultado no repositório
+      - name: Save result to repository
         run: |
           git config user.name "fpl-bot"
           git config user.email "fpl-bot@users.noreply.github.com"
           git add latest_squad.json history.json
-          git commit -m "Atualizar equipa otimizada" || echo "Sem alterações"
+          git commit -m "Update optimized squad" || echo "No changes"
           git push
-          

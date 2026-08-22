@@ -43,28 +43,37 @@ def fetch_players():
             "minutes": p["minutes"],
             "status": p["status"],  # 'a' = disponível, 'i' = lesionado, etc.
             "chance_of_playing": p.get("chance_of_playing_next_round"),
+            "xgi": float(p.get("expected_goal_involvements") or 0),
+            "xgc": float(p.get("expected_goals_conceded") or 0),
+            "news": p.get("news", ""),
         })
     return players
 
 
-def score_player(p, w_form=0.6, w_ppg=0.4):
-    """
-    Métrica simples de 'pontos esperados'. Ajusta os pesos conforme quiseres
-    evoluir (ex. incluir xG/xA de outra fonte, fixture difficulty, etc.)
-    """
+def score_player(p, fdr=3.0, w_form=0.5, w_ppg=0.35, w_xg=0.15):
+    """Expected-points metric: form + ppg + xG/xA + fixture difficulty."""
     base = w_form * p["form"] + w_ppg * p["points_per_game"]
-    # penaliza jogadores com dúvida de utilização
+
+    games = max(p.get("minutes", 0) / 90, 1)
+    if p["position"] in (3, 4):  # MID, FWD — reward goal involvements
+        base += w_xg * (p.get("xgi", 0.0) / games) * 5
+    else:  # GK, DEF — reward low expected goals conceded
+        base += w_xg * max(0.0, 1.2 - p.get("xgc", 0.0) / games) * 2
+
+    base *= 1.0 + (3.0 - fdr) * 0.05  # ±10% across FDR range 1–5
+
     if p["chance_of_playing"] is not None and p["chance_of_playing"] < 75:
-        base *= (p["chance_of_playing"] / 100)
-    if p["status"] not in ("a", "d"):  # não disponível / lesionado / suspenso
+        base *= p["chance_of_playing"] / 100
+    if p["status"] not in ("a", "d"):
         base = 0
     return base
 
 
-def optimize_squad(players, budget=BUDGET):
+def optimize_squad(players, budget=BUDGET, fdr_map=None):
     """Resolve o problema de seleção de equipa via programação linear inteira."""
+    fdr_map = fdr_map or {}
     for p in players:
-        p["score"] = score_player(p)
+        p["score"] = score_player(p, fdr=fdr_map.get(p["team_id"], 3.0))
 
     prob = LpProblem("FPL_Squad", LpMaximize)
     x = {p["id"]: LpVariable(f"x_{p['id']}", cat=LpBinary) for p in players}
@@ -95,11 +104,18 @@ def optimize_squad(players, budget=BUDGET):
 
 def _compact_squad(squad):
     """Representação compacta (CSV-like) para minimizar tokens de input."""
-    header = "nome,clube,pos,preco,forma,ppj"
-    rows = [
-        f"{p['web_name']},{p['team']},{p['position']},{p['price']/10},{p['form']},{p['points_per_game']}"
-        for p in squad
-    ]
+    header = "nome,clube,pos,preco,forma,ppj,xstat"
+    rows = []
+    for p in squad:
+        games = max(p.get("minutes", 0) / 90, 1)
+        if p["position"] in (3, 4):
+            xstat = f"xgi:{p.get('xgi', 0.0) / games:.2f}"
+        else:
+            xstat = f"xgc:{p.get('xgc', 0.0) / games:.2f}"
+        row = f"{p['web_name']},{p['team']},{p['position']},{p['price']/10},{p['form']},{p['points_per_game']},{xstat}"
+        if p.get("news"):
+            row += f",⚠{p['news'][:40]}"
+        rows.append(row)
     return header + "\n" + "\n".join(rows)
 
 
@@ -118,7 +134,8 @@ def _compact_transfers(transfers):
 SYSTEM_PROMPT = (
     "Analista de Fantasy Premier League. Respostas em português, "
     "diretas, sem preâmbulo, sem repetir os dados em tabela. "
-    "Pos: 1=GR,2=DEF,3=MED,4=AVA."
+    "Pos: 1=GR,2=DEF,3=MED,4=AVA. "
+    "xgi=expected goal involvements/90; xgc=expected goals conceded/90. ⚠=alerta lesão/rotação."
 )
 
 
@@ -167,6 +184,27 @@ def fetch_current_gameweek():
     return events[-1]["id"]
 
 
+def fetch_fixture_difficulty(current_gw, next_n_gws=3):
+    """Returns avg fixture difficulty rating (1–5) per team_id for the next N gameweeks."""
+    resp = requests.get(f"{FPL_BASE}/fixtures/", timeout=15)
+    resp.raise_for_status()
+    fixtures = resp.json()
+
+    upcoming = [
+        f for f in fixtures
+        if f.get("event") and current_gw <= f["event"] < current_gw + next_n_gws
+    ]
+    fdr_sum, fdr_count = {}, {}
+    for fix in upcoming:
+        for team_key, diff_key in (("team_h", "team_h_difficulty"), ("team_a", "team_a_difficulty")):
+            tid = fix[team_key]
+            fdr = fix[diff_key]
+            fdr_sum[tid] = fdr_sum.get(tid, 0) + fdr
+            fdr_count[tid] = fdr_count.get(tid, 0) + 1
+
+    return {tid: fdr_sum[tid] / fdr_count[tid] for tid in fdr_sum}
+
+
 def fetch_manager_squad(manager_id, gameweek=None):
     """
     Busca a equipa atual de um manager (o teu 'team ID' da FPL).
@@ -185,14 +223,15 @@ def fetch_manager_squad(manager_id, gameweek=None):
     return {p["element"]: p for p in picks}  # id -> pick info
 
 
-def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1):
+def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1, fdr_map=None):
     """
     Compara a equipa atual com a ótima e sugere as trocas de maior impacto,
     respeitando o nº de transfers livres (cada transfer extra custa -4 pts).
     """
     players_by_id = {p["id"]: p for p in players}
+    fdr_map = fdr_map or {}
     for p in players:
-        p["score"] = score_player(p)
+        p["score"] = score_player(p, fdr=fdr_map.get(p["team_id"], 3.0))
 
     current = [players_by_id[pid] for pid in current_squad_ids if pid in players_by_id]
     current_ids = set(current_squad_ids)
@@ -256,9 +295,13 @@ def save_history_entry(gameweek, squad, cost, score, path="history.json"):
 if __name__ == "__main__":
     print("A buscar dados da FPL...")
     players = fetch_players()
+    gw = fetch_current_gameweek()
+
+    print("A buscar dificuldade de fixtures...")
+    fdr_map = fetch_fixture_difficulty(gw)
 
     print("A otimizar equipa...")
-    squad = optimize_squad(players)
+    squad = optimize_squad(players, fdr_map=fdr_map)
 
     total_cost = sum(p["price"] for p in squad) / 10
     total_score = sum(p["score"] for p in squad)
@@ -275,7 +318,7 @@ if __name__ == "__main__":
         try:
             print(f"\nA buscar equipa atual do manager {manager_id}...")
             current_picks = fetch_manager_squad(int(manager_id))
-            transfers = suggest_transfers(list(current_picks.keys()), players)
+            transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map)
             output["suggested_transfers"] = [
                 {
                     "out": t["out"]["web_name"], "in": t["in"]["web_name"],
@@ -301,7 +344,6 @@ if __name__ == "__main__":
         print("Verifica se ANTHROPIC_API_KEY está definida no ambiente.")
 
     # --- Histórico ---
-    gw = fetch_current_gameweek()
     save_history_entry(gw, squad, total_cost, total_score)
     print(f"\nHistórico atualizado (jornada {gw}) em history.json")
 
