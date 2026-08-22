@@ -17,7 +17,33 @@
       "xgi": 0.0,
       "xgc": 0.0,
       "news": "",
-      "score": 0.37199999999999994
+      "score": 0.37199999999999994,
+      "fixtures": [
+        {
+          "opponent": "NFO",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 2
+        },
+        {
+          "opponent": "IPS",
+          "is_home": false,
+          "difficulty": 2,
+          "gw": 3
+        },
+        {
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "BOU",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 351,
@@ -36,7 +62,78 @@
       "xgi": 0.0,
       "xgc": 0.0,
       "news": "",
-      "score": 0.37199999999999994
+      "score": 0.37199999999999994,
+      "fixtures": [
+        {
+          "opponent": "NFO",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 2
+        },
+        {
+          "opponent": "IPS",
+          "is_home": false,
+          "difficulty": 2,
+          "gw": 3
+        },
+        {
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "BOU",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
+    },
+    {
+      "id": 586,
+      "name": "Nobel Mendy",
+      "web_name": "Mendy",
+      "team": "Hull City",
+      "team_id": 11,
+      "position": 2,
+      "price": 40,
+      "total_points": 11,
+      "form": 11.0,
+      "points_per_game": 11.0,
+      "minutes": 45,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.28,
+      "xgc": 0.71,
+      "news": "",
+      "score": 9.497,
+      "fixtures": [
+        {
+          "opponent": "COV",
+          "is_home": false,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "AVL",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "CHE",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "NEW",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 10,
@@ -55,7 +152,33 @@
       "xgi": 0.39,
       "xgc": 0.2,
       "news": "",
-      "score": 9.328333333333333
+      "score": 9.328333333333333,
+      "fixtures": [
+        {
+          "opponent": "AVL",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 2
+        },
+        {
+          "opponent": "CHE",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 3
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 279,
@@ -68,32 +191,39 @@
       "total_points": 10,
       "form": 10.0,
       "points_per_game": 10.0,
-      "minutes": 44,
+      "minutes": 45,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.81,
-      "xgc": 0.59,
+      "xgc": 0.71,
       "news": "",
-      "score": 8.683
-    },
-    {
-      "id": 586,
-      "name": "Nobel Mendy",
-      "web_name": "Mendy",
-      "team": "Hull City",
-      "team_id": 11,
-      "position": 2,
-      "price": 40,
-      "total_points": 9,
-      "form": 9.0,
-      "points_per_game": 9.0,
-      "minutes": 44,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 0.28,
-      "xgc": 0.59,
-      "news": "",
-      "score": 7.833
+      "score": 8.647,
+      "fixtures": [
+        {
+          "opponent": "COV",
+          "is_home": false,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "AVL",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "CHE",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "NEW",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 173,
@@ -112,7 +242,33 @@
       "xgi": 0.03,
       "xgc": 1.88,
       "news": "",
-      "score": 2.55
+      "score": 2.55,
+      "fixtures": [
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 3
+        },
+        {
+          "opponent": "BHA",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 358,
@@ -131,7 +287,33 @@
       "xgi": 0.0,
       "xgc": 0.0,
       "news": "",
-      "score": 0.37199999999999994
+      "score": 0.37199999999999994,
+      "fixtures": [
+        {
+          "opponent": "NFO",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 2
+        },
+        {
+          "opponent": "IPS",
+          "is_home": false,
+          "difficulty": 2,
+          "gw": 3
+        },
+        {
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "BOU",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 15,
@@ -150,7 +332,33 @@
       "xgi": 0.31,
       "xgc": 0.06,
       "news": "",
-      "score": 9.263083333333332
+      "score": 9.263083333333332,
+      "fixtures": [
+        {
+          "opponent": "AVL",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 2
+        },
+        {
+          "opponent": "CHE",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 3
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 12,
@@ -169,7 +377,33 @@
       "xgi": 0.72,
       "xgc": 0.06,
       "news": "",
-      "score": 7.917000000000002
+      "score": 7.917000000000002,
+      "fixtures": [
+        {
+          "opponent": "AVL",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 2
+        },
+        {
+          "opponent": "CHE",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 3
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 4
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 427,
@@ -182,13 +416,39 @@
       "total_points": 1,
       "form": 1.0,
       "points_per_game": 1.0,
-      "minutes": 44,
+      "minutes": 45,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 0.26,
+      "xgi": 0.27,
       "xgc": 1.16,
       "news": "",
-      "score": 1.045
+      "score": 1.0525,
+      "fixtures": [
+        {
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "MCI",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "FUL",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 162,
@@ -201,32 +461,84 @@
       "total_points": 1,
       "form": 1.0,
       "points_per_game": 1.0,
-      "minutes": 44,
+      "minutes": 45,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.23,
       "xgc": 1.16,
       "news": "",
-      "score": 1.0225
+      "score": 1.0225,
+      "fixtures": [
+        {
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "MCI",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "FUL",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
-      "id": 43,
-      "name": "Youri Tielemans",
-      "web_name": "Tielemans",
+      "id": 426,
+      "name": "Bruno Borges Fernandes",
+      "web_name": "B.Fernandes",
       "team": "Man Utd",
       "team_id": 16,
       "position": 3,
-      "price": 60,
+      "price": 120,
       "total_points": 1,
       "form": 1.0,
       "points_per_game": 1.0,
-      "minutes": 44,
+      "minutes": 45,
       "status": "a",
-      "chance_of_playing": 100,
-      "xgi": 0.07,
+      "chance_of_playing": null,
+      "xgi": 0.09,
       "xgc": 1.16,
       "news": "",
-      "score": 0.9025
+      "score": 0.9175,
+      "fixtures": [
+        {
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "MCI",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "FUL",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 295,
@@ -239,13 +551,39 @@
       "total_points": 5,
       "form": 5.0,
       "points_per_game": 5.0,
-      "minutes": 44,
+      "minutes": 45,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.1,
-      "xgc": 0.59,
+      "xgc": 0.71,
       "news": "",
-      "score": 4.325
+      "score": 4.325,
+      "fixtures": [
+        {
+          "opponent": "COV",
+          "is_home": false,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "AVL",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 3
+        },
+        {
+          "opponent": "CHE",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 4
+        },
+        {
+          "opponent": "NEW",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 194,
@@ -264,7 +602,33 @@
       "xgi": 0.02,
       "xgc": 1.6,
       "news": "",
-      "score": 1.7149999999999999
+      "score": 1.7149999999999999,
+      "fixtures": [
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 3
+        },
+        {
+          "opponent": "BHA",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     },
     {
       "id": 195,
@@ -283,11 +647,37 @@
       "xgi": 0.01,
       "xgc": 1.6,
       "news": "",
-      "score": 1.7075
+      "score": 1.7075,
+      "fixtures": [
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 2
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 3
+        },
+        {
+          "opponent": "BHA",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 4
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 5
+        }
+      ]
     }
   ],
-  "cost": 84.0,
-  "score": 57.407916666666665,
+  "cost": 90.0,
+  "score": 59.058416666666666,
   "suggested_transfers": [
     {
       "out": "Rogers",
@@ -304,5 +694,5 @@
       "uses_free_transfer": false
     }
   ],
-  "analysis": "1) **Melhores escolhas:** White (11 ppj, xgc baixo, Arsenal s\u00f3lido) e \u00d8degaard (11 ppj, retorno consistente). Ajayi e Mendy tamb\u00e9m entregam com bom custo. **Risco:** Mbeumo, Andrey Santos e Tielemans com apenas 1 ponto \u2014 Man Utd em m\u00e1 forma, vigiar titularidade.\n\n2) **Capit\u00e3o: White** \u2014 forma m\u00e1xima, defensiva Arsenal fi\u00e1vel.\n\n3) Rogers\u2192\u00d8degaard \u00e9 claramente priorit\u00e1ria: gratuita, ganho l\u00edquido de 9.3. Faz primeiro sem hesitar. Ampadu\u2192\u00d8degaard s\u00f3 faz sentido se tiveres transfer\u00eancia livre extra depois; pagar -4 com ganho l\u00edquido de 5.3 n\u00e3o compensa sozinho."
+  "analysis": "1) **Melhores escolhas:** White (xgc baixo, fixtures acess\u00edveis) e Saka (xgi 0.72, Arsenal em boa forma). Mendy/Ajayi oferecem valor defensivo com fixtures f\u00e1ceis. **Risco a vigiar:** Mbeumo e Man Utd toda \u2014 forma p\u00e9ssima (1 ponto), xgi fraco, fixtures dif\u00edceis a m\u00e9dio prazo.\n\n2) **Capit\u00e3o: Saka** \u2014 maior xgi da equipa, Arsenal com sequ\u00eancia de jogos acess\u00edveis.\n\n3) Rogers\u2192\u00d8degaard \u00e9 claramente melhor: ganho l\u00edquido superior (9.3) sem custo de -4. \u00d8degaard em boa forma com Arsenal. Faz primeiro e sem penaliza\u00e7\u00e3o. S\u00f3 considerar Ampadu\u2192\u00d8degaard se tiveres transfer\u00eancia extra dispon\u00edvel sem prejudicar a equipa."
 }
