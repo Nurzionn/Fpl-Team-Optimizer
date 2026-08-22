@@ -1,0 +1,36 @@
+# Guardar este ficheiro em: .github/workflows/fpl.yml no teu repositório
+name: FPL Optimizer
+
+on:
+  schedule:
+    # Corre toda a sexta-feira às 18:00 UTC (ajusta ao horário antes do deadline)
+    - cron: "0 18 * * 5"
+  workflow_dispatch: {}  # permite correr manualmente pelo GitHub
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install requests pulp anthropic
+
+      - name: Correr otimizador
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FPL_MANAGER_ID: ${{ secrets.FPL_MANAGER_ID }}  # opcional: o teu team ID da FPL
+        run: python fpl_optimizer.py
+
+      - name: Guardar resultado no repositório
+        run: |
+          git config user.name "fpl-bot"
+          git config user.email "fpl-bot@users.noreply.github.com"
+          git add latest_squad.json history.json
+          git commit -m "Atualizar equipa otimizada" || echo "Sem alterações"
+          git push
