@@ -55,12 +55,14 @@ def fetch_players():
             "bonus": p.get("bonus", 0),
             "starts": p.get("starts", 0),
             "news": p.get("news", ""),
+            "penalties_order": p.get("penalties_order"),  # 1 = marcador principal, 2 = suplente, etc.
         })
     return players
 
 
 GOALS_PTS = {1: 6, 2: 6, 3: 5, 4: 4}  # pontos por golo, por posição
 CLEAN_SHEET_PTS = {1: 4, 2: 4, 3: 1, 4: 0}  # pontos por jogo sem sofrer, por posição
+PENALTY_ORDER_BONUS = {1: 0.35, 2: 0.10}  # pts/90 extra estimados para marcadores de penáltis
 
 
 def score_player(p, fdr=3.0, dgw_factor=1.0, gws_elapsed=0, w_form=0.35, w_ppg=0.25, w_xpts=0.30, w_bps=0.10):
@@ -80,6 +82,7 @@ def score_player(p, fdr=3.0, dgw_factor=1.0, gws_elapsed=0, w_form=0.35, w_ppg=0
     xgc90 = p.get("xgc", 0.0) / games
 
     attack_pts90 = xg90 * goals_pts + xa90 * 3
+    attack_pts90 += PENALTY_ORDER_BONUS.get(p.get("penalties_order"), 0.0)
     clean_sheet_prob = max(0.0, 1 - xgc90 / 1.3) ** 2
     xpts90 = attack_pts90 + clean_sheet_prob * cs_pts
 
