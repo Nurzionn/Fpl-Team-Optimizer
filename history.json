@@ -37,5 +37,44 @@
       "Barry",
       "Havertz"
     ]
+  },
+  {
+    "gameweek": 3,
+    "cost": 97.1,
+    "score": 64.94045570139475,
+    "squad_ids": [
+      572,
+      385,
+      115,
+      388,
+      88,
+      279,
+      586,
+      399,
+      565,
+      154,
+      335,
+      367,
+      411,
+      165,
+      316
+    ],
+    "squad_names": [
+      "Tzolakis",
+      "Trafford",
+      "De Cuyper",
+      "Gu\u00e9hi",
+      "Kayode",
+      "Ajayi",
+      "Mendy",
+      "Cherki",
+      "M.Sangar\u00e9",
+      "Palmer",
+      "Stach",
+      "Gakpo",
+      "Haaland",
+      "Jo\u00e3o Pedro",
+      "Emersonn"
+    ]
   }
 ]
