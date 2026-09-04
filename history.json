@@ -76,5 +76,44 @@
       "Jo\u00e3o Pedro",
       "Emersonn"
     ]
+  },
+  {
+    "gameweek": 4,
+    "cost": 99.7,
+    "score": 64.56620872391323,
+    "squad_ids": [
+      572,
+      385,
+      8,
+      115,
+      10,
+      279,
+      277,
+      426,
+      367,
+      12,
+      154,
+      565,
+      379,
+      165,
+      249
+    ],
+    "squad_names": [
+      "Tzolakis",
+      "Trafford",
+      "Calafiori",
+      "De Cuyper",
+      "White",
+      "Ajayi",
+      "Egan",
+      "B.Fernandes",
+      "Gakpo",
+      "Saka",
+      "Palmer",
+      "M.Sangar\u00e9",
+      "Isak",
+      "Jo\u00e3o Pedro",
+      "Barry"
+    ]
   }
 ]
