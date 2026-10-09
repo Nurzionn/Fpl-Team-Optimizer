@@ -9,6 +9,7 @@ Dependências: requests, pulp, anthropic
 
 import os
 import json
+from collections import Counter
 import requests
 from pulp import LpProblem, LpMaximize, LpVariable, lpSum, LpBinary, PULP_CBC_CMD
 import anthropic
@@ -420,26 +421,50 @@ def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfer
 
     current = [players_by_id[pid] for pid in current_squad_ids if pid in players_by_id]
     current_ids = set(current_squad_ids)
+    club_counts = Counter(p["team_id"] for p in current)
 
-    # Para cada jogador atual, encontra o melhor substituto na mesma posição/orçamento
-    candidates = []
+    # Para cada jogador atual, lista de substitutos possíveis (mesma posição/orçamento),
+    # ordenados por score - escolhidos greedy mais abaixo para respeitar MAX_PER_CLUB
+    # e evitar sugerir o mesmo jogador de entrada mais que uma vez.
+    pools = []
     for out_p in current:
         budget_available = out_p["price"]  # preço de venda (aprox.; FPL tem regras de venda a considerar)
-        same_pos = [
-            p for p in players
-            if p["position"] == out_p["position"]
-            and p["id"] not in current_ids
-            and p["price"] <= budget_available + 999  # ajusta consoante banco disponível
-        ]
-        if not same_pos:
-            continue
-        best_in = max(same_pos, key=lambda p: p["score"])
-        gain = best_in["score"] - out_p["score"]
-        if gain > 0:
+        same_pos = sorted(
+            (
+                p for p in players
+                if p["position"] == out_p["position"]
+                and p["id"] not in current_ids
+                and p["price"] <= budget_available + 999  # ajusta consoante banco disponível
+            ),
+            key=lambda p: -p["score"],
+        )
+        if same_pos:
+            best_gain = same_pos[0]["score"] - out_p["score"]
+            pools.append({"out": out_p, "pool": same_pos, "best_gain": best_gain})
+
+    pools.sort(key=lambda e: -e["best_gain"])
+
+    candidates = []
+    chosen_in_ids = set()
+    for entry in pools:
+        out_p = entry["out"]
+        for in_p in entry["pool"]:
+            if in_p["id"] in chosen_in_ids:
+                continue
+            new_club_count = club_counts[in_p["team_id"]] + (0 if in_p["team_id"] == out_p["team_id"] else 1)
+            if new_club_count > MAX_PER_CLUB:
+                continue
+            gain = in_p["score"] - out_p["score"]
+            if gain <= 0:
+                break  # pool está ordenada por score; nenhum dos restantes é melhor
+            club_counts[out_p["team_id"]] -= 1
+            club_counts[in_p["team_id"]] += 1
+            chosen_in_ids.add(in_p["id"])
             candidates.append({
-                "out": out_p, "in": best_in, "gain": gain,
-                "cost_diff": (best_in["price"] - out_p["price"]) / 10,
+                "out": out_p, "in": in_p, "gain": gain,
+                "cost_diff": (in_p["price"] - out_p["price"]) / 10,
             })
+            break
 
     candidates.sort(key=lambda c: -c["gain"])
     top = candidates[:max_transfers]
