@@ -401,14 +401,17 @@ def fetch_manager_squad(manager_id, gameweek=None):
         f"{FPL_BASE}/entry/{manager_id}/event/{gameweek}/picks/", timeout=15
     )
     resp.raise_for_status()
-    picks = resp.json()["picks"]
-    return {p["element"]: p for p in picks}  # id -> pick info
+    data = resp.json()
+    picks = {p["element"]: p for p in data["picks"]}  # id -> pick info
+    bank = data.get("entry_history", {}).get("bank", 0)  # dinheiro livre, em décimos de milhão
+    return picks, bank
 
 
-def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1, fdr_map=None, dgw_map=None, gws_elapsed=0):
+def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfers=1, fdr_map=None, dgw_map=None, gws_elapsed=0, bank=0):
     """
     Compara a equipa atual com a ótima e sugere as trocas de maior impacto,
-    respeitando o nº de transfers livres (cada transfer extra custa -4 pts).
+    respeitando o nº de transfers livres (cada transfer extra custa -4 pts) e o
+    orçamento disponível (preço de venda do jogador que sai + bank).
     """
     players_by_id = {p["id"]: p for p in players}
     fdr_map = fdr_map or {}
@@ -428,13 +431,13 @@ def suggest_transfers(current_squad_ids, players, max_transfers=2, free_transfer
     # e evitar sugerir o mesmo jogador de entrada mais que uma vez.
     pools = []
     for out_p in current:
-        budget_available = out_p["price"]  # preço de venda (aprox.; FPL tem regras de venda a considerar)
+        budget_available = out_p["price"] + bank  # preço de venda (aprox.) + dinheiro livre
         same_pos = sorted(
             (
                 p for p in players
                 if p["position"] == out_p["position"]
                 and p["id"] not in current_ids
-                and p["price"] <= budget_available + 999  # ajusta consoante banco disponível
+                and p["price"] <= budget_available
             ),
             key=lambda p: -p["score"],
         )
@@ -539,7 +542,7 @@ if __name__ == "__main__":
     if manager_id:
         try:
             print(f"\nA buscar equipa atual do manager {manager_id}...")
-            current_picks = fetch_manager_squad(int(manager_id))
+            current_picks, bank = fetch_manager_squad(int(manager_id))
 
             players_by_id = {p["id"]: p for p in players}
             current_squad = []
@@ -559,7 +562,7 @@ if __name__ == "__main__":
             output["current_squad_score"] = round(sum(p["score"] for p in current_squad), 2)
             output["current_formation"] = pick_starting_xi(current_squad)
 
-            transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map, dgw_map=dgw_map, gws_elapsed=gws_elapsed)
+            transfers = suggest_transfers(list(current_picks.keys()), players, fdr_map=fdr_map, dgw_map=dgw_map, gws_elapsed=gws_elapsed, bank=bank)
             output["suggested_transfers"] = [
                 {
                     "out": t["out"]["web_name"], "in": t["in"]["web_name"],
