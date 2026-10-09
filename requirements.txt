@@ -1,5 +1,5 @@
 requests
-pulp
+pulp<4
 anthropic
 streamlit
 pandas

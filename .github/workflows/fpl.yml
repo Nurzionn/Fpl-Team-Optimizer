@@ -3,8 +3,9 @@ name: FPL Optimizer
 
 on:
   schedule:
-    # Runs every Friday at 17:00 UTC (adjust to time before deadline)
-    - cron: "0 17 * * 5"
+    # Tue/Fri at 16:30 UTC, Sat at 10:00 UTC (adjust to time before deadline)
+    - cron: "30 16 * * 2,5"
+    - cron: "0 10 * * 6"
   workflow_dispatch: {}  # allows manual runs from GitHub
 
 permissions:
@@ -22,7 +23,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests pulp anthropic
+        run: pip install requests "pulp<4" anthropic
 
       - name: Run optimizer
         env:
