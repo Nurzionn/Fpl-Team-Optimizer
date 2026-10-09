@@ -37,5 +37,44 @@
       "Simms",
       "Nketiah"
     ]
+  },
+  {
+    "gameweek": 6,
+    "cost": 99.0,
+    "score": 81.6570988315713,
+    "squad_ids": [
+      1,
+      350,
+      330,
+      229,
+      115,
+      391,
+      305,
+      124,
+      94,
+      397,
+      286,
+      12,
+      411,
+      138,
+      316
+    ],
+    "squad_names": [
+      "Raya",
+      "A.Becker",
+      "Bogle",
+      "Tarkowski",
+      "De Cuyper",
+      "Gvardiol",
+      "Davis",
+      "Gro\u00df",
+      "Schade",
+      "Semenyo",
+      "Belloumi",
+      "Saka",
+      "Haaland",
+      "Kostoulas",
+      "Emersonn"
+    ]
   }
 ]
