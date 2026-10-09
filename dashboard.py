@@ -13,7 +13,7 @@ import json
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="FPL Optimizer", page_icon="⚽", layout="centered")
+st.set_page_config(page_title="FPL Optimizer", page_icon="⚽", layout="wide")
 
 POS_NAMES = {1: "🧤 Guarda-Redes", 2: "🛡️ Defesas", 3: "🎯 Médios", 4: "⚡ Avançados"}
 POS_ORDER = [1, 2, 3, 4]
@@ -22,9 +22,43 @@ PLAYER_PHOTO_URL = "https://resources.premierleague.com/premierleague/photos/pla
 
 st.markdown("""
 <style>
-.fpl-table { width: auto; min-width: 100%; table-layout: auto !important; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 14px; }
-.fpl-table th { text-align: left; padding: 6px 8px; border-bottom: 2px solid rgba(120,120,120,0.4); font-size: 12px; opacity: 0.75; white-space: nowrap; }
-.fpl-table td { padding: 6px 8px; border-bottom: 1px solid rgba(120,120,120,0.2); vertical-align: middle; white-space: nowrap !important; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --fpl-green: #1e8e3e;
+    --fpl-green-light: #3ec86a;
+    --fpl-blue: #4a9eff;
+    --fpl-surface: rgba(120,120,120,0.08);
+    --fpl-border: rgba(120,120,120,0.22);
+}
+
+html, body, [class*="css"] { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+div.block-container { max-width: 1180px; padding-top: 1.5rem; padding-bottom: 3rem; }
+
+/* --- Hero header --- */
+.fpl-hero { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; background: linear-gradient(120deg, #0f3d20, #1e8e3e 65%, #2ea84a); border-radius: 16px; padding: 22px 28px; margin-bottom: 1.5rem; box-shadow: 0 10px 24px -12px rgba(15,61,32,0.55); }
+.fpl-hero-title { color: white; font-size: 1.65rem; font-weight: 800; margin: 0; letter-spacing: -0.02em; }
+.fpl-hero-subtitle { color: rgba(255,255,255,0.85); font-size: 0.85rem; margin-top: 4px; }
+.fpl-hero-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.fpl-hero-chip { background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.3); color: white; font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 999px; backdrop-filter: blur(4px); }
+
+/* --- Section headings --- */
+.section-heading { display: flex; align-items: center; gap: 8px; font-size: 1.05rem; font-weight: 700; margin: 1.6rem 0 0.75rem 0; padding-bottom: 6px; border-bottom: 2px solid var(--fpl-border); }
+.pos-heading { color: #2e7d32; margin: 0.4rem 0 0.6rem 0; font-size: 1.05rem; font-weight: 700; }
+
+/* --- Stat cards --- */
+.stat-card { background: var(--fpl-surface); border: 1px solid var(--fpl-border); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 2px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.stat-card:hover { transform: translateY(-2px); box-shadow: 0 8px 18px -10px rgba(0,0,0,0.35); }
+.stat-card-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; opacity: 0.65; }
+.stat-card-value { font-size: 1.45rem; font-weight: 800; }
+.stat-card-icon { font-size: 1.1rem; }
+
+/* --- Tables --- */
+.fpl-table { width: auto; min-width: 100%; table-layout: auto !important; border-collapse: collapse; margin-bottom: 1.25rem; font-size: 14px; border-radius: 10px; overflow: hidden; }
+.fpl-table th { text-align: left; padding: 8px 10px; background: var(--fpl-surface); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; opacity: 0.7; white-space: nowrap; border-bottom: 1px solid var(--fpl-border); }
+.fpl-table td { padding: 8px 10px; border-bottom: 1px solid var(--fpl-border); vertical-align: middle; white-space: nowrap !important; }
+.fpl-table tbody tr:nth-child(even) { background: rgba(120,120,120,0.05); }
+.fpl-table tbody tr:hover { background: rgba(62,200,106,0.10); }
 .fpl-table td.col-wrap { white-space: normal !important; max-width: 130px; word-break: break-word; }
 .fpl-bar-wrap { background: rgba(120,120,120,0.25); border-radius: 4px; height: 12px; width: 80px; display: inline-block; vertical-align: middle; overflow: hidden; }
 .fpl-bar { height: 100%; border-radius: 4px; }
@@ -40,7 +74,6 @@ st.markdown("""
 .gw-tag { display: inline-block; border-radius: 4px; padding: 1px 6px; margin-right: 4px; font-size: 11px; font-weight: 700; color: white; }
 .gw-dgw { background: #0b8a3d; }
 .gw-bgw { background: #c0392b; }
-.pos-heading { color: #2e7d32; margin: 0.4rem 0 0.6rem 0; font-size: 1.1rem; font-weight: 700; }
 .team-badge { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; margin-right: 5px; }
 .player-photo { width: 24px; height: 24px; object-fit: cover; object-position: top; border-radius: 50%; vertical-align: middle; margin-right: 6px; background: rgba(120,120,120,0.15); }
 .pitch-photo { width: 44px; height: 44px; object-fit: cover; object-position: top; border-radius: 50%; border: 2px solid rgba(255,255,255,0.85); box-shadow: 0 1px 3px rgba(0,0,0,0.5); background: #e8e8e8; }
@@ -58,8 +91,38 @@ st.markdown("""
 .pitch-sub { color: #eafff0; font-size: 10px; margin-top: 2px; text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
 .bench-strip { background: rgba(120,120,120,0.12); border: 1px solid rgba(120,120,120,0.3); border-radius: 10px; padding: 10px 8px 6px 8px; margin-bottom: 1rem; }
 .bench-label { font-size: 11px; font-weight: 700; opacity: 0.7; text-transform: uppercase; margin-bottom: 4px; }
+
+/* --- Transfer cards --- */
+.transfer-card { display: flex; align-items: center; gap: 10px; background: var(--fpl-surface); border: 1px solid var(--fpl-border); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; flex-wrap: wrap; }
+.transfer-arrow { opacity: 0.5; font-weight: 700; }
+.transfer-out { font-weight: 600; }
+.transfer-in { font-weight: 700; color: var(--fpl-green-light); }
+.transfer-pill { margin-left: auto; font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+.transfer-pill-gain { background: rgba(62,200,106,0.18); color: #1e8e3e; }
+.transfer-pill-free { background: rgba(74,158,255,0.18); color: #2176d6; font-weight: 600; }
+.transfer-pill-cost { background: rgba(224,102,58,0.18); color: #c0532a; font-weight: 600; }
+
+/* --- Tabs --- */
+button[data-baseweb="tab"] { font-weight: 600; }
+
+/* --- Sidebar --- */
+.sidebar-legend-item { font-size: 13px; margin-bottom: 4px; }
 </style>
 """, unsafe_allow_html=True)
+
+
+def stat_card(label, value, icon=""):
+    return (
+        '<div class="stat-card">'
+        f'<div class="stat-card-label">{icon} {label}</div>'
+        f'<div class="stat-card-value">{value}</div>'
+        "</div>"
+    )
+
+
+def section_heading(icon, text):
+    st.markdown(f'<div class="section-heading">{icon} {text}</div>', unsafe_allow_html=True)
+
 
 
 def bar_html(value, max_value, color):
@@ -199,9 +262,6 @@ def render_pitch(squad, formation_label):
         )
 
 
-st.title("⚽ FPL Optimizer")
-st.caption("Equipa ótima gerada automaticamente com base em forma, pontos/jogo, xG/xA e dificuldade de fixtures")
-
 try:
     with open("latest_squad.json") as f:
         data = json.load(f)
@@ -212,30 +272,52 @@ except FileNotFoundError:
     )
     st.stop()
 
+st.markdown(
+    '<div class="fpl-hero">'
+    '<div><div class="fpl-hero-title">⚽ FPL Optimizer</div>'
+    '<div class="fpl-hero-subtitle">Equipa ótima gerada automaticamente com base em forma, pontos/jogo, xG/xA e dificuldade de fixtures</div></div>'
+    '<div class="fpl-hero-chips">'
+    f'<span class="fpl-hero-chip">📅 Jornada {data.get("gameweek", "?")}</span>'
+    f'<span class="fpl-hero-chip">🧩 {data.get("formation", "-")}</span>'
+    "</div></div>",
+    unsafe_allow_html=True,
+)
+
+with st.sidebar:
+    st.markdown("### ⚽ FPL Optimizer")
+    st.caption("Seleção ótima de equipa via otimização linear + análise com IA.")
+    st.markdown("**Legenda**")
+    st.markdown(
+        '<div class="sidebar-legend-item">✅ Selecionado para a equipa ótima</div>'
+        '<div class="sidebar-legend-item">🪑 Risco de rotação</div>'
+        '<div class="sidebar-legend-item">⚠️ Lesão / dúvida</div>'
+        '<div class="sidebar-legend-item">★ Capitão · (V) Vice-capitão</div>'
+        '<div class="sidebar-legend-item"><span class="gw-tag gw-dgw">DGW</span> Jornada dupla</div>'
+        '<div class="sidebar-legend-item"><span class="gw-tag gw-bgw">BGW</span> Jornada em branco</div>',
+        unsafe_allow_html=True,
+    )
+    st.divider()
+    st.caption("🔄 Atualizado automaticamente via GitHub Actions.")
+
 squad = data["squad"]
 
 tab_optimal, tab_current = st.tabs(["🏆 Equipa Ótima", "👤 Minha Equipa"])
 
 with tab_optimal:
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Custo total", f"€{data['cost']}M")
-    col2.metric("Orçamento restante", f"€{100 - data['cost']:.1f}M")
-    col3.metric("Score total", f"{data['score']:.1f}")
-
-    st.divider()
+    c1, c2, c3 = st.columns(3)
+    c1.markdown(stat_card("Custo total", f"€{data['cost']}M", "💰"), unsafe_allow_html=True)
+    c2.markdown(stat_card("Orçamento restante", f"€{100 - data['cost']:.1f}M", "🏦"), unsafe_allow_html=True)
+    c3.markdown(stat_card("Score total", f"{data['score']:.1f}", "📊"), unsafe_allow_html=True)
 
     render_pitch(squad, data.get("formation", ""))
 
-    st.divider()
-
+    section_heading("🏅", "Top jogadores por posição")
     st.caption("Top 10 por posição segundo o modelo de score. ✅ = selecionado para a equipa ótima dentro do orçamento.")
     top_players = [p for group in data.get("top_players", {}).values() for p in group]
     render_squad_tables(top_players)
 
-    st.divider()
-
+    section_heading("📋", "Análise")
     if "analysis" in data:
-        st.subheader("📋 Análise")
         st.write(data["analysis"])
     else:
         st.info(
@@ -244,13 +326,25 @@ with tab_optimal:
             "(campo `analysis`) no fpl_optimizer.py."
         )
 
-    st.divider()
-
+    section_heading("🔄", "Transfers sugeridos")
     if "suggested_transfers" in data and data["suggested_transfers"]:
-        st.subheader("🔄 Transfers sugeridos")
-        df_t = pd.DataFrame(data["suggested_transfers"])
-        df_t.columns = ["Sai", "Entra", "Diferença custo (€M)", "Ganho líquido (pts)", "Usa transfer livre"]
-        st.dataframe(df_t, hide_index=True, use_container_width=True)
+        for t in data["suggested_transfers"]:
+            pill = (
+                '<span class="transfer-pill transfer-pill-free">Transfer livre</span>'
+                if t["uses_free_transfer"]
+                else '<span class="transfer-pill transfer-pill-cost">Extra (-4 pts)</span>'
+            )
+            st.markdown(
+                '<div class="transfer-card">'
+                f'<span class="transfer-out">{t["out"]}</span>'
+                '<span class="transfer-arrow">→</span>'
+                f'<span class="transfer-in">{t["in"]}</span>'
+                f'<span class="fpl-chip">€{t["cost_diff"]:+.1f}M</span>'
+                f'<span class="transfer-pill transfer-pill-gain">Ganho líquido: +{t["net_gain"]:.1f} pts</span>'
+                f"{pill}"
+                "</div>",
+                unsafe_allow_html=True,
+            )
     elif "suggested_transfers" in data:
         st.info("Nenhuma troca vantajosa encontrada esta jornada.")
     else:
@@ -262,13 +356,11 @@ with tab_optimal:
 with tab_current:
     current_squad = data.get("current_squad")
     if current_squad:
-        col1, col2 = st.columns(2)
-        col1.metric("Custo da equipa atual", f"€{data.get('current_squad_cost', 0)}M")
-        col2.metric("Score da equipa atual", f"{data.get('current_squad_score', 0):.1f}")
+        c1, c2 = st.columns(2)
+        c1.markdown(stat_card("Custo da equipa atual", f"€{data.get('current_squad_cost', 0)}M", "💰"), unsafe_allow_html=True)
+        c2.markdown(stat_card("Score da equipa atual", f"{data.get('current_squad_score', 0):.1f}", "📊"), unsafe_allow_html=True)
 
-        st.divider()
         render_pitch(current_squad, data.get("current_formation", ""))
-        st.divider()
         render_squad_tables(current_squad)
     else:
         st.info(
@@ -277,9 +369,7 @@ with tab_current:
             "fantasy.premierleague.com/entry/<ID>/...)."
         )
 
-st.divider()
-
-st.subheader("📈 Histórico de jornadas")
+section_heading("📈", "Histórico de jornadas")
 try:
     with open("history.json") as f:
         history = json.load(f)
@@ -298,5 +388,3 @@ try:
         st.caption("Ainda sem histórico registado.")
 except FileNotFoundError:
     st.caption("Ainda sem `history.json`. É criado automaticamente após a primeira execução do otimizador.")
-
-st.caption("🔄 Equipa atualizada automaticamente todas as sextas via GitHub Actions.")
