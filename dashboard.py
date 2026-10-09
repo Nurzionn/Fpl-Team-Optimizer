@@ -86,7 +86,9 @@ div.block-container { max-width: 1180px; padding-top: 1.5rem; padding-bottom: 3r
 .pitch-circle-half { position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%); width: 110px; height: 55px; border: 2px solid rgba(255,255,255,0.6); border-bottom: none; border-radius: 50% 50% 0 0; z-index: 1; }
 .pitch-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin: 12px 0; position: relative; z-index: 2; }
 .pitch-player { display: flex; flex-direction: column; align-items: center; width: 84px; }
+.pitch-avatar-wrap { position: relative; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; }
 .pitch-badge { width: 30px; height: 30px; object-fit: contain; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.7)); }
+.pitch-team-badge { position: absolute; bottom: -2px; right: -4px; width: 18px; height: 18px; object-fit: contain; background: white; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.9); box-shadow: 0 1px 3px rgba(0,0,0,0.5); padding: 1px; }
 .pitch-name { background: rgba(0,0,0,0.6); color: white; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-top: 3px; white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis; }
 .pitch-sub { color: #eafff0; font-size: 10px; margin-top: 2px; text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
 .bench-strip { background: rgba(120,120,120,0.12); border: 1px solid rgba(120,120,120,0.3); border-radius: 10px; padding: 10px 8px 6px 8px; margin-bottom: 1rem; }
@@ -104,6 +106,11 @@ div.block-container { max-width: 1180px; padding-top: 1.5rem; padding-bottom: 3r
 
 /* --- Tabs --- */
 button[data-baseweb="tab"] { font-weight: 600; }
+
+/* --- History --- */
+.trend-up { color: #1e8e3e; font-weight: 700; }
+.trend-down { color: #c0392b; font-weight: 700; }
+.trend-flat { opacity: 0.45; }
 
 /* --- Sidebar --- */
 .sidebar-legend-item { font-size: 13px; margin-bottom: 4px; }
@@ -212,6 +219,40 @@ def render_squad_tables(squad):
         st.markdown(f'<div style="overflow-x:auto">{table_html}</div>', unsafe_allow_html=True)
 
 
+def render_history_table(history):
+    """Tabela de histórico com indicador de variação de score face à jornada anterior."""
+    rows = sorted(history, key=lambda h: h["gameweek"])
+    rows_html = []
+    prev_score = None
+    for h in rows:
+        score = h["score"]
+        if prev_score is None:
+            trend_html = '<span class="trend-flat">—</span>'
+        else:
+            delta = score - prev_score
+            if abs(delta) < 0.05:
+                trend_html = '<span class="trend-flat">— 0.0</span>'
+            else:
+                css_class = "trend-up" if delta > 0 else "trend-down"
+                arrow = "▲" if delta > 0 else "▼"
+                trend_html = f'<span class="{css_class}">{arrow} {abs(delta):.1f}</span>'
+        prev_score = score
+        rows_html.append(
+            "<tr>"
+            f"<td><span class=\"fpl-chip\">GW {h['gameweek']}</span></td>"
+            f"<td>€{h['cost']}M</td>"
+            f"<td>{score:.1f}</td>"
+            f"<td>{trend_html}</td>"
+            "</tr>"
+        )
+    table_html = (
+        '<table class="fpl-table"><thead><tr>'
+        "<th>Jornada</th><th>Custo</th><th>Score</th><th>Variação</th>"
+        "</tr></thead><tbody>" + "".join(rows_html) + "</tbody></table>"
+    )
+    st.markdown(f'<div style="overflow-x:auto">{table_html}</div>', unsafe_allow_html=True)
+
+
 def render_pitch(squad, formation_label):
     """Mostra o plantel como um campo de futebol: 11 titulares na formação escolhida + banco de 4."""
     starters = [p for p in squad if p.get("is_starting")]
@@ -224,12 +265,17 @@ def render_pitch(squad, formation_label):
 
     def card(p):
         tag = " (C)" if p.get("is_captain") else (" (V)" if p.get("is_vice_captain") else "")
-        photo = player_photo_html(p, "pitch-photo") or team_badge_html(p, "pitch-badge")
+        player_photo = player_photo_html(p, "pitch-photo")
+        if player_photo:
+            # foto real + brasão do clube sobreposto no canto
+            avatar = player_photo + team_badge_html(p, "pitch-team-badge")
+        else:
+            avatar = team_badge_html(p, "pitch-badge")
         return (
             '<div class="pitch-player">'
-            f"{photo}"
+            f'<div class="pitch-avatar-wrap">{avatar}</div>'
             f'<div class="pitch-name">{p["web_name"]}{tag}</div>'
-            f'<div class="pitch-sub">€{p["price"]/10:.1f}M</div>'
+            f'<div class="pitch-sub">{p.get("team_short", "")} · €{p["price"]/10:.1f}M</div>'
             "</div>"
         )
 
@@ -377,13 +423,13 @@ try:
         df_h = pd.DataFrame(history)[["gameweek", "cost", "score"]]
         df_h.columns = ["Jornada", "Custo (€M)", "Score"]
         c1, c2 = st.columns(2)
-        with c1:
-            st.markdown("**Score por jornada**")
-            st.line_chart(df_h.set_index("Jornada")["Score"])
-        with c2:
-            st.markdown("**Custo (€M) por jornada**")
-            st.line_chart(df_h.set_index("Jornada")["Custo (€M)"])
-        st.dataframe(df_h, hide_index=True, use_container_width=True)
+        with c1, st.container(border=True):
+            st.markdown("**📊 Score por jornada**")
+            st.line_chart(df_h.set_index("Jornada")["Score"], color="#1e8e3e")
+        with c2, st.container(border=True):
+            st.markdown("**💰 Custo (€M) por jornada**")
+            st.line_chart(df_h.set_index("Jornada")["Custo (€M)"], color="#4a9eff")
+        render_history_table(history)
     else:
         st.caption("Ainda sem histórico registado.")
 except FileNotFoundError:
