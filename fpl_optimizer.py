@@ -36,6 +36,7 @@ def fetch_players():
             "id": p["id"],
             "name": f"{p['first_name']} {p['second_name']}",
             "web_name": p["web_name"],
+            "code": p["code"],  # usado para a foto do jogador no CDN da Premier League
             "team": teams[p["team"]],
             "team_short": short_names[p["team"]],
             "team_code": codes[p["team"]],

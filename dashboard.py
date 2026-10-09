@@ -18,6 +18,7 @@ st.set_page_config(page_title="FPL Optimizer", page_icon="⚽", layout="centered
 POS_NAMES = {1: "🧤 Guarda-Redes", 2: "🛡️ Defesas", 3: "🎯 Médios", 4: "⚡ Avançados"}
 POS_ORDER = [1, 2, 3, 4]
 BADGE_URL = "https://resources.premierleague.com/premierleague/badges/50/t{code}.png"
+PLAYER_PHOTO_URL = "https://resources.premierleague.com/premierleague/photos/players/110x140/p{code}.png"
 
 st.markdown("""
 <style>
@@ -41,6 +42,8 @@ st.markdown("""
 .gw-bgw { background: #c0392b; }
 .pos-heading { color: #2e7d32; margin: 0.4rem 0 0.6rem 0; font-size: 1.1rem; font-weight: 700; }
 .team-badge { width: 16px; height: 16px; object-fit: contain; vertical-align: middle; margin-right: 5px; }
+.player-photo { width: 24px; height: 24px; object-fit: cover; object-position: top; border-radius: 50%; vertical-align: middle; margin-right: 6px; background: rgba(120,120,120,0.15); }
+.pitch-photo { width: 44px; height: 44px; object-fit: cover; object-position: top; border-radius: 50%; border: 2px solid rgba(255,255,255,0.85); box-shadow: 0 1px 3px rgba(0,0,0,0.5); background: #e8e8e8; }
 .pitch-field { background: repeating-linear-gradient(180deg, #1e6b30, #1e6b30 36px, #26802f 36px, #26802f 72px); border: 3px solid rgba(255,255,255,0.85); border-radius: 14px; padding: 34px 8px 22px 8px; position: relative; margin-bottom: 0.75rem; overflow: hidden; transform: perspective(900px) rotateX(10deg); transform-origin: bottom center; box-shadow: 0 24px 30px -14px rgba(0,0,0,0.55); }
 .pitch-goal { position: absolute; top: -4px; left: 50%; transform: translateX(-50%); width: 64px; height: 8px; border: 3px solid rgba(255,255,255,0.95); border-top: none; background: rgba(255,255,255,0.15); z-index: 1; }
 .pitch-goal-area { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 150px; height: 46px; border: 2px solid rgba(255,255,255,0.7); border-top: none; z-index: 1; }
@@ -91,6 +94,13 @@ def team_badge_html(p, css_class="team-badge"):
     return f'<img class="{css_class}" src="{BADGE_URL.format(code=code)}">'
 
 
+def player_photo_html(p, css_class="player-photo"):
+    code = p.get("code")
+    if not code:
+        return ""
+    return f'<img class="{css_class}" src="{PLAYER_PHOTO_URL.format(code=code)}" loading="lazy">'
+
+
 def render_squad_tables(squad):
     """Constrói e apresenta uma tabela HTML por posição, com barras e badges de dificuldade."""
     for pos in POS_ORDER:
@@ -118,7 +128,7 @@ def render_squad_tables(squad):
 
             rows_html.append(
                 "<tr>"
-                f"<td>{name}</td>"
+                f"<td>{player_photo_html(p)}{name}</td>"
                 f"<td class=\"col-wrap\">{team_badge_html(p)}{p.get('team_short', p['team'])}</td>"
                 f"<td>€{p['price']/10:.1f}M</td>"
                 f"<td>{bar_html(float(p['form']), 10, '#3ec86a')}</td>"
@@ -151,9 +161,10 @@ def render_pitch(squad, formation_label):
 
     def card(p):
         tag = " (C)" if p.get("is_captain") else (" (V)" if p.get("is_vice_captain") else "")
+        photo = player_photo_html(p, "pitch-photo") or team_badge_html(p, "pitch-badge")
         return (
             '<div class="pitch-player">'
-            f"{team_badge_html(p, 'pitch-badge')}"
+            f"{photo}"
             f'<div class="pitch-name">{p["web_name"]}{tag}</div>'
             f'<div class="pitch-sub">€{p["price"]/10:.1f}M</div>'
             "</div>"
