@@ -1,6 +1,65 @@
 {
   "squad": [
     {
+      "id": 109,
+      "name": "Bart Verbruggen",
+      "web_name": "Verbruggen",
+      "code": 489639,
+      "team": "Brighton",
+      "team_short": "BHA",
+      "team_code": 36,
+      "team_id": 5,
+      "position": 1,
+      "price": 45,
+      "total_points": 32,
+      "form": 7.7,
+      "points_per_game": 5.3,
+      "minutes": 525,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.2,
+      "xgc": 9.2,
+      "expected_goals": 0.0,
+      "expected_assists": 0.2,
+      "bps": 134,
+      "bonus": 2,
+      "starts": 6,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 0.1,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 3.989847619047619,
+      "fixtures": [
+        {
+          "opponent": "CRY",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 7
+        },
+        {
+          "opponent": "LIV",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 8
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 9
+        },
+        {
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true
+    },
+    {
       "id": 1,
       "name": "David Raya Mart\u00edn",
       "web_name": "Raya",
@@ -11,32 +70,26 @@
       "team_id": 1,
       "position": 1,
       "price": 61,
-      "total_points": 30,
-      "form": 7.5,
-      "points_per_game": 6.0,
-      "minutes": 450,
+      "total_points": 33,
+      "form": 6.0,
+      "points_per_game": 5.5,
+      "minutes": 540,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.01,
-      "xgc": 4.03,
+      "xgc": 4.71,
       "expected_goals": 0.0,
       "expected_assists": 0.01,
-      "bps": 104,
+      "bps": 122,
       "bonus": 3,
-      "starts": 5,
+      "starts": 6,
       "news": "",
       "penalties_order": null,
-      "xpts90": 0.58,
+      "xpts90": 0.63,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 4.369413333333334,
+      "score": 3.6703931678720134,
       "fixtures": [
-        {
-          "opponent": "LEE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "NFO",
           "is_home": false,
@@ -54,69 +107,75 @@
           "is_home": false,
           "difficulty": 4,
           "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true
-    },
-    {
-      "id": 350,
-      "name": "Alisson Becker",
-      "web_name": "A.Becker",
-      "code": 116535,
-      "team": "Liverpool",
-      "team_short": "LIV",
-      "team_code": 14,
-      "team_id": 14,
-      "position": 1,
-      "price": 55,
-      "total_points": 27,
-      "form": 8.5,
-      "points_per_game": 5.4,
-      "minutes": 450,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 0.0,
-      "xgc": 6.12,
-      "expected_goals": 0.0,
-      "expected_assists": 0.0,
-      "bps": 96,
-      "bonus": 5,
-      "starts": 5,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 0.01,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.319882946745562,
-      "fixtures": [
-        {
-          "opponent": "MCI",
-          "is_home": true,
-          "difficulty": 4,
-          "gw": 6
         },
         {
-          "opponent": "BRE",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 7
-        },
-        {
-          "opponent": "BHA",
+          "opponent": "HUL",
           "is_home": true,
-          "difficulty": 3,
-          "gw": 8
-        },
-        {
-          "opponent": "ARS",
-          "is_home": true,
-          "difficulty": 4,
-          "gw": 9
+          "difficulty": 2,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_starting": false
+    },
+    {
+      "id": 115,
+      "name": "Maxim De Cuyper",
+      "web_name": "De Cuyper",
+      "code": 465730,
+      "team": "Brighton",
+      "team_short": "BHA",
+      "team_code": 36,
+      "team_id": 5,
+      "position": 2,
+      "price": 50,
+      "total_points": 53,
+      "form": 10.7,
+      "points_per_game": 8.8,
+      "minutes": 490,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 2.52,
+      "xgc": 9.06,
+      "expected_goals": 1.85,
+      "expected_assists": 0.67,
+      "bps": 168,
+      "bonus": 8,
+      "starts": 6,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 2.41,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 6.544570068027212,
+      "fixtures": [
+        {
+          "opponent": "CRY",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 7
+        },
+        {
+          "opponent": "LIV",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 8
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 9
+        },
+        {
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true
     },
     {
       "id": 330,
@@ -129,32 +188,26 @@
       "team_id": 13,
       "position": 2,
       "price": 46,
-      "total_points": 42,
-      "form": 10.0,
-      "points_per_game": 8.4,
-      "minutes": 365,
+      "total_points": 43,
+      "form": 7.0,
+      "points_per_game": 7.2,
+      "minutes": 450,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 1.46,
-      "xgc": 2.89,
-      "expected_goals": 1.38,
-      "expected_assists": 0.08,
-      "bps": 122,
+      "xgi": 1.68,
+      "xgc": 5.19,
+      "expected_goals": 1.57,
+      "expected_assists": 0.11,
+      "bps": 123,
       "bonus": 6,
-      "starts": 5,
+      "starts": 6,
       "news": "",
       "penalties_order": null,
-      "xpts90": 2.92,
+      "xpts90": 2.11,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 6.246740388695992,
+      "score": 4.8829789467455615,
       "fixtures": [
-        {
-          "opponent": "ARS",
-          "is_home": false,
-          "difficulty": 5,
-          "gw": 6
-        },
         {
           "opponent": "MUN",
           "is_home": true,
@@ -172,6 +225,71 @@
           "is_home": false,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "TOT",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true
+    },
+    {
+      "id": 8,
+      "name": "Riccardo Calafiori",
+      "web_name": "Calafiori",
+      "code": 466075,
+      "team": "Arsenal",
+      "team_short": "ARS",
+      "team_code": 3,
+      "team_id": 1,
+      "position": 2,
+      "price": 59,
+      "total_points": 38,
+      "form": 5.3,
+      "points_per_game": 6.3,
+      "minutes": 497,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 2.09,
+      "xgc": 4.44,
+      "expected_goals": 1.41,
+      "expected_assists": 0.68,
+      "bps": 98,
+      "bonus": 3,
+      "starts": 6,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 2.48,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 4.163675602310381,
+      "fixtures": [
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 7
+        },
+        {
+          "opponent": "EVE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 8
+        },
+        {
+          "opponent": "LIV",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 9
+        },
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -189,7 +307,7 @@
       "position": 2,
       "price": 62,
       "total_points": 43,
-      "form": 11.0,
+      "form": 7.3,
       "points_per_game": 8.6,
       "minutes": 450,
       "status": "a",
@@ -205,15 +323,9 @@
       "penalties_order": null,
       "xpts90": 0.24,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 5.9585333333333335,
+      "nailedness": 0.83,
+      "score": 4.0859024999999995,
       "fixtures": [
-        {
-          "opponent": "HUL",
-          "is_home": false,
-          "difficulty": 2,
-          "gw": 6
-        },
         {
           "opponent": "CHE",
           "is_home": true,
@@ -231,124 +343,12 @@
           "is_home": false,
           "difficulty": 3,
           "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true
-    },
-    {
-      "id": 115,
-      "name": "Maxim De Cuyper",
-      "web_name": "De Cuyper",
-      "code": 465730,
-      "team": "Brighton",
-      "team_short": "BHA",
-      "team_code": 36,
-      "team_id": 5,
-      "position": 2,
-      "price": 50,
-      "total_points": 38,
-      "form": 8.5,
-      "points_per_game": 7.6,
-      "minutes": 423,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 2.22,
-      "xgc": 8.58,
-      "expected_goals": 1.55,
-      "expected_assists": 0.67,
-      "bps": 132,
-      "bonus": 5,
-      "starts": 5,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 2.41,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 5.690531914893617,
-      "fixtures": [
-        {
-          "opponent": "SUN",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 6
         },
         {
-          "opponent": "CRY",
+          "opponent": "COV",
           "is_home": true,
           "difficulty": 2,
-          "gw": 7
-        },
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 8
-        },
-        {
-          "opponent": "MCI",
-          "is_home": false,
-          "difficulty": 5,
-          "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true
-    },
-    {
-      "id": 391,
-      "name": "Jo\u0161ko Gvardiol",
-      "web_name": "Gvardiol",
-      "code": 477424,
-      "team": "Man City",
-      "team_short": "MCI",
-      "team_code": 43,
-      "team_id": 15,
-      "position": 2,
-      "price": 57,
-      "total_points": 37,
-      "form": 7.5,
-      "points_per_game": 7.4,
-      "minutes": 434,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 0.96,
-      "xgc": 7.25,
-      "expected_goals": 0.22,
-      "expected_assists": 0.74,
-      "bps": 135,
-      "bonus": 6,
-      "starts": 5,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 0.73,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.788548387096774,
-      "fixtures": [
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 6
-        },
-        {
-          "opponent": "IPS",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 7
-        },
-        {
-          "opponent": "AVL",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 8
-        },
-        {
-          "opponent": "BHA",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 9
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -365,32 +365,26 @@
       "team_id": 12,
       "position": 2,
       "price": 40,
-      "total_points": 25,
-      "form": 8.0,
-      "points_per_game": 5.0,
-      "minutes": 450,
+      "total_points": 26,
+      "form": 5.7,
+      "points_per_game": 4.3,
+      "minutes": 526,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 2.05,
-      "xgc": 8.98,
-      "expected_goals": 1.59,
-      "expected_assists": 0.46,
-      "bps": 52,
+      "xgi": 2.11,
+      "xgc": 10.58,
+      "expected_goals": 1.64,
+      "expected_assists": 0.47,
+      "bps": 51,
       "bonus": 1,
-      "starts": 5,
+      "starts": 6,
       "news": "",
       "penalties_order": null,
-      "xpts90": 2.18,
+      "xpts90": 1.92,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 4.660868888888888,
+      "score": 3.6152829531051967,
       "fixtures": [
-        {
-          "opponent": "FUL",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 6
-        },
         {
           "opponent": "MCI",
           "is_home": false,
@@ -408,6 +402,12 @@
           "is_home": false,
           "difficulty": 2,
           "gw": 9
+        },
+        {
+          "opponent": "BOU",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -424,32 +424,26 @@
       "team_id": 5,
       "position": 3,
       "price": 59,
-      "total_points": 47,
-      "form": 15.5,
-      "points_per_game": 9.4,
-      "minutes": 450,
+      "total_points": 54,
+      "form": 12.7,
+      "points_per_game": 9.0,
+      "minutes": 525,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 2.63,
-      "xgc": 8.67,
+      "xgi": 2.81,
+      "xgc": 9.2,
       "expected_goals": 1.77,
-      "expected_assists": 0.86,
-      "bps": 166,
-      "bonus": 9,
-      "starts": 5,
+      "expected_assists": 1.04,
+      "bps": 189,
+      "bonus": 10,
+      "starts": 6,
       "news": "",
       "penalties_order": 1,
-      "xpts90": 2.64,
+      "xpts90": 2.4,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 8.676466666666668,
+      "score": 7.272813333333333,
       "fixtures": [
-        {
-          "opponent": "SUN",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "CRY",
           "is_home": true,
@@ -467,6 +461,12 @@
           "is_home": false,
           "difficulty": 5,
           "gw": 9
+        },
+        {
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -483,32 +483,26 @@
       "team_id": 4,
       "position": 3,
       "price": 62,
-      "total_points": 39,
-      "form": 12.0,
-      "points_per_game": 7.8,
-      "minutes": 447,
+      "total_points": 40,
+      "form": 8.3,
+      "points_per_game": 6.7,
+      "minutes": 498,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 1.84,
-      "xgc": 6.32,
-      "expected_goals": 1.52,
-      "expected_assists": 0.32,
-      "bps": 138,
+      "xgi": 2.26,
+      "xgc": 7.56,
+      "expected_goals": 1.93,
+      "expected_assists": 0.33,
+      "bps": 142,
       "bonus": 6,
-      "starts": 5,
+      "starts": 6,
       "news": "",
       "penalties_order": 2,
-      "xpts90": 1.82,
+      "xpts90": 2.02,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 6.789798838956291,
+      "score": 5.272409638554216,
       "fixtures": [
-        {
-          "opponent": "AVL",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "LIV",
           "is_home": true,
@@ -526,6 +520,71 @@
           "is_home": true,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "BHA",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true
+    },
+    {
+      "id": 40,
+      "name": "Morgan Rogers",
+      "web_name": "Rogers",
+      "code": 244850,
+      "team": "Chelsea",
+      "team_short": "CHE",
+      "team_code": 8,
+      "team_id": 6,
+      "position": 3,
+      "price": 78,
+      "total_points": 39,
+      "form": 6.7,
+      "points_per_game": 6.5,
+      "minutes": 513,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 3.23,
+      "xgc": 10.14,
+      "expected_goals": 1.86,
+      "expected_assists": 1.37,
+      "bps": 173,
+      "bonus": 3,
+      "starts": 6,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 2.35,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 4.776959064327485,
+      "fixtures": [
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 7
+        },
+        {
+          "opponent": "TOT",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 8
+        },
+        {
+          "opponent": "MUN",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 9
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -543,7 +602,7 @@
       "position": 3,
       "price": 84,
       "total_points": 33,
-      "form": 10.0,
+      "form": 6.7,
       "points_per_game": 6.6,
       "minutes": 450,
       "status": "d",
@@ -559,15 +618,9 @@
       "penalties_order": 2,
       "xpts90": 1.13,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 5.5858,
+      "nailedness": 0.83,
+      "score": 3.979104555555555,
       "fixtures": [
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 6
-        },
         {
           "opponent": "IPS",
           "is_home": true,
@@ -585,124 +638,130 @@
           "is_home": true,
           "difficulty": 3,
           "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true
-    },
-    {
-      "id": 286,
-      "name": "Mohamed Belloumi",
-      "web_name": "Belloumi",
-      "code": 540324,
-      "team": "Hull City",
-      "team_short": "HUL",
-      "team_code": 88,
-      "team_id": 11,
-      "position": 3,
-      "price": 51,
-      "total_points": 31,
-      "form": 8.5,
-      "points_per_game": 6.2,
-      "minutes": 394,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 1.15,
-      "xgc": 6.44,
-      "expected_goals": 0.72,
-      "expected_assists": 0.43,
-      "bps": 111,
-      "bonus": 2,
-      "starts": 5,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 1.12,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.944619289340101,
-      "fixtures": [
-        {
-          "opponent": "EVE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
-        {
-          "opponent": "FUL",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 7
-        },
-        {
-          "opponent": "BRE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 8
-        },
-        {
-          "opponent": "IPS",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true
-    },
-    {
-      "id": 12,
-      "name": "Bukayo Saka",
-      "web_name": "Saka",
-      "code": 223340,
-      "team": "Arsenal",
-      "team_short": "ARS",
-      "team_code": 3,
-      "team_id": 1,
-      "position": 3,
-      "price": 96,
-      "total_points": 32,
-      "form": 5.0,
-      "points_per_game": 6.4,
-      "minutes": 416,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 4.2,
-      "xgc": 3.58,
-      "expected_goals": 3.22,
-      "expected_assists": 0.98,
-      "bps": 137,
-      "bonus": 4,
-      "starts": 5,
-      "news": "",
-      "penalties_order": 1,
-      "xpts90": 4.63,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.838584474348763,
-      "fixtures": [
-        {
-          "opponent": "LEE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
         },
         {
           "opponent": "NFO",
           "is_home": false,
           "difficulty": 3,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true
+    },
+    {
+      "id": 41,
+      "name": "Emiliano Buend\u00eda Stati",
+      "web_name": "Buend\u00eda",
+      "code": 195546,
+      "team": "Aston Villa",
+      "team_short": "AVL",
+      "team_code": 7,
+      "team_id": 2,
+      "position": 3,
+      "price": 59,
+      "total_points": 26,
+      "form": 6.3,
+      "points_per_game": 4.3,
+      "minutes": 464,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 1.56,
+      "xgc": 8.62,
+      "expected_goals": 1.23,
+      "expected_assists": 0.33,
+      "bps": 94,
+      "bonus": 4,
+      "starts": 6,
+      "news": "",
+      "penalties_order": 1,
+      "xpts90": 1.73,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 3.861249999999999,
+      "fixtures": [
+        {
+          "opponent": "NEW",
+          "is_home": false,
+          "difficulty": 3,
           "gw": 7
         },
         {
-          "opponent": "EVE",
+          "opponent": "MCI",
           "is_home": true,
-          "difficulty": 3,
+          "difficulty": 4,
           "gw": 8
         },
         {
-          "opponent": "LIV",
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 9
+        },
+        {
+          "opponent": "MUN",
           "is_home": false,
           "difficulty": 4,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_starting": false
+    },
+    {
+      "id": 165,
+      "name": "Jo\u00e3o Pedro Junqueira de Jesus",
+      "web_name": "Jo\u00e3o Pedro",
+      "code": 475168,
+      "team": "Chelsea",
+      "team_short": "CHE",
+      "team_code": 8,
+      "team_id": 6,
+      "position": 4,
+      "price": 77,
+      "total_points": 45,
+      "form": 8.0,
+      "points_per_game": 9.0,
+      "minutes": 431,
+      "status": "a",
+      "chance_of_playing": 100,
+      "xgi": 2.96,
+      "xgc": 7.58,
+      "expected_goals": 2.75,
+      "expected_assists": 0.21,
+      "bps": 202,
+      "bonus": 9,
+      "starts": 5,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 2.43,
+      "reliability": 1.0,
+      "nailedness": 0.83,
+      "score": 5.228595514307811,
+      "fixtures": [
+        {
+          "opponent": "EVE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 7
+        },
+        {
+          "opponent": "TOT",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 8
+        },
+        {
+          "opponent": "MUN",
+          "is_home": true,
+          "difficulty": 4,
           "gw": 9
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -720,7 +779,7 @@
       "position": 4,
       "price": 156,
       "total_points": 39,
-      "form": 7.5,
+      "form": 5.0,
       "points_per_game": 7.8,
       "minutes": 450,
       "status": "a",
@@ -736,15 +795,9 @@
       "penalties_order": 1,
       "xpts90": 4.2,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 5.947533333333333,
+      "nailedness": 0.83,
+      "score": 4.55541674074074,
       "fixtures": [
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 6
-        },
         {
           "opponent": "IPS",
           "is_home": true,
@@ -762,69 +815,16 @@
           "is_home": true,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_starting": true
-    },
-    {
-      "id": 138,
-      "name": "Charalampos Kostoulas",
-      "web_name": "Kostoulas",
-      "code": 647850,
-      "team": "Brighton",
-      "team_short": "BHA",
-      "team_code": 36,
-      "team_id": 5,
-      "position": 4,
-      "price": 56,
-      "total_points": 28,
-      "form": 10.0,
-      "points_per_game": 5.6,
-      "minutes": 353,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 1.41,
-      "xgc": 7.67,
-      "expected_goals": 1.35,
-      "expected_assists": 0.06,
-      "bps": 105,
-      "bonus": 3,
-      "starts": 4,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 1.42,
-      "reliability": 1.0,
-      "nailedness": 0.8,
-      "score": 4.6577892351274786,
-      "fixtures": [
-        {
-          "opponent": "SUN",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 6
-        },
-        {
-          "opponent": "CRY",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 7
-        },
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 8
-        },
-        {
-          "opponent": "MCI",
-          "is_home": false,
-          "difficulty": 5,
-          "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_starting": false
     },
     {
       "id": 316,
@@ -836,33 +836,27 @@
       "team_code": 40,
       "team_id": 12,
       "position": 4,
-      "price": 55,
-      "total_points": 26,
-      "form": 7.0,
-      "points_per_game": 5.2,
-      "minutes": 317,
+      "price": 56,
+      "total_points": 28,
+      "form": 5.3,
+      "points_per_game": 4.7,
+      "minutes": 387,
       "status": "a",
       "chance_of_playing": 100,
-      "xgi": 1.73,
-      "xgc": 4.29,
-      "expected_goals": 1.61,
-      "expected_assists": 0.12,
-      "bps": 110,
+      "xgi": 2.18,
+      "xgc": 5.89,
+      "expected_goals": 2.05,
+      "expected_assists": 0.13,
+      "bps": 118,
       "bonus": 6,
-      "starts": 5,
+      "starts": 6,
       "news": "",
       "penalties_order": 2,
-      "xpts90": 2.03,
-      "reliability": 0.91,
+      "xpts90": 2.1,
+      "reliability": 0.92,
       "nailedness": 1.0,
-      "score": 4.181987800811175,
+      "score": 3.5433662559985226,
       "fixtures": [
-        {
-          "opponent": "FUL",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 6
-        },
         {
           "opponent": "MCI",
           "is_home": false,
@@ -880,138 +874,24 @@
           "is_home": false,
           "difficulty": 2,
           "gw": 9
+        },
+        {
+          "opponent": "BOU",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_starting": false
     }
   ],
-  "cost": 99.0,
-  "score": 81.6570988315713,
-  "gameweek": 6,
-  "formation": "4-5-1",
+  "cost": 99.4,
+  "score": 69.44256595992564,
+  "gameweek": 7,
+  "formation": "4-4-2",
   "top_players": {
     "1": [
-      {
-        "id": 1,
-        "name": "David Raya Mart\u00edn",
-        "web_name": "Raya",
-        "code": 154561,
-        "team": "Arsenal",
-        "team_short": "ARS",
-        "team_code": 3,
-        "team_id": 1,
-        "position": 1,
-        "price": 61,
-        "total_points": 30,
-        "form": 7.5,
-        "points_per_game": 6.0,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.01,
-        "xgc": 4.03,
-        "expected_goals": 0.0,
-        "expected_assists": 0.01,
-        "bps": 104,
-        "bonus": 3,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.58,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.369413333333334,
-        "fixtures": [
-          {
-            "opponent": "LEE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "NFO",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "EVE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "LIV",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
-      },
-      {
-        "id": 350,
-        "name": "Alisson Becker",
-        "web_name": "A.Becker",
-        "code": 116535,
-        "team": "Liverpool",
-        "team_short": "LIV",
-        "team_code": 14,
-        "team_id": 14,
-        "position": 1,
-        "price": 55,
-        "total_points": 27,
-        "form": 8.5,
-        "points_per_game": 5.4,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.0,
-        "xgc": 6.12,
-        "expected_goals": 0.0,
-        "expected_assists": 0.0,
-        "bps": 96,
-        "bonus": 5,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.01,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.319882946745562,
-        "fixtures": [
-          {
-            "opponent": "MCI",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 6
-          },
-          {
-            "opponent": "BRE",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "BHA",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "ARS",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_starting": false,
-        "is_selected": true
-      },
       {
         "id": 109,
         "name": "Bart Verbruggen",
@@ -1023,32 +903,26 @@
         "team_id": 5,
         "position": 1,
         "price": 45,
-        "total_points": 23,
-        "form": 7.0,
-        "points_per_game": 4.6,
-        "minutes": 450,
+        "total_points": 32,
+        "form": 7.7,
+        "points_per_game": 5.3,
+        "minutes": 525,
         "status": "a",
         "chance_of_playing": null,
         "xgi": 0.2,
-        "xgc": 8.67,
+        "xgc": 9.2,
         "expected_goals": 0.0,
         "expected_assists": 0.2,
-        "bps": 107,
-        "bonus": 0,
-        "starts": 5,
+        "bps": 134,
+        "bonus": 2,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
-        "xpts90": 0.12,
+        "xpts90": 0.1,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 3.707333333333333,
+        "score": 3.989847619047619,
         "fixtures": [
-          {
-            "opponent": "SUN",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
           {
             "opponent": "CRY",
             "is_home": true,
@@ -1066,128 +940,77 @@
             "is_home": false,
             "difficulty": 5,
             "gw": 9
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
-        "is_selected": false
+        "is_starting": true,
+        "is_selected": true
       },
       {
-        "id": 226,
-        "name": "Jordan Pickford",
-        "web_name": "Pickford",
-        "code": 111234,
-        "team": "Everton",
-        "team_short": "EVE",
-        "team_code": 11,
-        "team_id": 9,
+        "id": 1,
+        "name": "David Raya Mart\u00edn",
+        "web_name": "Raya",
+        "code": 154561,
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_code": 3,
+        "team_id": 1,
         "position": 1,
-        "price": 55,
-        "total_points": 25,
-        "form": 7.0,
-        "points_per_game": 5.0,
-        "minutes": 450,
+        "price": 61,
+        "total_points": 33,
+        "form": 6.0,
+        "points_per_game": 5.5,
+        "minutes": 540,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 0.02,
-        "xgc": 6.94,
+        "xgi": 0.01,
+        "xgc": 4.71,
         "expected_goals": 0.0,
-        "expected_assists": 0.02,
-        "bps": 121,
-        "bonus": 1,
-        "starts": 5,
+        "expected_assists": 0.01,
+        "bps": 122,
+        "bonus": 3,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
-        "xpts90": 0.01,
+        "xpts90": 0.63,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 3.6581244444444443,
+        "score": 3.6703931678720134,
         "fixtures": [
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "EVE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "LIV",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 9
+          },
           {
             "opponent": "HUL",
-            "is_home": false,
+            "is_home": true,
             "difficulty": 2,
-            "gw": 6
-          },
-          {
-            "opponent": "CHE",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 7
-          },
-          {
-            "opponent": "ARS",
-            "is_home": false,
-            "difficulty": 5,
-            "gw": 8
-          },
-          {
-            "opponent": "NEW",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 9
+            "gw": 10
           }
         ],
         "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 385,
-        "name": "James Trafford",
-        "web_name": "Trafford",
-        "code": 432720,
-        "team": "Leeds",
-        "team_short": "LEE",
-        "team_code": 2,
-        "team_id": 13,
-        "position": 1,
-        "price": 50,
-        "total_points": 28,
-        "form": 6.5,
-        "points_per_game": 5.6,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.0,
-        "xgc": 6.46,
-        "expected_goals": 0.0,
-        "expected_assists": 0.0,
-        "bps": 117,
-        "bonus": 5,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.0,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 3.565393171597633,
-        "fixtures": [
-          {
-            "opponent": "ARS",
-            "is_home": false,
-            "difficulty": 5,
-            "gw": 6
-          },
-          {
-            "opponent": "MUN",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 7
-          },
-          {
-            "opponent": "SUN",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "BOU",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
+        "is_starting": false,
+        "is_selected": true
       },
       {
         "id": 250,
@@ -1200,32 +1023,26 @@
         "team_id": 10,
         "position": 1,
         "price": 45,
-        "total_points": 18,
-        "form": 6.0,
-        "points_per_game": 3.6,
-        "minutes": 450,
+        "total_points": 25,
+        "form": 6.3,
+        "points_per_game": 4.2,
+        "minutes": 526,
         "status": "a",
         "chance_of_playing": null,
         "xgi": 0.0,
-        "xgc": 9.11,
+        "xgc": 9.74,
         "expected_goals": 0.0,
         "expected_assists": 0.0,
-        "bps": 77,
-        "bonus": 2,
-        "starts": 5,
+        "bps": 102,
+        "bonus": 3,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
         "xpts90": 0.0,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 3.2039,
+        "score": 3.423614068441064,
         "fixtures": [
-          {
-            "opponent": "IPS",
-            "is_home": false,
-            "difficulty": 2,
-            "gw": 6
-          },
           {
             "opponent": "HUL",
             "is_home": true,
@@ -1243,286 +1060,48 @@
             "is_home": false,
             "difficulty": 3,
             "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 572,
-        "name": "Konstantinos Tzolakis",
-        "web_name": "Tzolakis",
-        "code": 473284,
-        "team": "Hull City",
-        "team_short": "HUL",
-        "team_code": 88,
-        "team_id": 11,
-        "position": 1,
-        "price": 47,
-        "total_points": 34,
-        "form": 4.0,
-        "points_per_game": 6.8,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.0,
-        "xgc": 7.4,
-        "expected_goals": 0.0,
-        "expected_assists": 0.0,
-        "bps": 129,
-        "bonus": 6,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.0,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 3.1859999999999995,
-        "fixtures": [
-          {
-            "opponent": "EVE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 6
           },
-          {
-            "opponent": "FUL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "BRE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "IPS",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 110,
-        "name": "Carl Rushworth",
-        "web_name": "Rushworth",
-        "code": 472739,
-        "team": "Coventry City",
-        "team_short": "COV",
-        "team_code": 9,
-        "team_id": 7,
-        "position": 1,
-        "price": 45,
-        "total_points": 16,
-        "form": 5.5,
-        "points_per_game": 3.2,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.02,
-        "xgc": 8.63,
-        "expected_goals": 0.0,
-        "expected_assists": 0.02,
-        "bps": 56,
-        "bonus": 2,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.01,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 2.812032222222222,
-        "fixtures": [
           {
             "opponent": "NEW",
             "is_home": true,
             "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "TOT",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "FUL",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 8
-          },
-          {
-            "opponent": "SUN",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
+            "gw": 10
           }
         ],
         "gw_note": "",
         "is_selected": false
       },
       {
-        "id": 82,
-        "name": "Caoimh\u00edn Kelleher",
-        "web_name": "Kelleher",
-        "code": 200720,
-        "team": "Brentford",
-        "team_short": "BRE",
-        "team_code": 94,
-        "team_id": 4,
+        "id": 385,
+        "name": "James Trafford",
+        "web_name": "Trafford",
+        "code": 432720,
+        "team": "Leeds",
+        "team_short": "LEE",
+        "team_code": 2,
+        "team_id": 13,
         "position": 1,
         "price": 50,
-        "total_points": 20,
-        "form": 4.5,
-        "points_per_game": 4.0,
-        "minutes": 450,
+        "total_points": 30,
+        "form": 5.0,
+        "points_per_game": 5.0,
+        "minutes": 540,
         "status": "a",
         "chance_of_playing": null,
         "xgi": 0.01,
-        "xgc": 6.32,
+        "xgc": 9.04,
         "expected_goals": 0.0,
         "expected_assists": 0.01,
-        "bps": 97,
-        "bonus": 0,
-        "starts": 5,
+        "bps": 132,
+        "bonus": 5,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
         "xpts90": 0.01,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 2.6423869033530574,
+        "score": 3.023586111111111,
         "fixtures": [
-          {
-            "opponent": "AVL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "LIV",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 7
-          },
-          {
-            "opponent": "HUL",
-            "is_home": false,
-            "difficulty": 2,
-            "gw": 8
-          },
-          {
-            "opponent": "NFO",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 384,
-        "name": "Gianluigi Donnarumma",
-        "web_name": "Donnarumma",
-        "code": 204936,
-        "team": "Man City",
-        "team_short": "MCI",
-        "team_code": 43,
-        "team_id": 15,
-        "position": 1,
-        "price": 55,
-        "total_points": 19,
-        "form": 4.5,
-        "points_per_game": 3.8,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.0,
-        "xgc": 7.25,
-        "expected_goals": 0.0,
-        "expected_assists": 0.0,
-        "bps": 84,
-        "bonus": 0,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.0,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 2.581,
-        "fixtures": [
-          {
-            "opponent": "LIV",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 6
-          },
-          {
-            "opponent": "IPS",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 7
-          },
-          {
-            "opponent": "AVL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "BHA",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      }
-    ],
-    "2": [
-      {
-        "id": 330,
-        "name": "Jayden Bogle",
-        "web_name": "Bogle",
-        "code": 226182,
-        "team": "Leeds",
-        "team_short": "LEE",
-        "team_code": 2,
-        "team_id": 13,
-        "position": 2,
-        "price": 46,
-        "total_points": 42,
-        "form": 10.0,
-        "points_per_game": 8.4,
-        "minutes": 365,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 1.46,
-        "xgc": 2.89,
-        "expected_goals": 1.38,
-        "expected_assists": 0.08,
-        "bps": 122,
-        "bonus": 6,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 2.92,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 6.246740388695992,
-        "fixtures": [
-          {
-            "opponent": "ARS",
-            "is_home": false,
-            "difficulty": 5,
-            "gw": 6
-          },
           {
             "opponent": "MUN",
             "is_home": true,
@@ -1540,6 +1119,547 @@
             "is_home": false,
             "difficulty": 3,
             "gw": 9
+          },
+          {
+            "opponent": "TOT",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 350,
+        "name": "Alisson Becker",
+        "web_name": "A.Becker",
+        "code": 116535,
+        "team": "Liverpool",
+        "team_short": "LIV",
+        "team_code": 14,
+        "team_id": 14,
+        "position": 1,
+        "price": 55,
+        "total_points": 27,
+        "form": 5.7,
+        "points_per_game": 5.4,
+        "minutes": 450,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 6.12,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 96,
+        "bonus": 5,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.01,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 2.964657714069691,
+        "fixtures": [
+          {
+            "opponent": "BRE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "ARS",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 9
+          },
+          {
+            "opponent": "CRY",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 226,
+        "name": "Jordan Pickford",
+        "web_name": "Pickford",
+        "code": 111234,
+        "team": "Everton",
+        "team_short": "EVE",
+        "team_code": 11,
+        "team_id": 9,
+        "position": 1,
+        "price": 55,
+        "total_points": 25,
+        "form": 4.7,
+        "points_per_game": 5.0,
+        "minutes": 450,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.02,
+        "xgc": 6.94,
+        "expected_goals": 0.0,
+        "expected_assists": 0.02,
+        "bps": 121,
+        "bonus": 1,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.01,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 2.5001012777777776,
+        "fixtures": [
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 7
+          },
+          {
+            "opponent": "ARS",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 8
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "COV",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 572,
+        "name": "Konstantinos Tzolakis",
+        "web_name": "Tzolakis",
+        "code": 473284,
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_code": 88,
+        "team_id": 11,
+        "position": 1,
+        "price": 47,
+        "total_points": 34,
+        "form": 2.7,
+        "points_per_game": 6.8,
+        "minutes": 450,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 7.4,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 129,
+        "bonus": 6,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 2.4525897222222217,
+        "fixtures": [
+          {
+            "opponent": "FUL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 9
+          },
+          {
+            "opponent": "ARS",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 82,
+        "name": "Caoimh\u00edn Kelleher",
+        "web_name": "Kelleher",
+        "code": 200720,
+        "team": "Brentford",
+        "team_short": "BRE",
+        "team_code": 94,
+        "team_id": 4,
+        "position": 1,
+        "price": 50,
+        "total_points": 23,
+        "form": 4.0,
+        "points_per_game": 3.8,
+        "minutes": 523,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.01,
+        "xgc": 7.84,
+        "expected_goals": 0.0,
+        "expected_assists": 0.01,
+        "bps": 111,
+        "bonus": 0,
+        "starts": 6,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.01,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 2.415219885277246,
+        "fixtures": [
+          {
+            "opponent": "LIV",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 7
+          },
+          {
+            "opponent": "HUL",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 8
+          },
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 110,
+        "name": "Carl Rushworth",
+        "web_name": "Rushworth",
+        "code": 472739,
+        "team": "Coventry City",
+        "team_short": "COV",
+        "team_code": 9,
+        "team_id": 7,
+        "position": 1,
+        "price": 45,
+        "total_points": 16,
+        "form": 3.7,
+        "points_per_game": 3.2,
+        "minutes": 450,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.02,
+        "xgc": 8.63,
+        "expected_goals": 0.0,
+        "expected_assists": 0.02,
+        "bps": 56,
+        "bonus": 2,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.01,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 1.9181867962962957,
+        "fixtures": [
+          {
+            "opponent": "TOT",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 8
+          },
+          {
+            "opponent": "SUN",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "EVE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 384,
+        "name": "Gianluigi Donnarumma",
+        "web_name": "Donnarumma",
+        "code": 204936,
+        "team": "Man City",
+        "team_short": "MCI",
+        "team_code": 43,
+        "team_id": 15,
+        "position": 1,
+        "price": 55,
+        "total_points": 19,
+        "form": 3.0,
+        "points_per_game": 3.8,
+        "minutes": 450,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 7.25,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 84,
+        "bonus": 0,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.0,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 1.8464022222222216,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 7
+          },
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      }
+    ],
+    "2": [
+      {
+        "id": 115,
+        "name": "Maxim De Cuyper",
+        "web_name": "De Cuyper",
+        "code": 465730,
+        "team": "Brighton",
+        "team_short": "BHA",
+        "team_code": 36,
+        "team_id": 5,
+        "position": 2,
+        "price": 50,
+        "total_points": 53,
+        "form": 10.7,
+        "points_per_game": 8.8,
+        "minutes": 490,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 2.52,
+        "xgc": 9.06,
+        "expected_goals": 1.85,
+        "expected_assists": 0.67,
+        "bps": 168,
+        "bonus": 8,
+        "starts": 6,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 2.41,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 6.544570068027212,
+        "fixtures": [
+          {
+            "opponent": "CRY",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 7
+          },
+          {
+            "opponent": "LIV",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 8
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 9
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_starting": true,
+        "is_selected": true
+      },
+      {
+        "id": 330,
+        "name": "Jayden Bogle",
+        "web_name": "Bogle",
+        "code": 226182,
+        "team": "Leeds",
+        "team_short": "LEE",
+        "team_code": 2,
+        "team_id": 13,
+        "position": 2,
+        "price": 46,
+        "total_points": 43,
+        "form": 7.0,
+        "points_per_game": 7.2,
+        "minutes": 450,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 1.68,
+        "xgc": 5.19,
+        "expected_goals": 1.57,
+        "expected_assists": 0.11,
+        "bps": 123,
+        "bonus": 6,
+        "starts": 6,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 2.11,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.8829789467455615,
+        "fixtures": [
+          {
+            "opponent": "MUN",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 7
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "TOT",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_starting": true,
+        "is_selected": true
+      },
+      {
+        "id": 8,
+        "name": "Riccardo Calafiori",
+        "web_name": "Calafiori",
+        "code": 466075,
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_code": 3,
+        "team_id": 1,
+        "position": 2,
+        "price": 59,
+        "total_points": 38,
+        "form": 5.3,
+        "points_per_game": 6.3,
+        "minutes": 497,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 2.09,
+        "xgc": 4.44,
+        "expected_goals": 1.41,
+        "expected_assists": 0.68,
+        "bps": 98,
+        "bonus": 3,
+        "starts": 6,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 2.48,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 4.163675602310381,
+        "fixtures": [
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "EVE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "LIV",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 9
+          },
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -1558,7 +1678,7 @@
         "position": 2,
         "price": 62,
         "total_points": 43,
-        "form": 11.0,
+        "form": 7.3,
         "points_per_game": 8.6,
         "minutes": 450,
         "status": "a",
@@ -1574,15 +1694,9 @@
         "penalties_order": null,
         "xpts90": 0.24,
         "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 5.9585333333333335,
+        "nailedness": 0.83,
+        "score": 4.0859024999999995,
         "fixtures": [
-          {
-            "opponent": "HUL",
-            "is_home": false,
-            "difficulty": 2,
-            "gw": 6
-          },
           {
             "opponent": "CHE",
             "is_home": true,
@@ -1600,6 +1714,12 @@
             "is_home": false,
             "difficulty": 3,
             "gw": 9
+          },
+          {
+            "opponent": "COV",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -1607,10 +1727,10 @@
         "is_selected": true
       },
       {
-        "id": 115,
-        "name": "Maxim De Cuyper",
-        "web_name": "De Cuyper",
-        "code": 465730,
+        "id": 504,
+        "name": "Luka Vu\u0161kovi\u0107",
+        "web_name": "Vuskovic",
+        "code": 610799,
         "team": "Brighton",
         "team_short": "BHA",
         "team_code": 36,
@@ -1618,31 +1738,25 @@
         "position": 2,
         "price": 50,
         "total_points": 38,
-        "form": 8.5,
-        "points_per_game": 7.6,
-        "minutes": 423,
+        "form": 6.7,
+        "points_per_game": 6.3,
+        "minutes": 512,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 2.22,
-        "xgc": 8.58,
-        "expected_goals": 1.55,
-        "expected_assists": 0.67,
-        "bps": 132,
-        "bonus": 5,
-        "starts": 5,
+        "xgi": 0.73,
+        "xgc": 8.98,
+        "expected_goals": 0.65,
+        "expected_assists": 0.08,
+        "bps": 117,
+        "bonus": 2,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
-        "xpts90": 2.41,
+        "xpts90": 0.73,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 5.690531914893617,
+        "score": 4.066645833333333,
         "fixtures": [
-          {
-            "opponent": "SUN",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
           {
             "opponent": "CRY",
             "is_home": true,
@@ -1660,71 +1774,16 @@
             "is_home": false,
             "difficulty": 5,
             "gw": 9
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
-      },
-      {
-        "id": 391,
-        "name": "Jo\u0161ko Gvardiol",
-        "web_name": "Gvardiol",
-        "code": 477424,
-        "team": "Man City",
-        "team_short": "MCI",
-        "team_code": 43,
-        "team_id": 15,
-        "position": 2,
-        "price": 57,
-        "total_points": 37,
-        "form": 7.5,
-        "points_per_game": 7.4,
-        "minutes": 434,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.96,
-        "xgc": 7.25,
-        "expected_goals": 0.22,
-        "expected_assists": 0.74,
-        "bps": 135,
-        "bonus": 6,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.73,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.788548387096774,
-        "fixtures": [
-          {
-            "opponent": "LIV",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 6
-          },
-          {
-            "opponent": "IPS",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 7
-          },
-          {
-            "opponent": "AVL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "BHA",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
+        "is_selected": false
       },
       {
         "id": 305,
@@ -1737,32 +1796,26 @@
         "team_id": 12,
         "position": 2,
         "price": 40,
-        "total_points": 25,
-        "form": 8.0,
-        "points_per_game": 5.0,
-        "minutes": 450,
+        "total_points": 26,
+        "form": 5.7,
+        "points_per_game": 4.3,
+        "minutes": 526,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 2.05,
-        "xgc": 8.98,
-        "expected_goals": 1.59,
-        "expected_assists": 0.46,
-        "bps": 52,
+        "xgi": 2.11,
+        "xgc": 10.58,
+        "expected_goals": 1.64,
+        "expected_assists": 0.47,
+        "bps": 51,
         "bonus": 1,
-        "starts": 5,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
-        "xpts90": 2.18,
+        "xpts90": 1.92,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 4.660868888888888,
+        "score": 3.6152829531051967,
         "fixtures": [
-          {
-            "opponent": "FUL",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 6
-          },
           {
             "opponent": "MCI",
             "is_home": false,
@@ -1780,6 +1833,12 @@
             "is_home": false,
             "difficulty": 2,
             "gw": 9
+          },
+          {
+            "opponent": "BOU",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -1787,42 +1846,154 @@
         "is_selected": true
       },
       {
-        "id": 504,
-        "name": "Luka Vu\u0161kovi\u0107",
-        "web_name": "Vuskovic",
-        "code": 610799,
-        "team": "Brighton",
-        "team_short": "BHA",
-        "team_code": 36,
-        "team_id": 5,
+        "id": 391,
+        "name": "Jo\u0161ko Gvardiol",
+        "web_name": "Gvardiol",
+        "code": 477424,
+        "team": "Man City",
+        "team_short": "MCI",
+        "team_code": 43,
+        "team_id": 15,
         "position": 2,
-        "price": 50,
-        "total_points": 32,
-        "form": 7.0,
-        "points_per_game": 6.4,
-        "minutes": 437,
+        "price": 57,
+        "total_points": 37,
+        "form": 5.0,
+        "points_per_game": 7.4,
+        "minutes": 434,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 0.53,
-        "xgc": 8.45,
-        "expected_goals": 0.46,
-        "expected_assists": 0.07,
-        "bps": 98,
-        "bonus": 2,
+        "xgi": 0.96,
+        "xgc": 7.25,
+        "expected_goals": 0.22,
+        "expected_assists": 0.74,
+        "bps": 135,
+        "bonus": 6,
         "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.73,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 3.5145838709677415,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 7
+          },
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 332,
+        "name": "James Justin",
+        "web_name": "Justin",
+        "code": 220627,
+        "team": "Leeds",
+        "team_short": "LEE",
+        "team_code": 2,
+        "team_id": 13,
+        "position": 2,
+        "price": 45,
+        "total_points": 32,
+        "form": 5.3,
+        "points_per_game": 5.3,
+        "minutes": 528,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.81,
+        "xgc": 7.95,
+        "expected_goals": 0.39,
+        "expected_assists": 0.42,
+        "bps": 103,
+        "bonus": 4,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
         "xpts90": 0.61,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 4.300778032036614,
+        "score": 3.3655700757575753,
         "fixtures": [
+          {
+            "opponent": "MUN",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 7
+          },
           {
             "opponent": "SUN",
             "is_home": false,
             "difficulty": 3,
-            "gw": 6
+            "gw": 8
           },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "TOT",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 114,
+        "name": "Olivier Boscagli",
+        "web_name": "Boscagli",
+        "code": 204120,
+        "team": "Brighton",
+        "team_short": "BHA",
+        "team_code": 36,
+        "team_id": 5,
+        "position": 2,
+        "price": 45,
+        "total_points": 24,
+        "form": 5.7,
+        "points_per_game": 4.0,
+        "minutes": 504,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.66,
+        "xgc": 8.93,
+        "expected_goals": 0.07,
+        "expected_assists": 0.59,
+        "bps": 114,
+        "bonus": 0,
+        "starts": 6,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.39,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.0741726190476193,
+        "fixtures": [
           {
             "opponent": "CRY",
             "is_home": true,
@@ -1840,242 +2011,71 @@
             "is_home": false,
             "difficulty": 5,
             "gw": 9
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
         "is_selected": false
       },
       {
-        "id": 449,
-        "name": "Lewis Hall",
-        "web_name": "Hall",
-        "code": 487838,
-        "team": "Newcastle",
-        "team_short": "NEW",
-        "team_code": 4,
-        "team_id": 17,
+        "id": 257,
+        "name": "Calvin Bassey",
+        "web_name": "Bassey",
+        "code": 232892,
+        "team": "Fulham",
+        "team_short": "FUL",
+        "team_code": 54,
+        "team_id": 10,
         "position": 2,
-        "price": 53,
-        "total_points": 31,
-        "form": 6.5,
-        "points_per_game": 6.2,
-        "minutes": 449,
+        "price": 45,
+        "total_points": 20,
+        "form": 5.7,
+        "points_per_game": 3.3,
+        "minutes": 526,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 1.04,
-        "xgc": 9.12,
-        "expected_goals": 0.25,
-        "expected_assists": 0.79,
-        "bps": 127,
-        "bonus": 6,
-        "starts": 5,
+        "xgi": 0.23,
+        "xgc": 9.74,
+        "expected_goals": 0.13,
+        "expected_assists": 0.1,
+        "bps": 90,
+        "bonus": 1,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
-        "xpts90": 0.78,
+        "xpts90": 0.18,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 4.2116152561247215,
+        "score": 3.024326996197718,
         "fixtures": [
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 7
+          },
           {
             "opponent": "COV",
             "is_home": false,
             "difficulty": 2,
-            "gw": 6
+            "gw": 8
           },
           {
             "opponent": "AVL",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "CRY",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "EVE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 356,
-        "name": "Virgil van Dijk",
-        "web_name": "Virgil",
-        "code": 97032,
-        "team": "Liverpool",
-        "team_short": "LIV",
-        "team_code": 14,
-        "team_id": 14,
-        "position": 2,
-        "price": 65,
-        "total_points": 25,
-        "form": 8.0,
-        "points_per_game": 5.0,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.33,
-        "xgc": 6.12,
-        "expected_goals": 0.25,
-        "expected_assists": 0.08,
-        "bps": 96,
-        "bonus": 0,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.36,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.152126280078895,
-        "fixtures": [
-          {
-            "opponent": "MCI",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 6
-          },
-          {
-            "opponent": "BRE",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "BHA",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "ARS",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 233,
-        "name": "Vitalii Mykolenko",
-        "web_name": "Mykolenko",
-        "code": 224967,
-        "team": "Everton",
-        "team_short": "EVE",
-        "team_code": 11,
-        "team_id": 9,
-        "position": 2,
-        "price": 46,
-        "total_points": 27,
-        "form": 8.0,
-        "points_per_game": 5.4,
-        "minutes": 450,
-        "status": "d",
-        "chance_of_playing": 75,
-        "xgi": 0.2,
-        "xgc": 6.94,
-        "expected_goals": 0.04,
-        "expected_assists": 0.16,
-        "bps": 109,
-        "bonus": 3,
-        "starts": 5,
-        "news": "Leg injury - 75% chance of playing",
-        "penalties_order": null,
-        "xpts90": 0.14,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.123671111111111,
-        "fixtures": [
-          {
-            "opponent": "HUL",
-            "is_home": false,
-            "difficulty": 2,
-            "gw": 6
-          },
-          {
-            "opponent": "CHE",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 7
-          },
-          {
-            "opponent": "ARS",
-            "is_home": false,
-            "difficulty": 5,
-            "gw": 8
-          },
-          {
-            "opponent": "NEW",
             "is_home": false,
             "difficulty": 3,
             "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 176,
-        "name": "Jay Dasilva",
-        "web_name": "Dasilva",
-        "code": 173878,
-        "team": "Coventry City",
-        "team_short": "COV",
-        "team_code": 9,
-        "team_id": 7,
-        "position": 2,
-        "price": 40,
-        "total_points": 20,
-        "form": 7.5,
-        "points_per_game": 4.0,
-        "minutes": 444,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 1.02,
-        "xgc": 8.63,
-        "expected_goals": 0.5,
-        "expected_assists": 0.52,
-        "bps": 54,
-        "bonus": 3,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.92,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.00443018018018,
-        "fixtures": [
+          },
           {
             "opponent": "NEW",
             "is_home": true,
             "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "TOT",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "FUL",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 8
-          },
-          {
-            "opponent": "SUN",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -2094,32 +2094,26 @@
         "team_id": 5,
         "position": 3,
         "price": 59,
-        "total_points": 47,
-        "form": 15.5,
-        "points_per_game": 9.4,
-        "minutes": 450,
+        "total_points": 54,
+        "form": 12.7,
+        "points_per_game": 9.0,
+        "minutes": 525,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 2.63,
-        "xgc": 8.67,
+        "xgi": 2.81,
+        "xgc": 9.2,
         "expected_goals": 1.77,
-        "expected_assists": 0.86,
-        "bps": 166,
-        "bonus": 9,
-        "starts": 5,
+        "expected_assists": 1.04,
+        "bps": 189,
+        "bonus": 10,
+        "starts": 6,
         "news": "",
         "penalties_order": 1,
-        "xpts90": 2.64,
+        "xpts90": 2.4,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 8.676466666666668,
+        "score": 7.272813333333333,
         "fixtures": [
-          {
-            "opponent": "SUN",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
           {
             "opponent": "CRY",
             "is_home": true,
@@ -2137,6 +2131,12 @@
             "is_home": false,
             "difficulty": 5,
             "gw": 9
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -2154,32 +2154,26 @@
         "team_id": 4,
         "position": 3,
         "price": 62,
-        "total_points": 39,
-        "form": 12.0,
-        "points_per_game": 7.8,
-        "minutes": 447,
+        "total_points": 40,
+        "form": 8.3,
+        "points_per_game": 6.7,
+        "minutes": 498,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 1.84,
-        "xgc": 6.32,
-        "expected_goals": 1.52,
-        "expected_assists": 0.32,
-        "bps": 138,
+        "xgi": 2.26,
+        "xgc": 7.56,
+        "expected_goals": 1.93,
+        "expected_assists": 0.33,
+        "bps": 142,
         "bonus": 6,
-        "starts": 5,
+        "starts": 6,
         "news": "",
         "penalties_order": 2,
-        "xpts90": 1.82,
+        "xpts90": 2.02,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 6.789798838956291,
+        "score": 5.272409638554216,
         "fixtures": [
-          {
-            "opponent": "AVL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
           {
             "opponent": "LIV",
             "is_home": true,
@@ -2197,186 +2191,12 @@
             "is_home": true,
             "difficulty": 3,
             "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
-      },
-      {
-        "id": 397,
-        "name": "Antoine Semenyo",
-        "web_name": "Semenyo",
-        "code": 437730,
-        "team": "Man City",
-        "team_short": "MCI",
-        "team_code": 43,
-        "team_id": 15,
-        "position": 3,
-        "price": 84,
-        "total_points": 33,
-        "form": 10.0,
-        "points_per_game": 6.6,
-        "minutes": 450,
-        "status": "d",
-        "chance_of_playing": 75,
-        "xgi": 1.49,
-        "xgc": 7.25,
-        "expected_goals": 0.33,
-        "expected_assists": 1.16,
-        "bps": 147,
-        "bonus": 2,
-        "starts": 5,
-        "news": "Ankle injury - 75% chance of playing",
-        "penalties_order": 2,
-        "xpts90": 1.13,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 5.5858,
-        "fixtures": [
-          {
-            "opponent": "LIV",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 6
-          },
-          {
-            "opponent": "IPS",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 7
-          },
-          {
-            "opponent": "AVL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 8
           },
           {
             "opponent": "BHA",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
-      },
-      {
-        "id": 286,
-        "name": "Mohamed Belloumi",
-        "web_name": "Belloumi",
-        "code": 540324,
-        "team": "Hull City",
-        "team_short": "HUL",
-        "team_code": 88,
-        "team_id": 11,
-        "position": 3,
-        "price": 51,
-        "total_points": 31,
-        "form": 8.5,
-        "points_per_game": 6.2,
-        "minutes": 394,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 1.15,
-        "xgc": 6.44,
-        "expected_goals": 0.72,
-        "expected_assists": 0.43,
-        "bps": 111,
-        "bonus": 2,
-        "starts": 5,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 1.12,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.944619289340101,
-        "fixtures": [
-          {
-            "opponent": "EVE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "FUL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "BRE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "IPS",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
-      },
-      {
-        "id": 12,
-        "name": "Bukayo Saka",
-        "web_name": "Saka",
-        "code": 223340,
-        "team": "Arsenal",
-        "team_short": "ARS",
-        "team_code": 3,
-        "team_id": 1,
-        "position": 3,
-        "price": 96,
-        "total_points": 32,
-        "form": 5.0,
-        "points_per_game": 6.4,
-        "minutes": 416,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 4.2,
-        "xgc": 3.58,
-        "expected_goals": 3.22,
-        "expected_assists": 0.98,
-        "bps": 137,
-        "bonus": 4,
-        "starts": 5,
-        "news": "",
-        "penalties_order": 1,
-        "xpts90": 4.63,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.838584474348763,
-        "fixtures": [
-          {
-            "opponent": "LEE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "NFO",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "EVE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "LIV",
             "is_home": false,
             "difficulty": 4,
-            "gw": 9
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -2394,32 +2214,26 @@
         "team_id": 6,
         "position": 3,
         "price": 78,
-        "total_points": 29,
-        "form": 5.0,
-        "points_per_game": 5.8,
-        "minutes": 437,
+        "total_points": 39,
+        "form": 6.7,
+        "points_per_game": 6.5,
+        "minutes": 513,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 2.95,
-        "xgc": 8.73,
-        "expected_goals": 1.72,
-        "expected_assists": 1.23,
-        "bps": 135,
-        "bonus": 2,
-        "starts": 5,
+        "xgi": 3.23,
+        "xgc": 10.14,
+        "expected_goals": 1.86,
+        "expected_assists": 1.37,
+        "bps": 173,
+        "bonus": 3,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
-        "xpts90": 2.53,
+        "xpts90": 2.35,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 4.119547292143402,
+        "score": 4.776959064327485,
         "fixtures": [
-          {
-            "opponent": "BOU",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 6
-          },
           {
             "opponent": "EVE",
             "is_home": false,
@@ -2437,286 +2251,108 @@
             "is_home": true,
             "difficulty": 4,
             "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 480,
-        "name": "Morgan Gibbs-White",
-        "web_name": "Gibbs-White",
-        "code": 222531,
-        "team": "Nott'm Forest",
-        "team_short": "NFO",
-        "team_code": 17,
-        "team_id": 18,
-        "position": 3,
-        "price": 80,
-        "total_points": 28,
-        "form": 5.0,
-        "points_per_game": 5.6,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": 100,
-        "xgi": 2.98,
-        "xgc": 4.77,
-        "expected_goals": 1.56,
-        "expected_assists": 1.42,
-        "bps": 116,
-        "bonus": 6,
-        "starts": 5,
-        "news": "",
-        "penalties_order": 1,
-        "xpts90": 2.83,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.077184694280079,
-        "fixtures": [
-          {
-            "opponent": "CRY",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "ARS",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 7
-          },
-          {
-            "opponent": "IPS",
-            "is_home": false,
-            "difficulty": 2,
-            "gw": 8
-          },
-          {
-            "opponent": "BRE",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 68,
-        "name": "Marcus Tavernier",
-        "web_name": "Tavernier",
-        "code": 201658,
-        "team": "Bournemouth",
-        "team_short": "BOU",
-        "team_code": 91,
-        "team_id": 3,
-        "position": 3,
-        "price": 61,
-        "total_points": 31,
-        "form": 5.0,
-        "points_per_game": 6.2,
-        "minutes": 424,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 2.62,
-        "xgc": 6.54,
-        "expected_goals": 1.7,
-        "expected_assists": 0.92,
-        "bps": 153,
-        "bonus": 8,
-        "starts": 5,
-        "news": "",
-        "penalties_order": 3,
-        "xpts90": 2.39,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 3.9877735849056606,
-        "fixtures": [
-          {
-            "opponent": "CHE",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 6
           },
           {
             "opponent": "SUN",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "MUN",
             "is_home": false,
-            "difficulty": 4,
-            "gw": 8
-          },
-          {
-            "opponent": "LEE",
-            "is_home": true,
             "difficulty": 3,
-            "gw": 9
+            "gw": 10
           }
         ],
         "gw_note": "",
-        "is_selected": false
+        "is_starting": true,
+        "is_selected": true
       },
       {
-        "id": 41,
-        "name": "Emiliano Buend\u00eda Stati",
-        "web_name": "Buend\u00eda",
-        "code": 195546,
-        "team": "Aston Villa",
-        "team_short": "AVL",
-        "team_code": 7,
-        "team_id": 2,
+        "id": 12,
+        "name": "Bukayo Saka",
+        "web_name": "Saka",
+        "code": 223340,
+        "team": "Arsenal",
+        "team_short": "ARS",
+        "team_code": 3,
+        "team_id": 1,
         "position": 3,
-        "price": 59,
-        "total_points": 21,
-        "form": 7.0,
-        "points_per_game": 4.2,
-        "minutes": 401,
+        "price": 96,
+        "total_points": 34,
+        "form": 4.0,
+        "points_per_game": 5.7,
+        "minutes": 506,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 1.16,
-        "xgc": 7.86,
-        "expected_goals": 0.92,
-        "expected_assists": 0.24,
-        "bps": 73,
-        "bonus": 3,
-        "starts": 5,
-        "news": "",
-        "penalties_order": 1,
-        "xpts90": 1.54,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 3.950854322527016,
-        "fixtures": [
-          {
-            "opponent": "BRE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "NEW",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "MCI",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 8
-          },
-          {
-            "opponent": "FUL",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 428,
-        "name": "Matheus Santos Carneiro da Cunha",
-        "web_name": "Cunha",
-        "code": 430871,
-        "team": "Man Utd",
-        "team_short": "MUN",
-        "team_code": 1,
-        "team_id": 16,
-        "position": 3,
-        "price": 79,
-        "total_points": 26,
-        "form": 6.0,
-        "points_per_game": 5.2,
-        "minutes": 407,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 1.46,
-        "xgc": 5.44,
-        "expected_goals": 0.63,
-        "expected_assists": 0.83,
-        "bps": 95,
+        "xgi": 4.56,
+        "xgc": 4.26,
+        "expected_goals": 3.52,
+        "expected_assists": 1.04,
+        "bps": 146,
         "bonus": 4,
-        "starts": 5,
+        "starts": 6,
         "news": "",
-        "penalties_order": null,
-        "xpts90": 1.25,
+        "penalties_order": 1,
+        "xpts90": 4.21,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 3.9099464001989035,
+        "score": 4.104804705455775,
         "fixtures": [
           {
-            "opponent": "TOT",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 6
-          },
-          {
-            "opponent": "LEE",
+            "opponent": "NFO",
             "is_home": false,
             "difficulty": 3,
             "gw": 7
           },
           {
-            "opponent": "BOU",
+            "opponent": "EVE",
             "is_home": true,
             "difficulty": 3,
             "gw": 8
           },
-          {
-            "opponent": "CHE",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      }
-    ],
-    "4": [
-      {
-        "id": 411,
-        "name": "Erling Haaland",
-        "web_name": "Haaland",
-        "code": 223094,
-        "team": "Man City",
-        "team_short": "MCI",
-        "team_code": 43,
-        "team_id": 15,
-        "position": 4,
-        "price": 156,
-        "total_points": 39,
-        "form": 7.5,
-        "points_per_game": 7.8,
-        "minutes": 450,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 4.95,
-        "xgc": 7.25,
-        "expected_goals": 4.42,
-        "expected_assists": 0.53,
-        "bps": 167,
-        "bonus": 9,
-        "starts": 5,
-        "news": "",
-        "penalties_order": 1,
-        "xpts90": 4.2,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 5.947533333333333,
-        "fixtures": [
           {
             "opponent": "LIV",
             "is_home": false,
             "difficulty": 4,
-            "gw": 6
+            "gw": 9
           },
+          {
+            "opponent": "HUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 397,
+        "name": "Antoine Semenyo",
+        "web_name": "Semenyo",
+        "code": 437730,
+        "team": "Man City",
+        "team_short": "MCI",
+        "team_code": 43,
+        "team_id": 15,
+        "position": 3,
+        "price": 84,
+        "total_points": 33,
+        "form": 6.7,
+        "points_per_game": 6.6,
+        "minutes": 450,
+        "status": "d",
+        "chance_of_playing": 75,
+        "xgi": 1.49,
+        "xgc": 7.25,
+        "expected_goals": 0.33,
+        "expected_assists": 1.16,
+        "bps": 147,
+        "bonus": 2,
+        "starts": 5,
+        "news": "Ankle injury - 75% chance of playing",
+        "penalties_order": 2,
+        "xpts90": 1.13,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 3.979104555555555,
+        "fixtures": [
           {
             "opponent": "IPS",
             "is_home": true,
@@ -2734,6 +2370,12 @@
             "is_home": true,
             "difficulty": 3,
             "gw": 9
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -2741,102 +2383,36 @@
         "is_selected": true
       },
       {
-        "id": 138,
-        "name": "Charalampos Kostoulas",
-        "web_name": "Kostoulas",
-        "code": 647850,
-        "team": "Brighton",
-        "team_short": "BHA",
-        "team_code": 36,
-        "team_id": 5,
-        "position": 4,
-        "price": 56,
-        "total_points": 28,
-        "form": 10.0,
-        "points_per_game": 5.6,
-        "minutes": 353,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 1.41,
-        "xgc": 7.67,
-        "expected_goals": 1.35,
-        "expected_assists": 0.06,
-        "bps": 105,
-        "bonus": 3,
-        "starts": 4,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 1.42,
-        "reliability": 1.0,
-        "nailedness": 0.8,
-        "score": 4.6577892351274786,
-        "fixtures": [
-          {
-            "opponent": "SUN",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "CRY",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 7
-          },
-          {
-            "opponent": "LIV",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 8
-          },
-          {
-            "opponent": "MCI",
-            "is_home": false,
-            "difficulty": 5,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_starting": false,
-        "is_selected": true
-      },
-      {
-        "id": 165,
-        "name": "Jo\u00e3o Pedro Junqueira de Jesus",
-        "web_name": "Jo\u00e3o Pedro",
-        "code": 475168,
+        "id": 154,
+        "name": "Cole Palmer",
+        "web_name": "Palmer",
+        "code": 244851,
         "team": "Chelsea",
         "team_short": "CHE",
         "team_code": 8,
         "team_id": 6,
-        "position": 4,
-        "price": 77,
-        "total_points": 33,
-        "form": 6.0,
-        "points_per_game": 8.2,
-        "minutes": 360,
+        "position": 3,
+        "price": 97,
+        "total_points": 36,
+        "form": 5.0,
+        "points_per_game": 6.0,
+        "minutes": 518,
         "status": "a",
         "chance_of_playing": 100,
-        "xgi": 2.36,
-        "xgc": 6.17,
-        "expected_goals": 2.17,
-        "expected_assists": 0.19,
-        "bps": 141,
-        "bonus": 7,
-        "starts": 4,
+        "xgi": 2.18,
+        "xgc": 10.14,
+        "expected_goals": 1.31,
+        "expected_assists": 0.87,
+        "bps": 181,
+        "bonus": 3,
+        "starts": 6,
         "news": "",
-        "penalties_order": null,
-        "xpts90": 2.31,
+        "penalties_order": 1,
+        "xpts90": 1.94,
         "reliability": 1.0,
-        "nailedness": 0.8,
-        "score": 4.337786249999998,
+        "nailedness": 1.0,
+        "score": 3.937277992277992,
         "fixtures": [
-          {
-            "opponent": "BOU",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 6
-          },
           {
             "opponent": "EVE",
             "is_home": false,
@@ -2854,10 +2430,375 @@
             "is_home": true,
             "difficulty": 4,
             "gw": 9
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
         "is_selected": false
+      },
+      {
+        "id": 41,
+        "name": "Emiliano Buend\u00eda Stati",
+        "web_name": "Buend\u00eda",
+        "code": 195546,
+        "team": "Aston Villa",
+        "team_short": "AVL",
+        "team_code": 7,
+        "team_id": 2,
+        "position": 3,
+        "price": 59,
+        "total_points": 26,
+        "form": 6.3,
+        "points_per_game": 4.3,
+        "minutes": 464,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 1.56,
+        "xgc": 8.62,
+        "expected_goals": 1.23,
+        "expected_assists": 0.33,
+        "bps": 94,
+        "bonus": 4,
+        "starts": 6,
+        "news": "",
+        "penalties_order": 1,
+        "xpts90": 1.73,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.861249999999999,
+        "fixtures": [
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "MCI",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 8
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 9
+          },
+          {
+            "opponent": "MUN",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_starting": false,
+        "is_selected": true
+      },
+      {
+        "id": 286,
+        "name": "Mohamed Belloumi",
+        "web_name": "Belloumi",
+        "code": 540324,
+        "team": "Hull City",
+        "team_short": "HUL",
+        "team_code": 88,
+        "team_id": 11,
+        "position": 3,
+        "price": 51,
+        "total_points": 31,
+        "form": 5.7,
+        "points_per_game": 6.2,
+        "minutes": 394,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 1.15,
+        "xgc": 6.44,
+        "expected_goals": 0.72,
+        "expected_assists": 0.43,
+        "bps": 111,
+        "bonus": 2,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 1.12,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 3.560448378454596,
+        "fixtures": [
+          {
+            "opponent": "FUL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 9
+          },
+          {
+            "opponent": "ARS",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 127,
+        "name": "Diego G\u00f3mez Amarilla",
+        "web_name": "Gomez",
+        "code": 514254,
+        "team": "Brighton",
+        "team_short": "BHA",
+        "team_code": 36,
+        "team_id": 5,
+        "position": 3,
+        "price": 50,
+        "total_points": 29,
+        "form": 5.3,
+        "points_per_game": 4.8,
+        "minutes": 508,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 1.76,
+        "xgc": 9.02,
+        "expected_goals": 0.97,
+        "expected_assists": 0.79,
+        "bps": 102,
+        "bonus": 0,
+        "starts": 6,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 1.28,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.382343832020997,
+        "fixtures": [
+          {
+            "opponent": "CRY",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 7
+          },
+          {
+            "opponent": "LIV",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 8
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 9
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 68,
+        "name": "Marcus Tavernier",
+        "web_name": "Tavernier",
+        "code": 201658,
+        "team": "Bournemouth",
+        "team_short": "BOU",
+        "team_code": 91,
+        "team_id": 3,
+        "position": 3,
+        "price": 61,
+        "total_points": 32,
+        "form": 3.7,
+        "points_per_game": 5.3,
+        "minutes": 496,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 2.66,
+        "xgc": 7.62,
+        "expected_goals": 1.7,
+        "expected_assists": 0.96,
+        "bps": 158,
+        "bonus": 8,
+        "starts": 6,
+        "news": "",
+        "penalties_order": 3,
+        "xpts90": 2.06,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.279456317204301,
+        "fixtures": [
+          {
+            "opponent": "SUN",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "MUN",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 8
+          },
+          {
+            "opponent": "LEE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "IPS",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      }
+    ],
+    "4": [
+      {
+        "id": 165,
+        "name": "Jo\u00e3o Pedro Junqueira de Jesus",
+        "web_name": "Jo\u00e3o Pedro",
+        "code": 475168,
+        "team": "Chelsea",
+        "team_short": "CHE",
+        "team_code": 8,
+        "team_id": 6,
+        "position": 4,
+        "price": 77,
+        "total_points": 45,
+        "form": 8.0,
+        "points_per_game": 9.0,
+        "minutes": 431,
+        "status": "a",
+        "chance_of_playing": 100,
+        "xgi": 2.96,
+        "xgc": 7.58,
+        "expected_goals": 2.75,
+        "expected_assists": 0.21,
+        "bps": 202,
+        "bonus": 9,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 2.43,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 5.228595514307811,
+        "fixtures": [
+          {
+            "opponent": "EVE",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "TOT",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 8
+          },
+          {
+            "opponent": "MUN",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 9
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_starting": true,
+        "is_selected": true
+      },
+      {
+        "id": 411,
+        "name": "Erling Haaland",
+        "web_name": "Haaland",
+        "code": 223094,
+        "team": "Man City",
+        "team_short": "MCI",
+        "team_code": 43,
+        "team_id": 15,
+        "position": 4,
+        "price": 156,
+        "total_points": 39,
+        "form": 5.0,
+        "points_per_game": 7.8,
+        "minutes": 450,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 4.95,
+        "xgc": 7.25,
+        "expected_goals": 4.42,
+        "expected_assists": 0.53,
+        "bps": 167,
+        "bonus": 9,
+        "starts": 5,
+        "news": "",
+        "penalties_order": 1,
+        "xpts90": 4.2,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 4.55541674074074,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 7
+          },
+          {
+            "opponent": "AVL",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 8
+          },
+          {
+            "opponent": "BHA",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_starting": true,
+        "is_selected": true
       },
       {
         "id": 316,
@@ -2869,33 +2810,27 @@
         "team_code": 40,
         "team_id": 12,
         "position": 4,
-        "price": 55,
-        "total_points": 26,
-        "form": 7.0,
-        "points_per_game": 5.2,
-        "minutes": 317,
+        "price": 56,
+        "total_points": 28,
+        "form": 5.3,
+        "points_per_game": 4.7,
+        "minutes": 387,
         "status": "a",
         "chance_of_playing": 100,
-        "xgi": 1.73,
-        "xgc": 4.29,
-        "expected_goals": 1.61,
-        "expected_assists": 0.12,
-        "bps": 110,
+        "xgi": 2.18,
+        "xgc": 5.89,
+        "expected_goals": 2.05,
+        "expected_assists": 0.13,
+        "bps": 118,
         "bonus": 6,
-        "starts": 5,
+        "starts": 6,
         "news": "",
         "penalties_order": 2,
-        "xpts90": 2.03,
-        "reliability": 0.91,
+        "xpts90": 2.1,
+        "reliability": 0.92,
         "nailedness": 1.0,
-        "score": 4.181987800811175,
+        "score": 3.5433662559985226,
         "fixtures": [
-          {
-            "opponent": "FUL",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 6
-          },
           {
             "opponent": "MCI",
             "is_home": false,
@@ -2913,11 +2848,76 @@
             "is_home": false,
             "difficulty": 2,
             "gw": 9
+          },
+          {
+            "opponent": "BOU",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
           }
         ],
         "gw_note": "",
         "is_starting": false,
         "is_selected": true
+      },
+      {
+        "id": 138,
+        "name": "Charalampos Kostoulas",
+        "web_name": "Kostoulas",
+        "code": 647850,
+        "team": "Brighton",
+        "team_short": "BHA",
+        "team_code": 36,
+        "team_id": 5,
+        "position": 4,
+        "price": 56,
+        "total_points": 29,
+        "form": 7.0,
+        "points_per_game": 4.8,
+        "minutes": 412,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 1.42,
+        "xgc": 8.12,
+        "expected_goals": 1.35,
+        "expected_assists": 0.07,
+        "bps": 114,
+        "bonus": 3,
+        "starts": 5,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 1.23,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 3.501504031823085,
+        "fixtures": [
+          {
+            "opponent": "CRY",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 7
+          },
+          {
+            "opponent": "LIV",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 8
+          },
+          {
+            "opponent": "MCI",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 9
+          },
+          {
+            "opponent": "BRE",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
       },
       {
         "id": 346,
@@ -2930,32 +2930,26 @@
         "team_id": 13,
         "position": 4,
         "price": 60,
-        "total_points": 22,
-        "form": 6.0,
-        "points_per_game": 4.4,
-        "minutes": 419,
+        "total_points": 24,
+        "form": 4.7,
+        "points_per_game": 4.0,
+        "minutes": 509,
         "status": "a",
         "chance_of_playing": null,
         "xgi": 3.08,
-        "xgc": 4.85,
+        "xgc": 7.43,
         "expected_goals": 3.0,
         "expected_assists": 0.08,
-        "bps": 73,
+        "bps": 80,
         "bonus": 4,
-        "starts": 5,
+        "starts": 6,
         "news": "",
         "penalties_order": 1,
-        "xpts90": 2.98,
+        "xpts90": 2.51,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 3.938702267303102,
+        "score": 3.388983955468238,
         "fixtures": [
-          {
-            "opponent": "ARS",
-            "is_home": false,
-            "difficulty": 5,
-            "gw": 6
-          },
           {
             "opponent": "MUN",
             "is_home": true,
@@ -2973,124 +2967,12 @@
             "is_home": false,
             "difficulty": 3,
             "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 249,
-        "name": "Thierno Barry",
-        "web_name": "Barry",
-        "code": 586309,
-        "team": "Everton",
-        "team_short": "EVE",
-        "team_code": 11,
-        "team_id": 9,
-        "position": 4,
-        "price": 57,
-        "total_points": 20,
-        "form": 4.0,
-        "points_per_game": 4.0,
-        "minutes": 417,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 3.65,
-        "xgc": 5.02,
-        "expected_goals": 3.5,
-        "expected_assists": 0.15,
-        "bps": 83,
-        "bonus": 2,
-        "starts": 5,
-        "news": "",
-        "penalties_order": 1,
-        "xpts90": 3.47,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 3.383646282973621,
-        "fixtures": [
+          },
           {
-            "opponent": "HUL",
-            "is_home": false,
+            "opponent": "TOT",
+            "is_home": true,
             "difficulty": 2,
-            "gw": 6
-          },
-          {
-            "opponent": "CHE",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 7
-          },
-          {
-            "opponent": "ARS",
-            "is_home": false,
-            "difficulty": 5,
-            "gw": 8
-          },
-          {
-            "opponent": "NEW",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 106,
-        "name": "Igor Thiago Nascimento Rodrigues",
-        "web_name": "Thiago",
-        "code": 502500,
-        "team": "Brentford",
-        "team_short": "BRE",
-        "team_code": 94,
-        "team_id": 4,
-        "position": 4,
-        "price": 78,
-        "total_points": 10,
-        "form": 3.0,
-        "points_per_game": 2.0,
-        "minutes": 442,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 3.29,
-        "xgc": 6.25,
-        "expected_goals": 3.13,
-        "expected_assists": 0.16,
-        "bps": 37,
-        "bonus": 0,
-        "starts": 5,
-        "news": "",
-        "penalties_order": 1,
-        "xpts90": 3.0,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 2.474230769230769,
-        "fixtures": [
-          {
-            "opponent": "AVL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "LIV",
-            "is_home": true,
-            "difficulty": 4,
-            "gw": 7
-          },
-          {
-            "opponent": "HUL",
-            "is_home": false,
-            "difficulty": 2,
-            "gw": 8
-          },
-          {
-            "opponent": "NFO",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 9
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -3107,32 +2989,26 @@
         "team_id": 3,
         "position": 4,
         "price": 60,
-        "total_points": 18,
-        "form": 3.5,
-        "points_per_game": 3.6,
-        "minutes": 424,
+        "total_points": 24,
+        "form": 4.3,
+        "points_per_game": 4.0,
+        "minutes": 500,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 1.39,
-        "xgc": 6.45,
-        "expected_goals": 0.87,
-        "expected_assists": 0.52,
-        "bps": 66,
+        "xgi": 2.0,
+        "xgc": 7.53,
+        "expected_goals": 1.47,
+        "expected_assists": 0.53,
+        "bps": 101,
         "bonus": 0,
-        "starts": 5,
+        "starts": 6,
         "news": "",
         "penalties_order": null,
-        "xpts90": 1.07,
+        "xpts90": 1.34,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 2.4095534591194965,
+        "score": 2.919497,
         "fixtures": [
-          {
-            "opponent": "CHE",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 6
-          },
           {
             "opponent": "SUN",
             "is_home": true,
@@ -3150,6 +3026,189 @@
             "is_home": true,
             "difficulty": 3,
             "gw": 9
+          },
+          {
+            "opponent": "IPS",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 166,
+        "name": "Nicolas Jackson",
+        "web_name": "N.Jackson",
+        "code": 517052,
+        "team": "Aston Villa",
+        "team_short": "AVL",
+        "team_code": 7,
+        "team_id": 2,
+        "position": 4,
+        "price": 65,
+        "total_points": 19,
+        "form": 5.0,
+        "points_per_game": 3.8,
+        "minutes": 359,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 1.69,
+        "xgc": 3.51,
+        "expected_goals": 0.97,
+        "expected_assists": 0.72,
+        "bps": 87,
+        "bonus": 4,
+        "starts": 5,
+        "news": "",
+        "penalties_order": 2,
+        "xpts90": 1.61,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 2.876984679665738,
+        "fixtures": [
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 7
+          },
+          {
+            "opponent": "MCI",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 8
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 9
+          },
+          {
+            "opponent": "MUN",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 106,
+        "name": "Igor Thiago Nascimento Rodrigues",
+        "web_name": "Thiago",
+        "code": 502500,
+        "team": "Brentford",
+        "team_short": "BRE",
+        "team_code": 94,
+        "team_id": 4,
+        "position": 4,
+        "price": 78,
+        "total_points": 14,
+        "form": 3.3,
+        "points_per_game": 2.3,
+        "minutes": 515,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 3.49,
+        "xgc": 7.77,
+        "expected_goals": 3.2,
+        "expected_assists": 0.29,
+        "bps": 51,
+        "bonus": 0,
+        "starts": 6,
+        "news": "",
+        "penalties_order": 1,
+        "xpts90": 2.74,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 2.581388349514563,
+        "fixtures": [
+          {
+            "opponent": "LIV",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 7
+          },
+          {
+            "opponent": "HUL",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 8
+          },
+          {
+            "opponent": "NFO",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "BHA",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 10
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 249,
+        "name": "Thierno Barry",
+        "web_name": "Barry",
+        "code": 586309,
+        "team": "Everton",
+        "team_short": "EVE",
+        "team_code": 11,
+        "team_id": 9,
+        "position": 4,
+        "price": 57,
+        "total_points": 20,
+        "form": 2.7,
+        "points_per_game": 4.0,
+        "minutes": 417,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 3.65,
+        "xgc": 5.02,
+        "expected_goals": 3.5,
+        "expected_assists": 0.15,
+        "bps": 83,
+        "bonus": 2,
+        "starts": 5,
+        "news": "",
+        "penalties_order": 1,
+        "xpts90": 3.47,
+        "reliability": 1.0,
+        "nailedness": 0.83,
+        "score": 2.5555341726618703,
+        "fixtures": [
+          {
+            "opponent": "CHE",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 7
+          },
+          {
+            "opponent": "ARS",
+            "is_home": false,
+            "difficulty": 5,
+            "gw": 8
+          },
+          {
+            "opponent": "NEW",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 9
+          },
+          {
+            "opponent": "COV",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -3165,33 +3224,27 @@
         "team_code": 54,
         "team_id": 10,
         "position": 4,
-        "price": 60,
-        "total_points": 14,
+        "price": 61,
+        "total_points": 16,
         "form": 2.0,
-        "points_per_game": 2.8,
-        "minutes": 425,
+        "points_per_game": 2.7,
+        "minutes": 501,
         "status": "a",
         "chance_of_playing": null,
-        "xgi": 2.91,
-        "xgc": 8.29,
-        "expected_goals": 2.33,
-        "expected_assists": 0.58,
-        "bps": 53,
+        "xgi": 3.59,
+        "xgc": 8.92,
+        "expected_goals": 3.0,
+        "expected_assists": 0.59,
+        "bps": 56,
         "bonus": 0,
-        "starts": 5,
+        "starts": 6,
         "news": "",
         "penalties_order": 1,
-        "xpts90": 2.69,
+        "xpts90": 2.82,
         "reliability": 1.0,
         "nailedness": 1.0,
-        "score": 2.3572994117647057,
+        "score": 2.3308163672654687,
         "fixtures": [
-          {
-            "opponent": "IPS",
-            "is_home": false,
-            "difficulty": 2,
-            "gw": 6
-          },
           {
             "opponent": "HUL",
             "is_home": true,
@@ -3209,65 +3262,12 @@
             "is_home": false,
             "difficulty": 3,
             "gw": 9
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 26,
-        "name": "Kai Havertz",
-        "web_name": "Havertz",
-        "code": 219847,
-        "team": "Arsenal",
-        "team_short": "ARS",
-        "team_code": 3,
-        "team_id": 1,
-        "position": 4,
-        "price": 76,
-        "total_points": 19,
-        "form": 1.5,
-        "points_per_game": 3.8,
-        "minutes": 437,
-        "status": "d",
-        "chance_of_playing": 75,
-        "xgi": 2.04,
-        "xgc": 3.91,
-        "expected_goals": 1.67,
-        "expected_assists": 0.37,
-        "bps": 82,
-        "bonus": 2,
-        "starts": 5,
-        "news": "Hamstring injury - 75% chance of playing",
-        "penalties_order": null,
-        "xpts90": 1.6,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 2.0125972540045765,
-        "fixtures": [
+          },
           {
-            "opponent": "LEE",
+            "opponent": "NEW",
             "is_home": true,
             "difficulty": 3,
-            "gw": 6
-          },
-          {
-            "opponent": "NFO",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 7
-          },
-          {
-            "opponent": "EVE",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 8
-          },
-          {
-            "opponent": "LIV",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 9
+            "gw": 10
           }
         ],
         "gw_note": "",
@@ -3287,32 +3287,26 @@
       "team_id": 5,
       "position": 1,
       "price": 45,
-      "total_points": 23,
-      "form": 7.0,
-      "points_per_game": 4.6,
-      "minutes": 450,
+      "total_points": 32,
+      "form": 7.7,
+      "points_per_game": 5.3,
+      "minutes": 525,
       "status": "a",
       "chance_of_playing": null,
       "xgi": 0.2,
-      "xgc": 8.67,
+      "xgc": 9.2,
       "expected_goals": 0.0,
       "expected_assists": 0.2,
-      "bps": 107,
-      "bonus": 0,
-      "starts": 5,
+      "bps": 134,
+      "bonus": 2,
+      "starts": 6,
       "news": "",
       "penalties_order": null,
-      "xpts90": 0.12,
+      "xpts90": 0.1,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 3.707333333333333,
+      "score": 3.989847619047619,
       "fixtures": [
-        {
-          "opponent": "SUN",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "CRY",
           "is_home": true,
@@ -3330,12 +3324,18 @@
           "is_home": false,
           "difficulty": 5,
           "gw": 9
+        },
+        {
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
+      "is_starting": true,
       "is_captain": false,
-      "is_vice_captain": false,
-      "is_starting": true
+      "is_vice_captain": false
     },
     {
       "id": 226,
@@ -3349,7 +3349,7 @@
       "position": 1,
       "price": 55,
       "total_points": 25,
-      "form": 7.0,
+      "form": 4.7,
       "points_per_game": 5.0,
       "minutes": 450,
       "status": "a",
@@ -3365,15 +3365,9 @@
       "penalties_order": null,
       "xpts90": 0.01,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 3.6581244444444443,
+      "nailedness": 0.83,
+      "score": 2.5001012777777776,
       "fixtures": [
-        {
-          "opponent": "HUL",
-          "is_home": false,
-          "difficulty": 2,
-          "gw": 6
-        },
         {
           "opponent": "CHE",
           "is_home": true,
@@ -3391,6 +3385,12 @@
           "is_home": false,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "COV",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -3409,32 +3409,26 @@
       "team_id": 5,
       "position": 2,
       "price": 50,
-      "total_points": 38,
-      "form": 8.5,
-      "points_per_game": 7.6,
-      "minutes": 423,
+      "total_points": 53,
+      "form": 10.7,
+      "points_per_game": 8.8,
+      "minutes": 490,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 2.22,
-      "xgc": 8.58,
-      "expected_goals": 1.55,
+      "xgi": 2.52,
+      "xgc": 9.06,
+      "expected_goals": 1.85,
       "expected_assists": 0.67,
-      "bps": 132,
-      "bonus": 5,
-      "starts": 5,
+      "bps": 168,
+      "bonus": 8,
+      "starts": 6,
       "news": "",
       "penalties_order": null,
       "xpts90": 2.41,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 5.690531914893617,
+      "score": 6.544570068027212,
       "fixtures": [
-        {
-          "opponent": "SUN",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "CRY",
           "is_home": true,
@@ -3452,6 +3446,73 @@
           "is_home": false,
           "difficulty": 5,
           "gw": 9
+        },
+        {
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true,
+      "is_captain": false,
+      "is_vice_captain": false
+    },
+    {
+      "id": 8,
+      "name": "Riccardo Calafiori",
+      "web_name": "Calafiori",
+      "code": 466075,
+      "team": "Arsenal",
+      "team_short": "ARS",
+      "team_code": 3,
+      "team_id": 1,
+      "position": 2,
+      "price": 59,
+      "total_points": 38,
+      "form": 5.3,
+      "points_per_game": 6.3,
+      "minutes": 497,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 2.09,
+      "xgc": 4.44,
+      "expected_goals": 1.41,
+      "expected_assists": 0.68,
+      "bps": 98,
+      "bonus": 3,
+      "starts": 6,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 2.48,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 4.163675602310381,
+      "fixtures": [
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 7
+        },
+        {
+          "opponent": "EVE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 8
+        },
+        {
+          "opponent": "LIV",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 9
+        },
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -3471,7 +3532,7 @@
       "position": 2,
       "price": 57,
       "total_points": 37,
-      "form": 7.5,
+      "form": 5.0,
       "points_per_game": 7.4,
       "minutes": 434,
       "status": "a",
@@ -3487,15 +3548,9 @@
       "penalties_order": null,
       "xpts90": 0.73,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.788548387096774,
+      "nailedness": 0.83,
+      "score": 3.5145838709677415,
       "fixtures": [
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 6
-        },
         {
           "opponent": "IPS",
           "is_home": true,
@@ -3513,50 +3568,50 @@
           "is_home": true,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
-      "is_starting": true,
       "is_captain": false,
-      "is_vice_captain": false
+      "is_vice_captain": false,
+      "is_starting": true
     },
     {
-      "id": 8,
-      "name": "Riccardo Calafiori",
-      "web_name": "Calafiori",
-      "code": 466075,
+      "id": 31,
+      "name": "Ezri Konsa Ngoyo",
+      "web_name": "Konsa",
+      "code": 199798,
       "team": "Arsenal",
       "team_short": "ARS",
       "team_code": 3,
       "team_id": 1,
       "position": 2,
-      "price": 59,
-      "total_points": 29,
-      "form": 3.5,
-      "points_per_game": 5.8,
-      "minutes": 416,
+      "price": 46,
+      "total_points": 16,
+      "form": 3.7,
+      "points_per_game": 3.2,
+      "minutes": 371,
       "status": "a",
-      "chance_of_playing": null,
-      "xgi": 1.29,
-      "xgc": 3.76,
-      "expected_goals": 0.67,
-      "expected_assists": 0.62,
-      "bps": 76,
-      "bonus": 2,
-      "starts": 5,
+      "chance_of_playing": 100,
+      "xgi": 0.25,
+      "xgc": 4.18,
+      "expected_goals": 0.23,
+      "expected_assists": 0.02,
+      "bps": 53,
+      "bonus": 0,
+      "starts": 4,
       "news": "",
       "penalties_order": null,
-      "xpts90": 1.83,
+      "xpts90": 0.54,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 3.2795272837085534,
+      "nailedness": 0.67,
+      "score": 1.7344935908189314,
       "fixtures": [
-        {
-          "opponent": "LEE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "NFO",
           "is_home": false,
@@ -3574,12 +3629,18 @@
           "is_home": false,
           "difficulty": 4,
           "gw": 9
+        },
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_captain": false,
       "is_vice_captain": false,
-      "is_starting": true
+      "is_starting": false
     },
     {
       "id": 279,
@@ -3593,7 +3654,7 @@
       "position": 2,
       "price": 42,
       "total_points": 27,
-      "form": 1.0,
+      "form": 0.7,
       "points_per_game": 5.4,
       "minutes": 423,
       "status": "a",
@@ -3609,15 +3670,9 @@
       "penalties_order": null,
       "xpts90": 0.85,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 2.0107092198581564,
+      "nailedness": 0.83,
+      "score": 1.7114327521670605,
       "fixtures": [
-        {
-          "opponent": "EVE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "FUL",
           "is_home": false,
@@ -3635,134 +3690,18 @@
           "is_home": true,
           "difficulty": 2,
           "gw": 9
+        },
+        {
+          "opponent": "ARS",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_captain": false,
       "is_vice_captain": false,
       "is_starting": false
-    },
-    {
-      "id": 31,
-      "name": "Ezri Konsa Ngoyo",
-      "web_name": "Konsa",
-      "code": 199798,
-      "team": "Arsenal",
-      "team_short": "ARS",
-      "team_code": 3,
-      "team_id": 1,
-      "position": 2,
-      "price": 46,
-      "total_points": 12,
-      "form": 3.5,
-      "points_per_game": 3.0,
-      "minutes": 281,
-      "status": "d",
-      "chance_of_playing": 75,
-      "xgi": 0.25,
-      "xgc": 3.5,
-      "expected_goals": 0.23,
-      "expected_assists": 0.02,
-      "bps": 36,
-      "bonus": 0,
-      "starts": 3,
-      "news": "Unspecified injury - 75% chance of playing",
-      "penalties_order": null,
-      "xpts90": 0.54,
-      "reliability": 1.0,
-      "nailedness": 0.6,
-      "score": 1.5656753257787586,
-      "fixtures": [
-        {
-          "opponent": "LEE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
-        {
-          "opponent": "NFO",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 7
-        },
-        {
-          "opponent": "EVE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 8
-        },
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_captain": false,
-      "is_vice_captain": false,
-      "is_starting": false
-    },
-    {
-      "id": 286,
-      "name": "Mohamed Belloumi",
-      "web_name": "Belloumi",
-      "code": 540324,
-      "team": "Hull City",
-      "team_short": "HUL",
-      "team_code": 88,
-      "team_id": 11,
-      "position": 3,
-      "price": 51,
-      "total_points": 31,
-      "form": 8.5,
-      "points_per_game": 6.2,
-      "minutes": 394,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 1.15,
-      "xgc": 6.44,
-      "expected_goals": 0.72,
-      "expected_assists": 0.43,
-      "bps": 111,
-      "bonus": 2,
-      "starts": 5,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 1.12,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.944619289340101,
-      "fixtures": [
-        {
-          "opponent": "EVE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
-        {
-          "opponent": "FUL",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 7
-        },
-        {
-          "opponent": "BRE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 8
-        },
-        {
-          "opponent": "IPS",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true,
-      "is_captain": false,
-      "is_vice_captain": false
     },
     {
       "id": 40,
@@ -3775,32 +3714,26 @@
       "team_id": 6,
       "position": 3,
       "price": 78,
-      "total_points": 29,
-      "form": 5.0,
-      "points_per_game": 5.8,
-      "minutes": 437,
+      "total_points": 39,
+      "form": 6.7,
+      "points_per_game": 6.5,
+      "minutes": 513,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 2.95,
-      "xgc": 8.73,
-      "expected_goals": 1.72,
-      "expected_assists": 1.23,
-      "bps": 135,
-      "bonus": 2,
-      "starts": 5,
+      "xgi": 3.23,
+      "xgc": 10.14,
+      "expected_goals": 1.86,
+      "expected_assists": 1.37,
+      "bps": 173,
+      "bonus": 3,
+      "starts": 6,
       "news": "",
       "penalties_order": null,
-      "xpts90": 2.53,
+      "xpts90": 2.35,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 4.119547292143402,
+      "score": 4.776959064327485,
       "fixtures": [
-        {
-          "opponent": "BOU",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "EVE",
           "is_home": false,
@@ -3818,67 +3751,73 @@
           "is_home": true,
           "difficulty": 4,
           "gw": 9
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
+      "is_starting": true,
       "is_captain": false,
-      "is_vice_captain": false,
-      "is_starting": true
+      "is_vice_captain": false
     },
     {
-      "id": 480,
-      "name": "Morgan Gibbs-White",
-      "web_name": "Gibbs-White",
-      "code": 222531,
-      "team": "Nott'm Forest",
-      "team_short": "NFO",
-      "team_code": 17,
-      "team_id": 18,
+      "id": 286,
+      "name": "Mohamed Belloumi",
+      "web_name": "Belloumi",
+      "code": 540324,
+      "team": "Hull City",
+      "team_short": "HUL",
+      "team_code": 88,
+      "team_id": 11,
       "position": 3,
-      "price": 80,
-      "total_points": 28,
-      "form": 5.0,
-      "points_per_game": 5.6,
-      "minutes": 450,
+      "price": 51,
+      "total_points": 31,
+      "form": 5.7,
+      "points_per_game": 6.2,
+      "minutes": 394,
       "status": "a",
-      "chance_of_playing": 100,
-      "xgi": 2.98,
-      "xgc": 4.77,
-      "expected_goals": 1.56,
-      "expected_assists": 1.42,
-      "bps": 116,
-      "bonus": 6,
+      "chance_of_playing": null,
+      "xgi": 1.15,
+      "xgc": 6.44,
+      "expected_goals": 0.72,
+      "expected_assists": 0.43,
+      "bps": 111,
+      "bonus": 2,
       "starts": 5,
       "news": "",
-      "penalties_order": 1,
-      "xpts90": 2.83,
+      "penalties_order": null,
+      "xpts90": 1.12,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.077184694280079,
+      "nailedness": 0.83,
+      "score": 3.560448378454596,
       "fixtures": [
         {
-          "opponent": "CRY",
+          "opponent": "FUL",
           "is_home": false,
           "difficulty": 3,
-          "gw": 6
-        },
-        {
-          "opponent": "ARS",
-          "is_home": true,
-          "difficulty": 4,
           "gw": 7
         },
         {
-          "opponent": "IPS",
-          "is_home": false,
-          "difficulty": 2,
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
           "gw": 8
         },
         {
-          "opponent": "BRE",
-          "is_home": false,
-          "difficulty": 3,
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
           "gw": 9
+        },
+        {
+          "opponent": "ARS",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 10
         }
       ],
       "gw_note": "",
@@ -3897,32 +3836,26 @@
       "team_id": 1,
       "position": 3,
       "price": 68,
-      "total_points": 29,
-      "form": 2.5,
-      "points_per_game": 5.8,
-      "minutes": 377,
+      "total_points": 30,
+      "form": 2.0,
+      "points_per_game": 5.0,
+      "minutes": 466,
       "status": "a",
       "chance_of_playing": null,
-      "xgi": 2.4,
-      "xgc": 3.23,
-      "expected_goals": 1.08,
-      "expected_assists": 1.32,
-      "bps": 137,
+      "xgi": 3.43,
+      "xgc": 3.91,
+      "expected_goals": 2.02,
+      "expected_assists": 1.41,
+      "bps": 147,
       "bonus": 6,
-      "starts": 5,
+      "starts": 6,
       "news": "",
       "penalties_order": 3,
-      "xpts90": 2.4,
+      "xpts90": 2.94,
       "reliability": 1.0,
       "nailedness": 1.0,
-      "score": 3.1540228740862593,
+      "score": 2.8788179093784834,
       "fixtures": [
-        {
-          "opponent": "LEE",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 6
-        },
         {
           "opponent": "NFO",
           "is_home": false,
@@ -3940,10 +3873,77 @@
           "is_home": false,
           "difficulty": 4,
           "gw": 9
+        },
+        {
+          "opponent": "HUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_captain": false,
+      "is_vice_captain": false,
+      "is_starting": true
+    },
+    {
+      "id": 426,
+      "name": "Bruno Borges Fernandes",
+      "web_name": "B.Fernandes",
+      "code": 141746,
+      "team": "Man Utd",
+      "team_short": "MUN",
+      "team_code": 1,
+      "team_id": 16,
+      "position": 3,
+      "price": 119,
+      "total_points": 31,
+      "form": 1.3,
+      "points_per_game": 6.2,
+      "minutes": 450,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 3.88,
+      "xgc": 6.8,
+      "expected_goals": 2.56,
+      "expected_assists": 1.32,
+      "bps": 148,
+      "bonus": 3,
+      "starts": 5,
+      "news": "",
+      "penalties_order": 1,
+      "xpts90": 3.7,
+      "reliability": 1.0,
+      "nailedness": 0.83,
+      "score": 2.7919477407407403,
+      "fixtures": [
+        {
+          "opponent": "LEE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 7
+        },
+        {
+          "opponent": "BOU",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 8
+        },
+        {
+          "opponent": "CHE",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 9
+        },
+        {
+          "opponent": "AVL",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_captain": true,
       "is_vice_captain": false,
       "is_starting": true
     },
@@ -3959,7 +3959,7 @@
       "position": 3,
       "price": 58,
       "total_points": 22,
-      "form": 3.0,
+      "form": 2.0,
       "points_per_game": 4.4,
       "minutes": 385,
       "status": "a",
@@ -3975,15 +3975,9 @@
       "penalties_order": null,
       "xpts90": 0.85,
       "reliability": 1.0,
-      "nailedness": 0.8,
-      "score": 2.1422488311688306,
+      "nailedness": 0.67,
+      "score": 1.6687804329004328,
       "fixtures": [
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 6
-        },
         {
           "opponent": "IPS",
           "is_home": true,
@@ -4001,12 +3995,18 @@
           "is_home": true,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_captain": false,
       "is_vice_captain": false,
-      "is_starting": true
+      "is_starting": false
     },
     {
       "id": 411,
@@ -4020,7 +4020,7 @@
       "position": 4,
       "price": 156,
       "total_points": 39,
-      "form": 7.5,
+      "form": 5.0,
       "points_per_game": 7.8,
       "minutes": 450,
       "status": "a",
@@ -4036,15 +4036,9 @@
       "penalties_order": 1,
       "xpts90": 4.2,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 5.947533333333333,
+      "nailedness": 0.83,
+      "score": 4.55541674074074,
       "fixtures": [
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 6
-        },
         {
           "opponent": "IPS",
           "is_home": true,
@@ -4062,12 +4056,79 @@
           "is_home": true,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "NFO",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_starting": true,
-      "is_captain": true,
+      "is_captain": false,
       "is_vice_captain": false
+    },
+    {
+      "id": 138,
+      "name": "Charalampos Kostoulas",
+      "web_name": "Kostoulas",
+      "code": 647850,
+      "team": "Brighton",
+      "team_short": "BHA",
+      "team_code": 36,
+      "team_id": 5,
+      "position": 4,
+      "price": 56,
+      "total_points": 29,
+      "form": 7.0,
+      "points_per_game": 4.8,
+      "minutes": 412,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 1.42,
+      "xgc": 8.12,
+      "expected_goals": 1.35,
+      "expected_assists": 0.07,
+      "bps": 114,
+      "bonus": 3,
+      "starts": 5,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 1.23,
+      "reliability": 1.0,
+      "nailedness": 0.83,
+      "score": 3.501504031823085,
+      "fixtures": [
+        {
+          "opponent": "CRY",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 7
+        },
+        {
+          "opponent": "LIV",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 8
+        },
+        {
+          "opponent": "MCI",
+          "is_home": false,
+          "difficulty": 5,
+          "gw": 9
+        },
+        {
+          "opponent": "BRE",
+          "is_home": true,
+          "difficulty": 3,
+          "gw": 10
+        }
+      ],
+      "gw_note": "",
+      "is_captain": false,
+      "is_vice_captain": true,
+      "is_starting": true
     },
     {
       "id": 249,
@@ -4081,7 +4142,7 @@
       "position": 4,
       "price": 57,
       "total_points": 20,
-      "form": 4.0,
+      "form": 2.7,
       "points_per_game": 4.0,
       "minutes": 417,
       "status": "a",
@@ -4097,15 +4158,9 @@
       "penalties_order": 1,
       "xpts90": 3.47,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 3.383646282973621,
+      "nailedness": 0.83,
+      "score": 2.5555341726618703,
       "fixtures": [
-        {
-          "opponent": "HUL",
-          "is_home": false,
-          "difficulty": 2,
-          "gw": 6
-        },
         {
           "opponent": "CHE",
           "is_home": true,
@@ -4123,93 +4178,38 @@
           "is_home": false,
           "difficulty": 3,
           "gw": 9
+        },
+        {
+          "opponent": "COV",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
         }
       ],
       "gw_note": "",
       "is_captain": false,
       "is_vice_captain": false,
       "is_starting": true
-    },
-    {
-      "id": 379,
-      "name": "Alexander Isak",
-      "web_name": "Isak",
-      "code": 219168,
-      "team": "Liverpool",
-      "team_short": "LIV",
-      "team_code": 14,
-      "team_id": 14,
-      "position": 4,
-      "price": 91,
-      "total_points": 33,
-      "form": 5.0,
-      "points_per_game": 6.6,
-      "minutes": 413,
-      "status": "i",
-      "chance_of_playing": 0,
-      "xgi": 3.62,
-      "xgc": 5.82,
-      "expected_goals": 3.54,
-      "expected_assists": 0.08,
-      "bps": 133,
-      "bonus": 8,
-      "starts": 5,
-      "news": "Thigh injury - Unknown return date",
-      "penalties_order": 2,
-      "xpts90": 3.24,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 0,
-      "fixtures": [
-        {
-          "opponent": "MCI",
-          "is_home": true,
-          "difficulty": 4,
-          "gw": 6
-        },
-        {
-          "opponent": "BRE",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 7
-        },
-        {
-          "opponent": "BHA",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 8
-        },
-        {
-          "opponent": "ARS",
-          "is_home": true,
-          "difficulty": 4,
-          "gw": 9
-        }
-      ],
-      "gw_note": "",
-      "is_captain": false,
-      "is_vice_captain": true,
-      "is_starting": false
     }
   ],
-  "current_squad_cost": 99.3,
-  "current_squad_score": 52.47,
-  "current_formation": "3-5-2",
+  "current_squad_cost": 99.7,
+  "current_squad_score": 50.45,
+  "current_formation": "3-4-3",
   "suggested_transfers": [
     {
       "out": "Ndiaye",
-      "in": "Gro\u00df",
-      "cost_diff": 0.1,
-      "net_gain": 6.53,
+      "in": "Schade",
+      "cost_diff": 0.4,
+      "net_gain": 3.6,
       "uses_free_transfer": true
     },
     {
-      "out": "Konsa",
+      "out": "Ajayi",
       "in": "Bogle",
-      "cost_diff": 0.0,
-      "net_gain": 0.68,
+      "cost_diff": 0.4,
+      "net_gain": -0.83,
       "uses_free_transfer": false
     }
   ],
-  "analysis": "1) **Gro\u00df** \u00e9 a melhor escolha \u2014 forma excelente, xpts90 s\u00f3lido e bons pr\u00f3ximos jogos at\u00e9 LIV/MCI. **Bogle** tem n\u00fameros fortes mas enfrenta ARS e MUN de imediato. **Haaland** mant\u00e9m valor ao longo do tempo apesar da forma baixa. \u26a0 **Semenyo** \u2014 75% de jogar n\u00e3o \u00e9 garantia, evitar depender dele.\n\n---\n\n2) **Capit\u00e3o: Gro\u00df** \u2014 score mais alto (8.7), forma dominante (15.5), jogo em casa contra CRY ap\u00f3s SUN fora. Claramente superior aos outros candidatos.\n\n---\n\n3) **Ndiaye\u2192Gro\u00df** \u00e9 transfer\u00eancia clara: custo m\u00ednimo (0.1), ganho l\u00edquido alto (6.5), sem penalidade. Fazer primeiro e imediatamente. **Konsa\u2192Bogle** n\u00e3o vale: ganho de apenas 0.7 com -4pts de penalidade \u2014 matematicamente negativo a curto prazo, ignorar."
+  "analysis": "1) **Gro\u00df** \u00e9 o melhor ativo: forma elite, xpts90 s\u00f3lido, fixture acess\u00edvel vs CRY. **Jo\u00e3o Pedro** com bps90 alt\u00edssimo (42.2) e fixtures atraentes merece aten\u00e7\u00e3o. **Haaland** acorda com IPS em casa. \u26a0 Vigiar **Semenyo** \u2014 les\u00e3o no tornozelo com 75% de jogo; clube diferente (MCI), risco real de n\u00e3o jogar.\n\n---\n\n2) **Capit\u00e3o: Gro\u00df** \u2014 score mais alto (7.3), em casa vs CRY (dif. 2), forma excelente (12.7).\n\n---\n\n3) Faz **Ndiaye\u2192Schade** primeiro: transfer\u00eancia livre com ganho l\u00edquido de 3.6, claramente vale. **Ajayi\u2192Bogle** n\u00e3o compensa \u2014 paga -4 pontos e tem ganho l\u00edquido negativo (-0.8). Evita essa segunda transfer\u00eancia."
 }

@@ -76,5 +76,44 @@
       "Kostoulas",
       "Emersonn"
     ]
+  },
+  {
+    "gameweek": 7,
+    "cost": 99.4,
+    "score": 69.44256595992564,
+    "squad_ids": [
+      109,
+      1,
+      115,
+      330,
+      8,
+      229,
+      305,
+      124,
+      94,
+      40,
+      397,
+      41,
+      165,
+      411,
+      316
+    ],
+    "squad_names": [
+      "Verbruggen",
+      "Raya",
+      "De Cuyper",
+      "Bogle",
+      "Calafiori",
+      "Tarkowski",
+      "Davis",
+      "Gro\u00df",
+      "Schade",
+      "Rogers",
+      "Semenyo",
+      "Buend\u00eda",
+      "Jo\u00e3o Pedro",
+      "Haaland",
+      "Emersonn"
+    ]
   }
 ]
