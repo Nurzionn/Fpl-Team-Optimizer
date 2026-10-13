@@ -79,41 +79,41 @@
   },
   {
     "gameweek": 7,
-    "cost": 99.4,
-    "score": 69.44256595992564,
+    "cost": 99.9,
+    "score": 73.39997272551498,
     "squad_ids": [
       109,
-      1,
+      110,
       115,
+      176,
       330,
-      8,
       229,
-      305,
+      8,
       124,
-      94,
-      40,
       397,
+      428,
+      399,
       41,
-      165,
       411,
-      316
+      165,
+      249
     ],
     "squad_names": [
       "Verbruggen",
-      "Raya",
+      "Rushworth",
       "De Cuyper",
+      "Dasilva",
       "Bogle",
-      "Calafiori",
       "Tarkowski",
-      "Davis",
+      "Calafiori",
       "Gro\u00df",
-      "Schade",
-      "Rogers",
       "Semenyo",
+      "Cunha",
+      "Cherki",
       "Buend\u00eda",
-      "Jo\u00e3o Pedro",
       "Haaland",
-      "Emersonn"
+      "Jo\u00e3o Pedro",
+      "Barry"
     ]
   }
 ]
