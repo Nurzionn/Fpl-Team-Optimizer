@@ -154,5 +154,44 @@
       "Evanilson",
       "Jo\u00e3o Pedro"
     ]
+  },
+  {
+    "gameweek": 9,
+    "cost": 98.9,
+    "score": 53.32077869281356,
+    "squad_ids": [
+      1,
+      109,
+      115,
+      504,
+      8,
+      10,
+      304,
+      427,
+      68,
+      156,
+      236,
+      591,
+      411,
+      79,
+      165
+    ],
+    "squad_names": [
+      "Raya",
+      "Verbruggen",
+      "De Cuyper",
+      "Vuskovic",
+      "Calafiori",
+      "White",
+      "O'Shea",
+      "Mbeumo",
+      "Tavernier",
+      "Neto",
+      "Dewsbury-Hall",
+      "Enciso",
+      "Haaland",
+      "Evanilson",
+      "Jo\u00e3o Pedro"
+    ]
   }
 ]
