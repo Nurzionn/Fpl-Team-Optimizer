@@ -157,41 +157,41 @@
   },
   {
     "gameweek": 9,
-    "cost": 98.9,
-    "score": 53.32077869281356,
+    "cost": 99.1,
+    "score": 55.82612173237478,
     "squad_ids": [
       1,
-      109,
+      597,
       115,
       504,
       8,
-      10,
       304,
+      10,
       427,
+      124,
       68,
       156,
       236,
-      591,
       411,
-      79,
-      165
+      166,
+      79
     ],
     "squad_names": [
       "Raya",
-      "Verbruggen",
+      "Suzuki",
       "De Cuyper",
       "Vuskovic",
       "Calafiori",
-      "White",
       "O'Shea",
+      "White",
       "Mbeumo",
+      "Gro\u00df",
       "Tavernier",
       "Neto",
       "Dewsbury-Hall",
-      "Enciso",
       "Haaland",
-      "Evanilson",
-      "Jo\u00e3o Pedro"
+      "N.Jackson",
+      "Evanilson"
     ]
   }
 ]
