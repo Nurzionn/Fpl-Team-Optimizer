@@ -1,65 +1,6 @@
 {
   "squad": [
     {
-      "id": 1,
-      "name": "David Raya Mart\u00edn",
-      "web_name": "Raya",
-      "code": 154561,
-      "team": "Arsenal",
-      "team_short": "ARS",
-      "team_code": 3,
-      "team_id": 1,
-      "position": 1,
-      "price": 62,
-      "total_points": 49,
-      "form": 6.3,
-      "points_per_game": 6.1,
-      "minutes": 720,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 0.01,
-      "xgc": 6.18,
-      "expected_goals": 0.0,
-      "expected_assists": 0.01,
-      "bps": 180,
-      "bonus": 6,
-      "starts": 8,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 0.66,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.003703402366863,
-      "fixtures": [
-        {
-          "opponent": "LIV",
-          "is_home": false,
-          "difficulty": 4,
-          "gw": 9
-        },
-        {
-          "opponent": "HUL",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 10
-        },
-        {
-          "opponent": "NEW",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 11
-        },
-        {
-          "opponent": "MCI",
-          "is_home": true,
-          "difficulty": 4,
-          "gw": 12
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true
-    },
-    {
       "id": 109,
       "name": "Bart Verbruggen",
       "web_name": "Verbruggen",
@@ -112,6 +53,65 @@
           "opponent": "NEW",
           "is_home": true,
           "difficulty": 3,
+          "gw": 12
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true
+    },
+    {
+      "id": 385,
+      "name": "James Trafford",
+      "web_name": "Trafford",
+      "code": 432720,
+      "team": "Leeds",
+      "team_short": "LEE",
+      "team_code": 2,
+      "team_id": 13,
+      "position": 1,
+      "price": 50,
+      "total_points": 42,
+      "form": 4.7,
+      "points_per_game": 5.2,
+      "minutes": 720,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 0.02,
+      "xgc": 10.54,
+      "expected_goals": 0.0,
+      "expected_assists": 0.02,
+      "bps": 178,
+      "bonus": 8,
+      "starts": 8,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 0.01,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 3.021416666666667,
+      "fixtures": [
+        {
+          "opponent": "BOU",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 9
+        },
+        {
+          "opponent": "TOT",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
+        },
+        {
+          "opponent": "CHE",
+          "is_home": false,
+          "difficulty": 4,
+          "gw": 11
+        },
+        {
+          "opponent": "COV",
+          "is_home": true,
+          "difficulty": 2,
           "gw": 12
         }
       ],
@@ -305,7 +305,7 @@
       "team_code": 36,
       "team_id": 5,
       "position": 2,
-      "price": 51,
+      "price": 52,
       "total_points": 52,
       "form": 6.7,
       "points_per_game": 6.5,
@@ -355,63 +355,63 @@
       "is_starting": true
     },
     {
-      "id": 334,
-      "name": "Tarik Muharemovi\u0107",
-      "web_name": "Muharemovi\u0107",
-      "code": 522047,
-      "team": "Leeds",
-      "team_short": "LEE",
-      "team_code": 2,
-      "team_id": 13,
+      "id": 31,
+      "name": "Ezri Konsa Ngoyo",
+      "web_name": "Konsa",
+      "code": 199798,
+      "team": "Arsenal",
+      "team_short": "ARS",
+      "team_code": 3,
+      "team_id": 1,
       "position": 2,
-      "price": 51,
-      "total_points": 43,
-      "form": 5.3,
-      "points_per_game": 5.4,
-      "minutes": 720,
+      "price": 47,
+      "total_points": 39,
+      "form": 9.0,
+      "points_per_game": 5.6,
+      "minutes": 551,
       "status": "a",
-      "chance_of_playing": null,
-      "xgi": 0.87,
-      "xgc": 10.54,
-      "expected_goals": 0.65,
-      "expected_assists": 0.22,
-      "bps": 152,
-      "bonus": 1,
-      "starts": 8,
+      "chance_of_playing": 100,
+      "xgi": 0.64,
+      "xgc": 5.65,
+      "expected_goals": 0.61,
+      "expected_assists": 0.03,
+      "bps": 125,
+      "bonus": 5,
+      "starts": 6,
       "news": "",
       "penalties_order": null,
-      "xpts90": 0.57,
+      "xpts90": 0.95,
       "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 3.4393333333333334,
+      "nailedness": 0.75,
+      "score": 4.044814806177892,
       "fixtures": [
         {
-          "opponent": "BOU",
+          "opponent": "LIV",
           "is_home": false,
-          "difficulty": 3,
+          "difficulty": 4,
           "gw": 9
         },
         {
-          "opponent": "TOT",
+          "opponent": "HUL",
           "is_home": true,
           "difficulty": 2,
           "gw": 10
         },
         {
-          "opponent": "CHE",
+          "opponent": "NEW",
           "is_home": false,
-          "difficulty": 4,
+          "difficulty": 3,
           "gw": 11
         },
         {
-          "opponent": "COV",
+          "opponent": "MCI",
           "is_home": true,
-          "difficulty": 2,
+          "difficulty": 4,
           "gw": 12
         }
       ],
       "gw_note": "",
-      "is_starting": false
+      "is_starting": true
     },
     {
       "id": 68,
@@ -588,7 +588,66 @@
         }
       ],
       "gw_note": "",
-      "is_starting": true
+      "is_starting": false
+    },
+    {
+      "id": 236,
+      "name": "Kiernan Dewsbury-Hall",
+      "web_name": "Dewsbury-Hall",
+      "code": 215413,
+      "team": "Everton",
+      "team_short": "EVE",
+      "team_code": 11,
+      "team_id": 9,
+      "position": 3,
+      "price": 66,
+      "total_points": 37,
+      "form": 5.7,
+      "points_per_game": 4.6,
+      "minutes": 715,
+      "status": "a",
+      "chance_of_playing": null,
+      "xgi": 2.45,
+      "xgc": 11.45,
+      "expected_goals": 1.45,
+      "expected_assists": 1.0,
+      "bps": 201,
+      "bonus": 6,
+      "starts": 8,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 1.29,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 3.6766719114219106,
+      "fixtures": [
+        {
+          "opponent": "NEW",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 9
+        },
+        {
+          "opponent": "COV",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 10
+        },
+        {
+          "opponent": "BRE",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 11
+        },
+        {
+          "opponent": "LIV",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 12
+        }
+      ],
+      "gw_note": "",
+      "is_starting": false
     },
     {
       "id": 261,
@@ -650,65 +709,6 @@
       "is_starting": false
     },
     {
-      "id": 264,
-      "name": "Oscar Bobb",
-      "web_name": "Bobb",
-      "code": 477555,
-      "team": "Fulham",
-      "team_short": "FUL",
-      "team_code": 54,
-      "team_id": 10,
-      "position": 3,
-      "price": 55,
-      "total_points": 30,
-      "form": 5.7,
-      "points_per_game": 3.8,
-      "minutes": 575,
-      "status": "a",
-      "chance_of_playing": null,
-      "xgi": 2.86,
-      "xgc": 7.38,
-      "expected_goals": 1.34,
-      "expected_assists": 1.52,
-      "bps": 120,
-      "bonus": 3,
-      "starts": 8,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 1.77,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 3.4220625117094143,
-      "fixtures": [
-        {
-          "opponent": "AVL",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 9
-        },
-        {
-          "opponent": "NEW",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 10
-        },
-        {
-          "opponent": "MCI",
-          "is_home": false,
-          "difficulty": 5,
-          "gw": 11
-        },
-        {
-          "opponent": "BOU",
-          "is_home": true,
-          "difficulty": 3,
-          "gw": 12
-        }
-      ],
-      "gw_note": "",
-      "is_starting": false
-    },
-    {
       "id": 411,
       "name": "Erling Haaland",
       "web_name": "Haaland",
@@ -718,7 +718,7 @@
       "team_code": 43,
       "team_id": 15,
       "position": 4,
-      "price": 157,
+      "price": 158,
       "total_points": 66,
       "form": 9.0,
       "points_per_game": 8.2,
@@ -777,7 +777,7 @@
       "team_code": 91,
       "team_id": 3,
       "position": 4,
-      "price": 62,
+      "price": 63,
       "total_points": 43,
       "form": 8.3,
       "points_per_game": 5.4,
@@ -836,7 +836,7 @@
       "team_code": 7,
       "team_id": 2,
       "position": 4,
-      "price": 67,
+      "price": 68,
       "total_points": 34,
       "form": 8.0,
       "points_per_game": 4.9,
@@ -886,10 +886,10 @@
       "is_starting": true
     }
   ],
-  "cost": 100.0,
-  "score": 65.8657119329318,
+  "cost": 99.9,
+  "score": 65.74351606978865,
   "gameweek": 9,
-  "formation": "4-3-3",
+  "formation": "5-2-3",
   "top_players": {
     "1": [
       {
@@ -949,8 +949,7 @@
           }
         ],
         "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
+        "is_selected": false
       },
       {
         "id": 109,
@@ -1009,7 +1008,7 @@
           }
         ],
         "gw_note": "",
-        "is_starting": false,
+        "is_starting": true,
         "is_selected": true
       },
       {
@@ -1069,7 +1068,8 @@
           }
         ],
         "gw_note": "",
-        "is_selected": false
+        "is_starting": false,
+        "is_selected": true
       },
       {
         "id": 250,
@@ -1676,7 +1676,7 @@
         "team_code": 36,
         "team_id": 5,
         "position": 2,
-        "price": 51,
+        "price": 52,
         "total_points": 52,
         "form": 6.7,
         "points_per_game": 6.5,
@@ -1783,7 +1783,8 @@
           }
         ],
         "gw_note": "",
-        "is_selected": false
+        "is_starting": true,
+        "is_selected": true
       },
       {
         "id": 8,
@@ -1795,7 +1796,7 @@
         "team_code": 3,
         "team_id": 1,
         "position": 2,
-        "price": 60,
+        "price": 59,
         "total_points": 45,
         "form": 5.3,
         "points_per_game": 5.6,
@@ -1960,8 +1961,7 @@
           }
         ],
         "gw_note": "",
-        "is_starting": false,
-        "is_selected": true
+        "is_selected": false
       },
       {
         "id": 112,
@@ -2260,7 +2260,7 @@
           }
         ],
         "gw_note": "",
-        "is_starting": true,
+        "is_starting": false,
         "is_selected": true
       },
       {
@@ -2278,8 +2278,8 @@
         "form": 6.3,
         "points_per_game": 4.9,
         "minutes": 670,
-        "status": "a",
-        "chance_of_playing": 100,
+        "status": "d",
+        "chance_of_playing": 75,
         "xgi": 1.97,
         "xgc": 5.45,
         "expected_goals": 0.32,
@@ -2287,7 +2287,7 @@
         "bps": 171,
         "bonus": 5,
         "starts": 8,
-        "news": "",
+        "news": "Unspecified injury - 75% chance of playing",
         "penalties_order": null,
         "xpts90": 1.07,
         "reliability": 1.0,
@@ -2438,7 +2438,8 @@
           }
         ],
         "gw_note": "",
-        "is_selected": false
+        "is_starting": false,
+        "is_selected": true
       },
       {
         "id": 261,
@@ -2557,8 +2558,7 @@
           }
         ],
         "gw_note": "",
-        "is_starting": false,
-        "is_selected": true
+        "is_selected": false
       },
       {
         "id": 129,
@@ -2690,7 +2690,7 @@
         "team_code": 43,
         "team_id": 15,
         "position": 4,
-        "price": 157,
+        "price": 158,
         "total_points": 66,
         "form": 9.0,
         "points_per_game": 8.2,
@@ -2750,7 +2750,7 @@
         "team_code": 91,
         "team_id": 3,
         "position": 4,
-        "price": 62,
+        "price": 63,
         "total_points": 43,
         "form": 8.3,
         "points_per_game": 5.4,
@@ -2810,7 +2810,7 @@
         "team_code": 14,
         "team_id": 14,
         "position": 4,
-        "price": 90,
+        "price": 91,
         "total_points": 51,
         "form": 6.0,
         "points_per_game": 7.3,
@@ -2869,7 +2869,7 @@
         "team_code": 7,
         "team_id": 2,
         "position": 4,
-        "price": 67,
+        "price": 68,
         "total_points": 34,
         "form": 8.0,
         "points_per_game": 4.9,
@@ -3516,9 +3516,9 @@
         }
       ],
       "gw_note": "",
+      "is_starting": true,
       "is_captain": false,
-      "is_vice_captain": false,
-      "is_starting": true
+      "is_vice_captain": false
     },
     {
       "id": 8,
@@ -3530,7 +3530,7 @@
       "team_code": 3,
       "team_id": 1,
       "position": 2,
-      "price": 60,
+      "price": 59,
       "total_points": 45,
       "form": 5.3,
       "points_per_game": 5.6,
@@ -4018,7 +4018,7 @@
       "team_code": 43,
       "team_id": 15,
       "position": 4,
-      "price": 157,
+      "price": 158,
       "total_points": 66,
       "form": 9.0,
       "points_per_game": 8.2,
@@ -4140,7 +4140,7 @@
       "team_code": 8,
       "team_id": 6,
       "position": 4,
-      "price": 79,
+      "price": 78,
       "total_points": 47,
       "form": 4.7,
       "points_per_game": 7.8,
@@ -4192,14 +4192,14 @@
       "is_starting": false
     }
   ],
-  "current_squad_cost": 97.4,
+  "current_squad_cost": 97.3,
   "current_squad_score": 45.59,
   "current_formation": "3-5-2",
   "suggested_transfers": [
     {
       "out": "Jo\u00e3o Pedro",
       "in": "Evanilson",
-      "cost_diff": -1.7,
+      "cost_diff": -1.5,
       "net_gain": 5.03,
       "uses_free_transfer": true
     },
@@ -4211,5 +4211,5 @@
       "uses_free_transfer": false
     }
   ],
-  "analysis": "1) **Haaland** continua imbat\u00edvel (xpts90 3.74, FUL em casa a seguir). **Tavernier** \u00e9 excelente escolha m\u00e9dio prazo (fixtures f\u00e1ceis, bps90 alto). **De Cuyper** vale por pre\u00e7o baixo e bons n\u00fameros. \u26a0 Risco: **Vuskovic** \u2014 xpts90 muito baixo (1.02), fixtures dif\u00edceis imediatos (MCI fora).\n\n---\n\n2) **Haaland** (score 6.6) \u2014 FUL em casa, forma 9.0, sem discuss\u00e3o.\n\n---\n\n3) Faz **Jo\u00e3o Pedro\u2192Evanilson** primeiro \u2014 ganho l\u00edquido 5.0 positivo, fixtures BOU excelentes (IPS, FUL), custo negativo (ganhas). Evita **Ndiaye\u2192Tavernier** agora: paga -4 pontos e ganho l\u00edquido negativo (-1.5). S\u00f3 vale se tiveres transfer\u00eancia livre extra."
+  "analysis": "1) **Haaland** \u00e9 a escolha \u00f3bvia \u2014 forma m\u00e1xima, xpts90 e bps90 dominantes, fixture favor\u00e1vel at\u00e9 ARS. **Tavernier** tem xpts90 s\u00f3lido (3.01) e calend\u00e1rio excelente (IPS, NFO, FUL). **De Cuyper** \u00e9 valor puro a 5.3M. \u26a0 Risco: **BHA trio** (Vuskovic, De Cuyper, Verbruggen) enfrentam MCI fora na pr\u00f3xima jornada (dificuldade 5).\n\n2) **Capit\u00e3o: Haaland** \u2014 score mais alto (6.6), forma 9.0, fixtures acess\u00edveis (BHA, NFO, FUL antes de ARS).\n\n3) **Jo\u00e3o Pedro\u2192Evanilson primeiro** \u2014 gratuita, ganho l\u00edquido +5.0, calend\u00e1rio BOU excelente. Ndiaye\u2192Tavernier custa -4 pontos e ganho l\u00edquido negativo (-1.5); s\u00f3 vale se Ndiaye estiver fora ou Tavernier for capitan\u00e1vel \u2014 caso contr\u00e1rio, evitar."
 }
