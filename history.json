@@ -193,5 +193,44 @@
       "Evanilson",
       "N.Jackson"
     ]
+  },
+  {
+    "gameweek": 10,
+    "cost": 99.9,
+    "score": 56.77638613218067,
+    "squad_ids": [
+      1,
+      385,
+      115,
+      4,
+      504,
+      10,
+      332,
+      68,
+      129,
+      427,
+      156,
+      183,
+      411,
+      79,
+      166
+    ],
+    "squad_names": [
+      "Raya",
+      "Trafford",
+      "De Cuyper",
+      "Gabriel",
+      "Vuskovic",
+      "White",
+      "Justin",
+      "Tavernier",
+      "Ayari",
+      "Mbeumo",
+      "Neto",
+      "Rudoni",
+      "Haaland",
+      "Evanilson",
+      "N.Jackson"
+    ]
   }
 ]
