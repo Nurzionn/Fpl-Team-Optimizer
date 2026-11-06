@@ -232,5 +232,44 @@
       "Evanilson",
       "N.Jackson"
     ]
+  },
+  {
+    "gameweek": 11,
+    "cost": 100.0,
+    "score": 55.764568385113094,
+    "squad_ids": [
+      109,
+      1,
+      115,
+      4,
+      112,
+      504,
+      31,
+      68,
+      183,
+      40,
+      427,
+      261,
+      411,
+      249,
+      79
+    ],
+    "squad_names": [
+      "Verbruggen",
+      "Raya",
+      "De Cuyper",
+      "Gabriel",
+      "Van Hecke",
+      "Vuskovic",
+      "Konsa",
+      "Tavernier",
+      "Rudoni",
+      "Rogers",
+      "Mbeumo",
+      "Iwobi",
+      "Haaland",
+      "Barry",
+      "Evanilson"
+    ]
   }
 ]
