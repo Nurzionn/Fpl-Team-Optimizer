@@ -235,41 +235,41 @@
   },
   {
     "gameweek": 11,
-    "cost": 90.7,
-    "score": 67.05871892946772,
+    "cost": 90.8,
+    "score": 68.41900559613437,
     "squad_ids": [
-      1,
       385,
+      1,
       4,
-      504,
-      112,
       31,
+      112,
       115,
-      68,
+      504,
       542,
-      124,
       366,
+      68,
+      124,
       591,
-      79,
       166,
-      249
+      249,
+      79
     ],
     "squad_names": [
-      "Raya",
       "Trafford",
+      "Raya",
       "Gabriel",
-      "Vuskovic",
-      "Van Hecke",
       "Konsa",
+      "Van Hecke",
       "De Cuyper",
-      "Tavernier",
+      "Vuskovic",
       "E.Le F\u00e9e",
-      "Gro\u00df",
       "Wirtz",
+      "Tavernier",
+      "Gro\u00df",
       "Enciso",
-      "Evanilson",
       "N.Jackson",
-      "Barry"
+      "Barry",
+      "Evanilson"
     ]
   }
 ]
