@@ -178,6 +178,65 @@
       "is_starting": true
     },
     {
+      "id": 112,
+      "name": "Jan Paul van Hecke",
+      "web_name": "Van Hecke",
+      "code": 469142,
+      "team": "Spurs",
+      "team_short": "TOT",
+      "team_code": 6,
+      "team_id": 19,
+      "position": 2,
+      "price": 51,
+      "total_points": 57,
+      "form": 8.7,
+      "points_per_game": 5.7,
+      "minutes": 900,
+      "status": "a",
+      "chance_of_playing": 100,
+      "xgi": 2.42,
+      "xgc": 11.92,
+      "expected_goals": 1.7,
+      "expected_assists": 0.72,
+      "bps": 183,
+      "bonus": 6,
+      "starts": 10,
+      "news": "",
+      "penalties_order": null,
+      "xpts90": 1.26,
+      "reliability": 1.0,
+      "nailedness": 1.0,
+      "score": 5.073751534516764,
+      "fixtures": [
+        {
+          "opponent": "IPS",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 11
+        },
+        {
+          "opponent": "SUN",
+          "is_home": false,
+          "difficulty": 3,
+          "gw": 12
+        },
+        {
+          "opponent": "FUL",
+          "is_home": true,
+          "difficulty": 2,
+          "gw": 13
+        },
+        {
+          "opponent": "ARS",
+          "is_home": true,
+          "difficulty": 4,
+          "gw": 14
+        }
+      ],
+      "gw_note": "",
+      "is_starting": true
+    },
+    {
       "id": 31,
       "name": "Ezri Konsa Ngoyo",
       "web_name": "Konsa",
@@ -230,65 +289,6 @@
           "opponent": "TOT",
           "is_home": false,
           "difficulty": 3,
-          "gw": 14
-        }
-      ],
-      "gw_note": "",
-      "is_starting": true
-    },
-    {
-      "id": 112,
-      "name": "Jan Paul van Hecke",
-      "web_name": "Van Hecke",
-      "code": 469142,
-      "team": "Spurs",
-      "team_short": "TOT",
-      "team_code": 6,
-      "team_id": 19,
-      "position": 2,
-      "price": 51,
-      "total_points": 57,
-      "form": 7.5,
-      "points_per_game": 5.7,
-      "minutes": 900,
-      "status": "a",
-      "chance_of_playing": 100,
-      "xgi": 2.42,
-      "xgc": 11.92,
-      "expected_goals": 1.7,
-      "expected_assists": 0.72,
-      "bps": 183,
-      "bonus": 6,
-      "starts": 10,
-      "news": "",
-      "penalties_order": null,
-      "xpts90": 1.26,
-      "reliability": 1.0,
-      "nailedness": 1.0,
-      "score": 4.639751534516765,
-      "fixtures": [
-        {
-          "opponent": "IPS",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 11
-        },
-        {
-          "opponent": "SUN",
-          "is_home": false,
-          "difficulty": 3,
-          "gw": 12
-        },
-        {
-          "opponent": "FUL",
-          "is_home": true,
-          "difficulty": 2,
-          "gw": 13
-        },
-        {
-          "opponent": "ARS",
-          "is_home": true,
-          "difficulty": 4,
           "gw": 14
         }
       ],
@@ -718,7 +718,7 @@
       "team_code": 7,
       "team_id": 2,
       "position": 4,
-      "price": 71,
+      "price": 72,
       "total_points": 54,
       "form": 11.0,
       "points_per_game": 6.0,
@@ -886,8 +886,8 @@
       "is_starting": true
     }
   ],
-  "cost": 90.8,
-  "score": 68.41900559613437,
+  "cost": 90.9,
+  "score": 68.85300559613437,
   "gameweek": 11,
   "formation": "5-2-3",
   "top_players": {
@@ -1072,6 +1072,65 @@
         "is_selected": false
       },
       {
+        "id": 496,
+        "name": "Anton\u00edn Kinsk\u00fd",
+        "web_name": "Kinsky",
+        "code": 485055,
+        "team": "Spurs",
+        "team_short": "TOT",
+        "team_code": 6,
+        "team_id": 19,
+        "position": 1,
+        "price": 44,
+        "total_points": 40,
+        "form": 5.7,
+        "points_per_game": 4.0,
+        "minutes": 900,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 0.0,
+        "xgc": 11.92,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "bps": 168,
+        "bonus": 2,
+        "starts": 10,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 0.03,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 3.161258201183432,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 11
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 12
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 13
+          },
+          {
+            "opponent": "ARS",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 14
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
         "id": 529,
         "name": "Robin Roefs",
         "web_name": "Roefs",
@@ -1124,65 +1183,6 @@
             "opponent": "NEW",
             "is_home": false,
             "difficulty": 3,
-            "gw": 14
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
-        "id": 496,
-        "name": "Anton\u00edn Kinsk\u00fd",
-        "web_name": "Kinsky",
-        "code": 485055,
-        "team": "Spurs",
-        "team_short": "TOT",
-        "team_code": 6,
-        "team_id": 19,
-        "position": 1,
-        "price": 44,
-        "total_points": 40,
-        "form": 4.8,
-        "points_per_game": 4.0,
-        "minutes": 900,
-        "status": "a",
-        "chance_of_playing": null,
-        "xgi": 0.0,
-        "xgc": 11.92,
-        "expected_goals": 0.0,
-        "expected_assists": 0.0,
-        "bps": 168,
-        "bonus": 2,
-        "starts": 10,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 0.03,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 2.8357582011834315,
-        "fixtures": [
-          {
-            "opponent": "IPS",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 11
-          },
-          {
-            "opponent": "SUN",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 12
-          },
-          {
-            "opponent": "FUL",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 13
-          },
-          {
-            "opponent": "ARS",
-            "is_home": true,
-            "difficulty": 4,
             "gw": 14
           }
         ],
@@ -1547,6 +1547,66 @@
         "is_selected": true
       },
       {
+        "id": 112,
+        "name": "Jan Paul van Hecke",
+        "web_name": "Van Hecke",
+        "code": 469142,
+        "team": "Spurs",
+        "team_short": "TOT",
+        "team_code": 6,
+        "team_id": 19,
+        "position": 2,
+        "price": 51,
+        "total_points": 57,
+        "form": 8.7,
+        "points_per_game": 5.7,
+        "minutes": 900,
+        "status": "a",
+        "chance_of_playing": 100,
+        "xgi": 2.42,
+        "xgc": 11.92,
+        "expected_goals": 1.7,
+        "expected_assists": 0.72,
+        "bps": 183,
+        "bonus": 6,
+        "starts": 10,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 1.26,
+        "reliability": 1.0,
+        "nailedness": 1.0,
+        "score": 5.073751534516764,
+        "fixtures": [
+          {
+            "opponent": "IPS",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 11
+          },
+          {
+            "opponent": "SUN",
+            "is_home": false,
+            "difficulty": 3,
+            "gw": 12
+          },
+          {
+            "opponent": "FUL",
+            "is_home": true,
+            "difficulty": 2,
+            "gw": 13
+          },
+          {
+            "opponent": "ARS",
+            "is_home": true,
+            "difficulty": 4,
+            "gw": 14
+          }
+        ],
+        "gw_note": "",
+        "is_starting": true,
+        "is_selected": true
+      },
+      {
         "id": 31,
         "name": "Ezri Konsa Ngoyo",
         "web_name": "Konsa",
@@ -1599,66 +1659,6 @@
             "opponent": "TOT",
             "is_home": false,
             "difficulty": 3,
-            "gw": 14
-          }
-        ],
-        "gw_note": "",
-        "is_starting": true,
-        "is_selected": true
-      },
-      {
-        "id": 112,
-        "name": "Jan Paul van Hecke",
-        "web_name": "Van Hecke",
-        "code": 469142,
-        "team": "Spurs",
-        "team_short": "TOT",
-        "team_code": 6,
-        "team_id": 19,
-        "position": 2,
-        "price": 51,
-        "total_points": 57,
-        "form": 7.5,
-        "points_per_game": 5.7,
-        "minutes": 900,
-        "status": "a",
-        "chance_of_playing": 100,
-        "xgi": 2.42,
-        "xgc": 11.92,
-        "expected_goals": 1.7,
-        "expected_assists": 0.72,
-        "bps": 183,
-        "bonus": 6,
-        "starts": 10,
-        "news": "",
-        "penalties_order": null,
-        "xpts90": 1.26,
-        "reliability": 1.0,
-        "nailedness": 1.0,
-        "score": 4.639751534516765,
-        "fixtures": [
-          {
-            "opponent": "IPS",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 11
-          },
-          {
-            "opponent": "SUN",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 12
-          },
-          {
-            "opponent": "FUL",
-            "is_home": true,
-            "difficulty": 2,
-            "gw": 13
-          },
-          {
-            "opponent": "ARS",
-            "is_home": true,
-            "difficulty": 4,
             "gw": 14
           }
         ],
@@ -2452,7 +2452,7 @@
         "team_code": 7,
         "team_id": 2,
         "position": 3,
-        "price": 54,
+        "price": 55,
         "total_points": 44,
         "form": 5.3,
         "points_per_game": 4.4,
@@ -2690,7 +2690,7 @@
         "team_code": 7,
         "team_id": 2,
         "position": 4,
-        "price": 71,
+        "price": 72,
         "total_points": 54,
         "form": 11.0,
         "points_per_game": 6.0,
@@ -3156,65 +3156,6 @@
         "is_selected": false
       },
       {
-        "id": 552,
-        "name": "Brian Brobbey",
-        "web_name": "Brobbey",
-        "code": 441264,
-        "team": "Sunderland",
-        "team_short": "SUN",
-        "team_code": 56,
-        "team_id": 20,
-        "position": 4,
-        "price": 57,
-        "total_points": 32,
-        "form": 2.7,
-        "points_per_game": 4.0,
-        "minutes": 619,
-        "status": "d",
-        "chance_of_playing": 75,
-        "xgi": 4.34,
-        "xgc": 9.58,
-        "expected_goals": 4.21,
-        "expected_assists": 0.13,
-        "bps": 130,
-        "bonus": 3,
-        "starts": 8,
-        "news": "Muscular injury - 75% chance of playing",
-        "penalties_order": null,
-        "xpts90": 2.51,
-        "reliability": 1.0,
-        "nailedness": 0.8,
-        "score": 2.3336642999461485,
-        "fixtures": [
-          {
-            "opponent": "AVL",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 11
-          },
-          {
-            "opponent": "TOT",
-            "is_home": true,
-            "difficulty": 3,
-            "gw": 12
-          },
-          {
-            "opponent": "LIV",
-            "is_home": false,
-            "difficulty": 4,
-            "gw": 13
-          },
-          {
-            "opponent": "NEW",
-            "is_home": false,
-            "difficulty": 3,
-            "gw": 14
-          }
-        ],
-        "gw_note": "",
-        "is_selected": false
-      },
-      {
         "id": 346,
         "name": "Dominic Calvert-Lewin",
         "web_name": "Calvert-Lewin",
@@ -3266,6 +3207,65 @@
           {
             "opponent": "IPS",
             "is_home": true,
+            "difficulty": 2,
+            "gw": 14
+          }
+        ],
+        "gw_note": "",
+        "is_selected": false
+      },
+      {
+        "id": 138,
+        "name": "Charalampos Kostoulas",
+        "web_name": "Kostoulas",
+        "code": 647850,
+        "team": "Brighton",
+        "team_short": "BHA",
+        "team_code": 36,
+        "team_id": 5,
+        "position": 4,
+        "price": 58,
+        "total_points": 47,
+        "form": 2.0,
+        "points_per_game": 4.7,
+        "minutes": 724,
+        "status": "a",
+        "chance_of_playing": null,
+        "xgi": 2.81,
+        "xgc": 11.37,
+        "expected_goals": 2.59,
+        "expected_assists": 0.22,
+        "bps": 199,
+        "bonus": 6,
+        "starts": 9,
+        "news": "",
+        "penalties_order": null,
+        "xpts90": 1.37,
+        "reliability": 1.0,
+        "nailedness": 0.9,
+        "score": 2.202635635359116,
+        "fixtures": [
+          {
+            "opponent": "HUL",
+            "is_home": false,
+            "difficulty": 2,
+            "gw": 11
+          },
+          {
+            "opponent": "NEW",
+            "is_home": true,
+            "difficulty": 3,
+            "gw": 12
+          },
+          {
+            "opponent": "BOU",
+            "is_home": false,
+            "difficulty": 4,
+            "gw": 13
+          },
+          {
+            "opponent": "NFO",
+            "is_home": false,
             "difficulty": 2,
             "gw": 14
           }
@@ -3657,8 +3657,8 @@
       "form": 1.0,
       "points_per_game": 4.4,
       "minutes": 700,
-      "status": "d",
-      "chance_of_playing": 75,
+      "status": "a",
+      "chance_of_playing": 100,
       "xgi": 1.79,
       "xgc": 10.51,
       "expected_goals": 0.8,
@@ -3666,7 +3666,7 @@
       "bps": 165,
       "bonus": 6,
       "starts": 8,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "",
       "penalties_order": null,
       "xpts90": 1.0,
       "reliability": 1.0,
@@ -3901,8 +3901,8 @@
       "form": 3.0,
       "points_per_game": 5.3,
       "minutes": 685,
-      "status": "d",
-      "chance_of_playing": 75,
+      "status": "a",
+      "chance_of_playing": 100,
       "xgi": 2.19,
       "xgc": 10.87,
       "expected_goals": 1.29,
@@ -3910,7 +3910,7 @@
       "bps": 194,
       "bonus": 2,
       "starts": 8,
-      "news": "Hamstring injury - 75% chance of playing",
+      "news": "",
       "penalties_order": null,
       "xpts90": 1.2,
       "reliability": 1.0,
@@ -4018,7 +4018,7 @@
       "team_code": 7,
       "team_id": 2,
       "position": 4,
-      "price": 71,
+      "price": 72,
       "total_points": 54,
       "form": 11.0,
       "points_per_game": 6.0,
@@ -4192,24 +4192,24 @@
       "is_starting": false
     }
   ],
-  "current_squad_cost": 100.4,
+  "current_squad_cost": 100.5,
   "current_squad_score": 48.73,
   "current_formation": "4-4-2",
   "suggested_transfers": [
     {
-      "out": "Kostoulas",
-      "in": "Barry",
-      "cost_diff": -0.1,
-      "net_gain": 3.29,
-      "uses_free_transfer": true
-    },
-    {
       "out": "Gvardiol",
       "in": "Van Hecke",
       "cost_diff": -0.5,
-      "net_gain": -0.9,
+      "net_gain": 3.53,
+      "uses_free_transfer": true
+    },
+    {
+      "out": "Kostoulas",
+      "in": "Barry",
+      "cost_diff": -0.1,
+      "net_gain": -0.71,
       "uses_free_transfer": false
     }
   ],
-  "analysis": "1) **N.Jackson** \u00e9 o destaque: forma 11.0, fixtures f\u00e1ceis (SUN, IPS, CRY) e bps90 elevado. **De Cuyper** oferece excelente valor (7.5 xpts90, bps90 28.5) com BHA a come\u00e7ar em HUL(F,2). **Evanilson** continua s\u00f3lido com 6.1 ppj. \u26a0 Risco: **Gabriel/Konsa** enfrentam MCI(C,4) e BRE(F,4) nas pr\u00f3ximas jornadas.\n\n2) **Capit\u00e3o: N.Jackson** \u2014 melhor forma, fixtures imediatos mais acess\u00edveis e score mais alto.\n\n3) **Kostoulas\u2192Barry** vale claramente: ganho l\u00edquido 3.3 sem custo de chips, fazer primeiro. **Gvardiol\u2192Van Hecke** n\u00e3o compensa: ganho negativo (-0.9) e ainda paga -4pts \u2014 evitar."
+  "analysis": "1) **De Cuyper** \u00e9 a melhor escolha: xpts90 e bps90 altos, pr\u00f3ximos dois jogos f\u00e1ceis. **Gro\u00df** destaca com ppj e bps90 s\u00f3lidos e calend\u00e1rio favor\u00e1vel. **Barry** tem xpts90 impressionante mas jogos dif\u00edceis imediatos (BRE, LIV). \u26a0 Risco: **Trafford** \u2014 enfrenta CHE fora e MCI fora (dif.5) nos pr\u00f3ximos 4.\n\n2) **N.Jackson** \u2014 maior score (5.8), pr\u00f3ximos jogos acess\u00edveis (SUN, IPS, CRY), forma de 11.0.\n\n3) **Van Hecke** vale claramente: transfer gratuito, ganho l\u00edquido de 3.5. Faz primeiro. **Barry** n\u00e3o vale: paga chip (-4pts) com ganho l\u00edquido negativo (-0.7). Evita a menos que seja imprescind\u00edvel."
 }
