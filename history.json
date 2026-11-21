@@ -271,5 +271,44 @@
       "Barry",
       "Evanilson"
     ]
+  },
+  {
+    "gameweek": 12,
+    "cost": 90.2,
+    "score": 62.09078307424135,
+    "squad_ids": [
+      529,
+      385,
+      112,
+      60,
+      4,
+      115,
+      31,
+      68,
+      542,
+      183,
+      40,
+      124,
+      166,
+      79,
+      249
+    ],
+    "squad_names": [
+      "Roefs",
+      "Trafford",
+      "Van Hecke",
+      "Hill",
+      "Gabriel",
+      "De Cuyper",
+      "Konsa",
+      "Tavernier",
+      "E.Le F\u00e9e",
+      "Rudoni",
+      "Rogers",
+      "Gro\u00df",
+      "N.Jackson",
+      "Evanilson",
+      "Barry"
+    ]
   }
 ]
