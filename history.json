@@ -310,5 +310,44 @@
       "Evanilson",
       "McBurnie"
     ]
+  },
+  {
+    "gameweek": 13,
+    "cost": 91.5,
+    "score": 53.6102277456356,
+    "squad_ids": [
+      572,
+      529,
+      112,
+      115,
+      504,
+      60,
+      4,
+      366,
+      480,
+      124,
+      542,
+      15,
+      249,
+      79,
+      295
+    ],
+    "squad_names": [
+      "Tzolakis",
+      "Roefs",
+      "Van Hecke",
+      "De Cuyper",
+      "Vuskovic",
+      "Hill",
+      "Gabriel",
+      "Wirtz",
+      "Gibbs-White",
+      "Gro\u00df",
+      "E.Le F\u00e9e",
+      "\u00d8degaard",
+      "Barry",
+      "Evanilson",
+      "McBurnie"
+    ]
   }
 ]
